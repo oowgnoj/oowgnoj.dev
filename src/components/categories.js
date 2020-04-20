@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, Link } from "gatsby"
 import { Query } from '../../graphql-types';
 import CategoryItem from './categoryItem'
+import styled from "styled-components"
 
 const Categories =  () => {
   const data =  useStaticQuery(graphql`
@@ -23,11 +24,21 @@ const Categories =  () => {
         });
 
   return(
-        <div>
-        {categoryList.map(category => <CategoryItem item={category}/>)}
-        </div>
+        <CategoryList>
+            <Link style={{textDecoration: `none`}} to={'/'}>
+                <LinkItem> index </LinkItem>
+            </Link>
+            {categoryList.map(category => <CategoryItem item={category}/>)}
+        </CategoryList>
     );
 }
 export default Categories
 
+const CategoryList = styled.div`
 
+
+`
+const LinkItem = styled.span`
+  color: #484848;
+  cursor: pointer;
+`

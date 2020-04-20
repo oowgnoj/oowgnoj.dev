@@ -5,6 +5,7 @@ author: "oowgnoj"
 subtitle: "읽기에 대한 생각"
 header-img: "img/in-post/header-reason-to-read.jpeg"
 catalog: true
+thumbnail: "./1.jpg"
 tags:
   - 독서
 ---
@@ -17,7 +18,7 @@ tags:
 
 ## 나는 왜 독서를 하는가?
 
-#### ![better_person](/img/in-post/reason-to-read.jpeg)
+#### ![](./1.jpg)   
 
 어렸을때, 김진명씨의 소설과 해리포터를 제외하고 크게 기억나는 책은 없습니다. 게임, 축구 하는 것을 좋아했고 공부하는 것을 썩 좋아하는 학생은 아니였어요. 그러다 독서를 주기적으로 하고, 좋아하게 된 계기는, 군대 동기가 책을 많이 읽었어요. 저는 그 모습이 좋아보였어요. 시작부터 엄청난 이유가 있었던 건 아니에요. 단순히, '멋있어 보인다'는 가벼운 마음으로 시작하게 되었어요.
 

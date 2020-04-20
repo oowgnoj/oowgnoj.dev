@@ -185,7 +185,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: -apple-system, BlinkMacSystemFont, 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -200,14 +200,14 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: -apple-system, BlinkMacSystemFont,NotoSansKR;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
+  -moz-font-feature-settings: -apple-system, BlinkMacSystemFont,NotoSansKR;
+  -ms-font-feature-settings: -apple-system, BlinkMacSystemFont,NotoSansKR;
+  -webkit-font-feature-settings: -apple-system, BlinkMacSystemFont, NotoSansKR;
+  font-feature-settings: -apple-system, BlinkMacSystemFont, NotoSansKR;
 }
 img {
   max-width: 100%;

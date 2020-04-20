@@ -6,6 +6,15 @@ module.exports = {
   },
   plugins: [
     {
+        resolve: "gatsby-plugin-web-font-loader",
+        options: {
+          custom: {
+            families: ["NotoSansKR"],
+            urls: ["/static/fonts/fonts.css"],
+          },
+        },
+      },
+    {
         resolve: 'gatsby-source-filesystem',
         options: {
             name: 'posts',
@@ -13,6 +22,17 @@ module.exports = {
         },
     },
    `gatsby-plugin-sharp`,
+    `gatsby-plugin-graphql-codegen`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-typescript`, 
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/images`,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -24,17 +44,6 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    `gatsby-plugin-graphql-codegen`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-typescript`, 
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/images`,
       },
     },
     `gatsby-transformer-sharp`,
