@@ -696,9 +696,9 @@ export type FileFieldsEnum =
   'childMarkdownRemark___frontmatter___layout' |
   'childMarkdownRemark___frontmatter___author' |
   'childMarkdownRemark___frontmatter___header_img' |
-  'childMarkdownRemark___frontmatter___subtitle' |
   'childMarkdownRemark___frontmatter___category' |
   'childMarkdownRemark___frontmatter___tags' |
+  'childMarkdownRemark___frontmatter___subtitle' |
   'childMarkdownRemark___frontmatter___catalog' |
   'childMarkdownRemark___frontmatter___date' |
   'childMarkdownRemark___frontmatter___type' |
@@ -1502,9 +1502,9 @@ export type MarkdownRemarkFieldsEnum =
   'frontmatter___layout' |
   'frontmatter___author' |
   'frontmatter___header_img' |
-  'frontmatter___subtitle' |
   'frontmatter___category' |
   'frontmatter___tags' |
+  'frontmatter___subtitle' |
   'frontmatter___catalog' |
   'frontmatter___date' |
   'frontmatter___type' |
@@ -1692,9 +1692,9 @@ export type MarkdownRemarkFrontmatter = {
   layout?: Maybe<Scalars['String']>;
   author?: Maybe<Scalars['String']>;
   header_img?: Maybe<Scalars['String']>;
-  subtitle?: Maybe<Scalars['String']>;
   category?: Maybe<Scalars['String']>;
   tags?: Maybe<Array<Maybe<Scalars['String']>>>;
+  subtitle?: Maybe<Scalars['String']>;
   catalog?: Maybe<Scalars['Boolean']>;
   date?: Maybe<Scalars['Date']>;
   type?: Maybe<Scalars['String']>;
@@ -1714,9 +1714,9 @@ export type MarkdownRemarkFrontmatterFilterInput = {
   layout?: Maybe<StringQueryOperatorInput>;
   author?: Maybe<StringQueryOperatorInput>;
   header_img?: Maybe<StringQueryOperatorInput>;
-  subtitle?: Maybe<StringQueryOperatorInput>;
   category?: Maybe<StringQueryOperatorInput>;
   tags?: Maybe<StringQueryOperatorInput>;
+  subtitle?: Maybe<StringQueryOperatorInput>;
   catalog?: Maybe<BooleanQueryOperatorInput>;
   date?: Maybe<DateQueryOperatorInput>;
   type?: Maybe<StringQueryOperatorInput>;
