@@ -5,7 +5,7 @@ author: "oowgnoj"
 date: 2019-10-12
 subtitle : "Recursion in python"
 category: CS Basic
-photo: "./../images/test.jpeg"
+photo: "https://images.unsplash.com/photo-1587969571956-03ce01d5d906?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
 tags:
   - recursion
   - 하노이의 탑

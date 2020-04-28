@@ -24,7 +24,6 @@ const Categories =  (props) => {
         });
     const [current, setCurrent] = useState('');
     useEffect(()=> {
-        console.log(props.current);
         setCurrent(props.current);
     })
   return(
