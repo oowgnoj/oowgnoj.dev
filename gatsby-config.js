@@ -6,14 +6,13 @@ module.exports = {
   },
   plugins: [
     {
-        resolve: "gatsby-plugin-web-font-loader",
-        options: {
-          custom: {
-            families: ["NotoSansKR"],
-            urls: ["/static/fonts/fonts.css"],
-          },
-        },
-      },
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['NotoSansKR', 'Droid Serif']
+        }
+      }
+    },
     {
         resolve: 'gatsby-source-filesystem',
         options: {
@@ -33,6 +32,7 @@ module.exports = {
         path: `${__dirname}/images`,
       },
     },
+    
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -43,6 +43,12 @@ module.exports = {
               maxWidth: 800,
             },
           },
+           {
+          resolve: `gatsby-remark-prismjs`,
+          options: {
+            aliases:{sh: "bash", js:"javascript"}
+          }
+           }
         ],
       },
     },

@@ -6,12 +6,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Categories from "../components/categories"
 import styled from "styled-components"
+import Img from "gatsby-image"
 
 
 const IndexPage = () => {
   const postData = useStaticQuery(graphql`
     query LatestPostListQuery {
-        allMarkdownRemark(sort: { order: ASC, fields: frontmatter___date }) {
+        allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
           edges {
             node {
               excerpt(truncate: true, pruneLength: 200)
@@ -20,7 +21,14 @@ const IndexPage = () => {
                 category
                 subtitle
                 tags
-                date(formatString: "YYYY-MM-DD HH:mm:ss")
+                photo {
+                  childImageSharp {
+                    fluid(maxWidth: 400) {
+                      ...GatsbyImageSharpFluid
+                      }
+                  }
+                }
+                date(formatString: "YYYY-MM-DD")
               }
               id
             }
@@ -29,7 +37,6 @@ const IndexPage = () => {
       }
   `
 )
-  
 
   return(
     <Layout>
@@ -37,15 +44,14 @@ const IndexPage = () => {
     <Categories></Categories>
       <PostList>
         {postData.allMarkdownRemark.edges.map(({ node }) => (
-          <li key={node.id}>
+          <PostWrapper>
               <Link style={{textDecoration: `none`}} to={node.frontmatter.title}>
+              <Img fluid={node.frontmatter.photo.childImageSharp.fluid}/>
                 <PostTitle> {node.frontmatter.title} </PostTitle>
+                <PostDate>{node.frontmatter.date}</PostDate>
+                <PostSubtitle>{node.frontmatter.subtitle}</PostSubtitle>
               </Link>
-            <PostSubtitle>{node.frontmatter.subtitle}</PostSubtitle>
-            <PostPreview>{node.excerpt.slice(0, 100)}</PostPreview>
-            <PostDate>{node.frontmatter.date}</PostDate>
-            <hr />
-          </li>
+        </PostWrapper>
         ))}
       </PostList>
   </Layout>
@@ -56,18 +62,33 @@ export default IndexPage
 
 const PostList = styled.li`
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+
 `
 
+const PostWrapper = styled.div`
+  padding-top: 30px;
+  padding-bottom: 10px;
+  &:hover{
+    box-shadow:inset 0 -3px 0 #90AFC5;
+  }
+`
 const PostTitle = styled.div`
   font-size: 26px;
   color: black;
+  font-weight: bold;
   padding-bottom: 5px;
+  
 `
 
 const PostSubtitle = styled.div`
   font-size: 16px;
   color: #484848;
   padding-bottom: 5px;
+  
 `
 
 const PostPreview = styled.div`
@@ -79,6 +100,5 @@ const PostPreview = styled.div`
 const PostDate = styled.div`
   font-size: 13px;
   color: #484848;
-  padding-bottom: 9px;
-  font-style: italic;
+  padding-bottom: 5px;
 `
