@@ -38,15 +38,30 @@ const Categories =  (props) => {
 export default Categories
 
 const CategoryList = styled.div`
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    @media(max-width:767px){
+      margin-bottom: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: row wrap;
+      height: 90px;
+  }
 
 `
 
 const LinkItem = styled.span`
-  color: ${props => !props.current? '#ffffff' : '#868686'};
+  color: ${props => !props.current? '#ffffff' : 'rgb(72,72,72)'};
   margin-left: 5px;
   background-color: ${props => !props.current? '#336B87' : null};
   cursor: pointer;
   border-radius: 5px;
   padding: 8px;
+  .LinkItem + .LinkItem {
+  margin-top: 12px;
+  }
+
+  @media(max-width:767px){
+      margin-top: 3px;
+  }
+ 
 `

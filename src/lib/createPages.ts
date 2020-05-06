@@ -24,6 +24,7 @@ export async function createPages({ actions, graphql }) {
           nodes {
             frontmatter {
               title
+              subtitle
               category
               author
               date(formatString: "YYYY-MM-DD")

@@ -5,7 +5,7 @@ author: "oowgnoj"
 date: 2019-10-12
 subtitle : "Recursion in python"
 category: CS Basic
-photo: "https://images.unsplash.com/photo-1587969571956-03ce01d5d906?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+photo: "https://cdn-images-1.medium.com/max/1600/1*gSHrSNZK0bx-X7m1RraA6A.jpeg"
 tags:
   - recursion
   - 하노이의 탑
@@ -13,7 +13,7 @@ tags:
 ---
 
 
-
+![재귀함수](./../images/in-post/recursion/recursion1.gif)
 ### 재귀?
 위에서 사과를 받아서, 사과를 밑으로 던지면, 다시 위에서 사과를 받는다. 위에서 부터 사과를 계속 받고, 밑으로 사과를 던져준다. 재귀함수의 동작 원리와 유사점이 있다. 코드로 옮겨보자.
 
@@ -128,7 +128,7 @@ some_list에서 **가운데 값과 element가 같은지를 확인하는 작업�
 
 다음 실핼될 때 함수는 (1) 축소된 리스트를 인자로 받거나 (2) 변경된 시작, 끝의 index 를 넘겨주면 된다. 이번 문제에서는 (2)번 개념을 활용했다. 아래 슈퍼마리오 그림을 보자. 
 
-![binary-search-tree](/img/in-post/recursion/binary-search-tree.png)
+![binary-search-tree](./../images/in-post/recursion/binary-search-tree.png)
 슈퍼마리오가 내려가는 과정은 binary search 를 하는 과정이다. 슈퍼마리오는 위에서부터 ?박스의 가운데를 확인한다. 비교결과에 따라 반씩 제외하며 밑으로 내려간다. ?박스가 한 층에 반씩 줄어든다.
 
 재귀함수로 binary search algorithm 구현할 때도 같다. 
@@ -186,7 +186,7 @@ binary search 알고리즘의 결과는 이 두가지다.
 
 #### 3.하노이의 탑
 마지막으로 하노이의 탑이다.
-![하노이의탑](/img/in-post/recursion/hanoi-tower.jpeg)
+![하노이의탑](./../images/in-post/recursion/hanoi-tower.jpeg)
 
 하노이의 탑은 재귀함수의 유용성을 보여주는 가장 적절한 예라고 한다. 이해하기 어려워, 풀이를 먼저 보고 해결했다. 혹시 정리한 부분이 독자분들께도 도움이 될까 이해한 방식을 적어본다.
 
@@ -256,7 +256,7 @@ def hanoi(num_disks, start_peg, end_peg):
 other_peg 에서 end_peg 로 갈 때도 똑같이 `hanoi` 함수를 사용해야 한다. 같은 규칙이 적용되기 때문이다. 그러면 결국 7번줄에서 또 hanoi 를 함수를 실행한다는 얘기인데, 이 경우에도 `num_disk-1`이 들어가게 된다. 마지막 num_disk 번째의 원반은 다음 번 실행될 함수에서 `move_disk` 함수에서 최종적으로 end_peg로 때문이다.
 
 
-![재귀함수](/img/in-post/recursion/recursion1.gif)
+![재귀함수](./../images/in-post/recursion/recursion1.gif)
 처음에 이해가 안간다. 당연하다. 머리 싸매지 말고 함수의 흐름을 따라가보자.
 
 ##### (3) 탈출 조건

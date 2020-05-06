@@ -5,7 +5,7 @@ author: "oowgnoj"
 category: Flutter
 date: 2020-03-15
 subtitle : 'parsing complex json in flutter'
-photo: "./../images/test.jpeg"
+photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt4UOW9hCeGdqfRe2cYpl9TGXfI7p8dAqQZX_2RnsjLttmuYBv&usqp=CAU"
 tags:
   - flutter
   - front-end

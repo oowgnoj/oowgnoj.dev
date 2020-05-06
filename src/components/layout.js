@@ -49,7 +49,7 @@ const Main = styled.div`
   margin: 30% auto;
   color: #2A3132;
   max-width: 960;
-  padding: 0 5rem 5rem
+  padding: 0 5rem 0 5rem ;
   
 `
 

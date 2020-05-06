@@ -5,7 +5,7 @@ author: "oowgnoj"
 subtitle: "예술수업을 읽고"
 category: Book review
 date: 2020-01-13
-photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt4UOW9hCeGdqfRe2cYpl9TGXfI7p8dAqQZX_2RnsjLttmuYBv&usqp=CAU"
+photo: "https://img.ridicdn.net/cover/280000052/xxlarge"
 tags:
   - web
   - front-end

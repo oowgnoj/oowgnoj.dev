@@ -5,7 +5,7 @@ author: "oowgnoj"
 subtitle: "개인과 팀의 발전"
 category: Book review
 date: 2020-01-15
-photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt4UOW9hCeGdqfRe2cYpl9TGXfI7p8dAqQZX_2RnsjLttmuYBv&usqp=CAU"
+photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSX4LXY9fkfwFyYJrQCMWrtBgK2iiMWItGBMzb0A24MRga9ASyO&usqp=CAU"
 tags:
   - 독서
   - 리뷰

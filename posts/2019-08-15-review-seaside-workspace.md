@@ -6,7 +6,7 @@ header-img: "img/post-bg-universe.jpg"
 subtitle: "공간에 대한 욕심"
 category: random
 date: 2019-08-15
-photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt4UOW9hCeGdqfRe2cYpl9TGXfI7p8dAqQZX_2RnsjLttmuYBv&usqp=CAU"
+photo: "https://img.ridicdn.net/cover/222002134/xxlarge"
 tags:
   - 독서
   - 리뷰

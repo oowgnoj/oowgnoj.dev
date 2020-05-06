@@ -9,7 +9,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['NotoSansKR', 'Droid Serif']
+          families: ['NotoSansKR', 'Droid Serif', 'Crimson Text']
         }
       }
     },
@@ -43,6 +43,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          'gatsby-remark-static-images',
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -53,8 +54,8 @@ module.exports = {
           resolve: `gatsby-remark-prismjs`,
           options: {
             aliases:{sh: "bash", js:"javascript"}
-          }
-           }
+            }
+          },
         ],
       },
     },

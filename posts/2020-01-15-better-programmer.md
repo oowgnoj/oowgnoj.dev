@@ -5,7 +5,7 @@ author: "oowgnoj"
 subtitle: "할 수 있다."
 catalog: development
 date: 2020-01-15
-photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt4UOW9hCeGdqfRe2cYpl9TGXfI7p8dAqQZX_2RnsjLttmuYBv&usqp=CAU"
+photo: "https://i2.wp.com/www.brainpickings.org/wp-content/uploads/2013/08/richardfeynman-1.jpg?resize=680%2C383&ssl=1"
 tags:
   - web
   - front-end

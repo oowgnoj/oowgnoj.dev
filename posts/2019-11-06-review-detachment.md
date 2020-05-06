@@ -6,7 +6,7 @@ header-img: "img/post-bg-universe.jpg"
 subtitle: "거리두기"
 category: Review
 date: 2019-11-06
-photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt4UOW9hCeGdqfRe2cYpl9TGXfI7p8dAqQZX_2RnsjLttmuYBv&usqp=CAU"
+photo: "http://www.artinsight.co.kr/data/tmp/1608/62f32e36be3348ccb1142831a1d23602_ajCQ5A92LT.png"
 tags:
   - 영화
   - 리뷰

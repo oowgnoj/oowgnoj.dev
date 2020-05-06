@@ -4,10 +4,10 @@ import { Query } from '../../graphql-types';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Categories from "../components/categories"
-import BackgroundImage from "../components/backgroundImage"
+import ImagePost from "../components/imagePost"
 import styled from "styled-components"
 import Img from "gatsby-image"
-// import BackgroundImage from 'gatsby-background-image'
+// import ImagePost from 'gatsby-background-image'
 
 
 const IndexPage = () => {
@@ -33,16 +33,14 @@ const IndexPage = () => {
       }
   `
 )
-  // const backgroundImage = isHover ? postData.node.frontmatter.photo.childImageSharp.fluid : null
+  // const ImagePost = isHover ? postData.node.frontmatter.photo.childImageSharp.fluid : null
   return(
     <Layout>
     <SEO title="Home" />
-    <Categories></Categories>
+    <Categories/>
       <PostList>
         {postData.allMarkdownRemark.edges.map(({ node }) => (
-          <PostWrapper>
-           <BackgroundImage node={node}/>
-          </PostWrapper>
+           <ImagePost node={node}/>
         ))}
       </PostList>
   </Layout>
@@ -59,12 +57,11 @@ const PostList = styled.li`
   grid-auto-rows: minmax(100px, auto);
   @media(max-width: 767px){
     grid-template-columns: repeat(1, 1fr);
-
   }
 `
 
 
-const PostWrapper = styled.div`
 
-
+const Slogan = styled.div`
+  font-size: 100px;
 `

@@ -5,7 +5,7 @@ author: "oowgnoj"
 subtitle: "시련과 고난"
 category: development
 date: 2019-12-10
-photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt4UOW9hCeGdqfRe2cYpl9TGXfI7p8dAqQZX_2RnsjLttmuYBv&usqp=CAU"
+photo: "https://nesoy.github.io/assets/posts/20180503/refactoring.jpg"
 tags:
   - web
   - front-end

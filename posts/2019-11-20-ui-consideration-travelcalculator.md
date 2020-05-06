@@ -6,7 +6,7 @@ header-img: "img/post-bg-universe.jpg"
 subtitle: "첫 프로젝트"
 category: development
 date: 2019-11-20
-photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt4UOW9hCeGdqfRe2cYpl9TGXfI7p8dAqQZX_2RnsjLttmuYBv&usqp=CAU"
+photo: "https://miro.medium.com/max/506/1*FqpuKySet9_T4ZhNlVwxPw.png"
 tags:
   - UI
   - front-end

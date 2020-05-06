@@ -6,7 +6,7 @@ header-img: "img/post-bg-universe.jpg"
 subtitle: "typescript tutorial"
 category: development
 date: 2019-11-15
-photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt4UOW9hCeGdqfRe2cYpl9TGXfI7p8dAqQZX_2RnsjLttmuYBv&usqp=CAU"
+photo: "https://media.vlpt.us/post-images/chltndid724/0b2147f0-20a3-11ea-bfea-5d0fa0c4a664/ts.png"
 tags:
   - typescript
   - begin

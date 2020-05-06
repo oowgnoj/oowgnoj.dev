@@ -5,7 +5,7 @@ author: "oowgnoj"
 subtitle: "거의 첫 웹 프로젝트"
 category: development
 date: 2019-12-08
-photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt4UOW9hCeGdqfRe2cYpl9TGXfI7p8dAqQZX_2RnsjLttmuYBv&usqp=CAU"
+photo: "https://www.challies.com/wp-content/uploads/2019/02/janko-ferlic-174927-unsplash-1.jpg"
 tags:
   - web
   - front-end

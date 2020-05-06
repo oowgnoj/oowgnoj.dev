@@ -4,7 +4,7 @@ title: "내가 책을 읽는 이유"
 author: "oowgnoj"
 subtitle: "읽기에 대한 생각"
 category: random
-photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt4UOW9hCeGdqfRe2cYpl9TGXfI7p8dAqQZX_2RnsjLttmuYBv&usqp=CAU"
+photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSj0iZgYE2vxvmCJ50_GTSB0Br79vU7Pn_XGteoFRBNTvUUlajr&usqp=CAU"
 date: 2020-02-02
 tags:
   - 독서
@@ -18,8 +18,7 @@ tags:
 
 ## 나는 왜 독서를 하는가?
 
-#### ![](./1.jpg)   
-
+#### ![](./../images/in-post/reason-to-read.jpeg)   
 어렸을때, 김진명씨의 소설과 해리포터를 제외하고 크게 기억나는 책은 없습니다. 게임, 축구 하는 것을 좋아했고 공부하는 것을 썩 좋아하는 학생은 아니였어요. 그러다 독서를 주기적으로 하고, 좋아하게 된 계기는, 군대 동기가 책을 많이 읽었어요. 저는 그 모습이 좋아보였어요. 시작부터 엄청난 이유가 있었던 건 아니에요. 단순히, '멋있어 보인다'는 가벼운 마음으로 시작하게 되었어요.
 
 지금은 하루에 1시간은 책을 읽으려고 하는데요, 새롭게 궁금한 책도 많습니다. 책 속의 책, 블로그, 좋아하는 작가의 신간이 나오면 서점에 방문에 책을 살펴봅니다. 요즘에는 읽기와 더불어 쓰기를 시도하고 있습니다. 여가시간의 상당 부분을 독서에 관련해 시간을 보내고 있습니다. 그러다 갑자기 궁금한게 생겼습니다. 저는 왜 책을 읽을까요?
@@ -50,7 +49,8 @@ _닥치는 대로 끌리는 대로 오직 재미있게 이동진 독서법_ 을 
 
 달라지고 싶어 읽고 있습니다. 더 나은 사람이란 무엇일까 생각하다 다이어리를 뒤적였습니다. 더 좋은 영향을 주는 사람, 더 웃는 사람, 더 성실한 사람, 더 따뜻한 사람이 되자고 썼는데요..(ㅋㅋ)
 
-#### ![better_person](/img/better_person.jpeg)
+
+![better_person](./../images/better_person.jpeg)
 
 저는 책이 목표를 달성하기에 도움을 줄 것이라고 믿고 있습니다. 더군다나 제가 이룰 수 있다고 확신하는 가장 큰 이유는 외부세계의 어떤 것을 소유하거나, 성취하거나, 되는 것이 목표가 아니기 때문입니다. 저의 생각, 사고의 개선을 통해 이룰 수 있는 목표입니다. 이 측면에서 공감, 비판적 사고, 질문과 대답의 세 측면에서 책이 훌륭한 나침반, 선생님, 지도자 등의 역할을 해줄것이라고 생각합니다.
 
@@ -86,7 +86,7 @@ _닥치는 대로 끌리는 대로 오직 재미있게 이동진 독서법_ 을 
 
 저의 실제 경험담인데요, 각각의 책이 말하고 있는 견해도 상충되는 내용이 많습니다. 예술가의 가치를 다른 무엇보다 중요하게 여긴 심미주의 작가 오스카 와일드와 예술은 현실의 모방일 뿐이다를 주장한 플라톤의 말이요.
 
-![critical_thinking](/img/in-post/critical-thinking.jpg)
+![critical_thinking](./../images/in-post/critical-thinking.jpg)
 
 ##### 비판적 사고는 왜 필요하죠?
 

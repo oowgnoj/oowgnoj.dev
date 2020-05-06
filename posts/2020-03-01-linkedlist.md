@@ -5,7 +5,7 @@ author: "oowgnoj"
 header-img: "img/in-post/desert-night.jpeg"
 subtitle: "data structure in python - 2. linked list"
 category: CS Basic
-photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt4UOW9hCeGdqfRe2cYpl9TGXfI7p8dAqQZX_2RnsjLttmuYBv&usqp=CAU"
+photo: "https://res.cloudinary.com/practicaldev/image/fetch/s--y3j6aJXJ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://res.cloudinary.com/practicaldev/image/fetch/s--_PwtVEkJ--/c_limit%252Cf_auto%252Cfl_progressive%252Cq_auto%252Cw_880/https://www.educative.io/api/edpresso/shot/5077575695073280/image/5192456339456000"
 date: 2020-03-01
 tags:
   - computer science
@@ -16,7 +16,8 @@ tags:
 
 
 ## Linked List
-{% include image.html url="/img/in-post/data-structure/linked-list-illustrate.png" description="출처 Log2Base2" %}
+
+![linkedList](./../images/in-post/data-structure/linked-list-illustrate.png)
 
 
 
@@ -40,14 +41,16 @@ class Node:
 
 
 ### Singly Linked List
-{% include image.html url="/img/in-post/data-structure/linked-list.png" description="singly linked list, 출처 wikipedia" %}
+
+![linkedList](./../images/in-post/data-structure/linked-list.png)
 
 - head, tail `Node` 에 대한 정보를 담는 property 를 포함한다.
 - 위 예시 그림의 경우에 `head` 값은 데이터가 12인 노드를 가리킨다. 마찬가지로 `tail` 의 경우에 데이터값이 37인 노드를 가르킨다.
 
 
 #### 시간복잡도
-{% include image.html url="/img/in-post/data-structure/time-complexity.png" description="singly linked list, 출처 wikipedia" %}
+![linkedList](./../images/in-post/data-structure/time-complexity.png)
+
 
 - 추가
     - 맨 뒤에 data 추가: O(1)
@@ -170,8 +173,11 @@ class LinkedList:
 ````
 
 ## Doubly Linked List
-{% include image.html url="/img/in-post/data-structure/doubly-linked-list.png" description="singly linked list, 출처 wikipedia" %}
 
+
+![linkedList](./../images/in-post/data-structure/doubly-linked-list.png)
+
+data-structure/linked-list.png
 - head, tail `Node` 에 대한 정보를 담는 property 를 포함한다.
 - `head` 와 `tail`은 linked list의 가장 맨 앞 Node, 맨 뒤 Node를 각각 가르킨다.
 

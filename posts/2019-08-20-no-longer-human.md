@@ -6,7 +6,7 @@ header-img: "img/post-bg-universe.jpg"
 subtitle: "다자이 오사무가 생각하는 인간의 조건"
 category: Review
 date: 2019-08-20
-photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt4UOW9hCeGdqfRe2cYpl9TGXfI7p8dAqQZX_2RnsjLttmuYBv&usqp=CAU"
+photo: "http://image.yes24.com/goods/1387488/800x0"
 tags:
   - 독서
   - 리뷰
