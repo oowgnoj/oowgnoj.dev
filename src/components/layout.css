@@ -213,7 +213,7 @@ body {
   font-feature-settings: -apple-system, BlinkMacSystemFont, NotoSansKR;
 }
 img {
-  width: 50%;
+  width: 80%;
   max-width: 100%;
   display:block;
   margin-left: auto;
@@ -224,6 +224,12 @@ img {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+}
+@media screen and (max-width:767px) {
+  img{
+    width: 100%;
+    margin: 0px;
+  }
 }
 h1 {
   margin-left: 0;

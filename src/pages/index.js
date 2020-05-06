@@ -35,7 +35,7 @@ const IndexPage = () => {
 )
   // const ImagePost = isHover ? postData.node.frontmatter.photo.childImageSharp.fluid : null
   return(
-    <Layout>
+    <Layout isMain={true}>
     <SEO title="Home" />
     <Categories/>
       <PostList>

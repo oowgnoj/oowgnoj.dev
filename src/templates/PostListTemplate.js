@@ -13,7 +13,7 @@ const PostListTemplate = ({location, pageContext}) => {
   const current = location.state ? location.state.current : undefined;
 
   return (
-    <Layout>
+    <Layout isMain={true}>
     <SEO title="Home" />
     <Categories current={current}></Categories>
         {nodes.map( node => (

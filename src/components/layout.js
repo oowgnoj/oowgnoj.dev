@@ -12,7 +12,7 @@ import styled from "styled-components"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, isMain }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,16 +26,16 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Main
+      <Main 
         style={{
           margin: `0 auto`,
           color: '#2A3132',
-          maxWidth: 1200,
-          padding: `0 1.0875rem 1.45rem`,
+          maxWidth: isMain? 1200 : 800,
+          padding: `45px 20px`,
         }}
       >
         <main>{children}</main>
-        <footer>
+        <footer style={{marginTop: '20px'}}>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
@@ -50,8 +50,12 @@ const Main = styled.div`
   color: #2A3132;
   max-width: 960;
   padding: 0 5rem 0 5rem ;
-  
+  @media(max-width:767px){
+      padding-top: 0px !important;
+  }
 `
+
+
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
