@@ -2,7 +2,7 @@
 layout: post
 title: "[번역] 플러터 - 복잡한 JSON 파싱하기"
 author: "oowgnoj"
-category: Flutter
+category: development
 date: 2020-03-15
 subtitle : 'parsing complex json in flutter'
 photo: "https://nesoy.github.io/assets/posts/20170208/json.PNG"

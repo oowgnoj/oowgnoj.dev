@@ -12,7 +12,7 @@ const Post = ({ node }) => {
   const image = node.frontmatter.photo;
   const touchRef = useRef('');
   const [mobileTouch, setTouch] = useState(false);
-
+  console.log(node)
   useEffect(()=> {
     touchRef.current.addEventListener('touchstart', ()=>{setTouch(true)});
     touchRef.current.addEventListener('touchend', ()=>{setTouch(false)});

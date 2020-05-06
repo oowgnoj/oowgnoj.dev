@@ -4,7 +4,7 @@ title: "플러터 HTTP request"
 author: "oowgnoj"
 header-img: "img/post-bg-universe.jpg"
 subtitle : 'api request in flutter'
-category: Flutter
+category: development
 date: 2020-03-12
 photo: "https://flutter.dev/images/flutter-logo-sharing.png"
 tags:

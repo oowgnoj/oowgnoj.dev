@@ -3,7 +3,7 @@ layout: post
 title: "리뷰 - 함께 자라기 애자일로 가는길"
 author: "oowgnoj"
 subtitle: "개인과 팀의 발전"
-category: Book review
+category: random
 date: 2020-01-15
 photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSX4LXY9fkfwFyYJrQCMWrtBgK2iiMWItGBMzb0A24MRga9ASyO&usqp=CAU"
 tags:

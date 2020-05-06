@@ -3,7 +3,7 @@ layout: post
 title: "예술작품이 주는 두가지 이점"
 author: "oowgnoj"
 subtitle: "예술수업을 읽고"
-category: Book review
+category: random
 date: 2020-01-13
 photo: "https://img.ridicdn.net/cover/280000052/xxlarge"
 tags:
@@ -54,4 +54,4 @@ tags:
 예술을 통해 기른 인식하는 능력과 해석하는 능력을 통해, 내가 처한 현실세계를 한발짝 떨어져 객관적으로 해석하게 됩니다. 이를 통해 진정 ‘아는 것’으로 발전시켜 실질세계에 파묻히지 않고, 자주적인 삶을 살수 있게 된다고 주장합니다.
 
 ![르네 마그리트, <이미지의 배반>](https://cdn-images-1.medium.com/max/2000/1*Ic0rniNsjQhxlAbaC5bPZg.jpeg)*르네 마그리트, <이미지의 배반>*
-> # “이것은 파이프가 아니다”
+> “이것은 파이프가 아니다”

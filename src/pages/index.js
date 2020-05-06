@@ -34,7 +34,6 @@ const IndexPage = () => {
   `
 )
 
-
   return(
     <Layout isMain={true}>
     <SEO title="Home" />

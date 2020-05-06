@@ -4,7 +4,7 @@ title: "영화 detachment 후기"
 author: "oowgnoj"
 header-img: "img/post-bg-universe.jpg"
 subtitle: "거리두기"
-category: Review
+category: random
 date: 2019-11-06
 photo: "http://www.artinsight.co.kr/data/tmp/1608/62f32e36be3348ccb1142831a1d23602_ajCQ5A92LT.png"
 tags:
