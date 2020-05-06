@@ -12,22 +12,20 @@ const Post = ({ node }) => {
   const image = node.frontmatter.photo;
   const touchRef = useRef('');
   const [mobileTouch, setTouch] = useState(false);
-  console.log(node)
   useEffect(()=> {
     touchRef.current.addEventListener('touchstart', ()=>{setTouch(true)});
     touchRef.current.addEventListener('touchend', ()=>{setTouch(false)});
   },[])
     return(
+      <Link style={{textDecoration: `none`}} to={node.frontmatter.title}>
         <PostWrapper img={image} ref={touchRef} mobileTouch={mobileTouch}> 
           <TextWrapper>
-          <Link style={{textDecoration: `none`}} to={node.frontmatter.title}>
             <PostTitle> <span> {node.frontmatter.title} </span> </PostTitle>
             <PostDate>{node.frontmatter.date}</PostDate>
             <PostSubtitle>{node.frontmatter.subtitle}</PostSubtitle>
-          </Link>
           </TextWrapper>
         </PostWrapper>
-
+      </Link>
     )
 }
 
