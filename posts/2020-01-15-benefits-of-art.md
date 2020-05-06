@@ -3,7 +3,9 @@ layout: post
 title: "예술작품이 주는 두가지 이점"
 author: "oowgnoj"
 subtitle: "예술수업을 읽고"
-catalog: true
+category: Book review
+date: 2020-01-13
+photo: "https://img.ridicdn.net/cover/280000052/xxlarge"
 tags:
   - web
   - front-end

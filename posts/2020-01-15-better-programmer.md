@@ -3,7 +3,9 @@ layout: post
 title: "더 좋은 프로그래머 되기"
 author: "oowgnoj"
 subtitle: "할 수 있다."
-catalog: true
+catalog: development
+date: 2020-01-15
+photo: "https://i2.wp.com/www.brainpickings.org/wp-content/uploads/2013/08/richardfeynman-1.jpg?resize=680%2C383&ssl=1"
 tags:
   - web
   - front-end
@@ -69,7 +71,7 @@ write out an idea from start to finish in simple language that a child can under
 
 ### Review
 
-**Competence is knowing the limit of your abilities. **This is where the learning starts. **Now you know where you got stuck, go back to the *source* material and re-learn it until you can explain it in basic terms.**
+Competence is knowing the limit of your abilities. This is where the learning starts. Now you know where you got stuck, go back to the source material and re-learn it until you can explain it in basic terms.
 
 ### Organize and Simplify
 

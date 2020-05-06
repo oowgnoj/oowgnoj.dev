@@ -4,7 +4,9 @@ title: "여행계산기 UI 고려사항"
 author: "oowgnoj"
 header-img: "img/post-bg-universe.jpg"
 subtitle: "첫 프로젝트"
-catalog: true
+category: development
+date: 2019-11-20
+photo: "https://miro.medium.com/max/506/1*FqpuKySet9_T4ZhNlVwxPw.png"
 tags:
   - UI
   - front-end

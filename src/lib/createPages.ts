@@ -18,15 +18,16 @@ export async function createPages({ actions, graphql }) {
           }
         }
       }
-      allPostByCategory: allMarkdownRemark(filter: {frontmatter: {}}) {
+      allPostByCategory: allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date } filter: {frontmatter: {}}) {
         group(field: frontmatter___category) {
           category: fieldValue
           nodes {
             frontmatter {
               title
+              subtitle
               category
               author
-              date
+              date(formatString: "YYYY-MM-DD")
               tags
             }
           excerpt(truncate: true, pruneLength: 150)

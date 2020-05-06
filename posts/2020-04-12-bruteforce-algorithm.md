@@ -2,16 +2,17 @@
 layout: post
 title: "짐승처럼 무식하게, brute force"
 author: "oowgnoj"
-header-img: "img/in-post/desert-night.jpeg"
 subtitle: "way to approach algorithm - 1 - brute force"
-catalog: true
+category: CS Basic
+date: 2020-04-12
+photo: "https://3.bp.blogspot.com/-bsAe5iHfUvw/XMm2l8YCMtI/AAAAAAAAA28/9-Uj-v3GHhIE06c1_HdSEOeXML1byHInACLcBGAs/s1600/what-is-an-algorithm.png"
+
 tags:
   - computer science
   - data structure
   - python
   - linked list
 ---
-
 
 알고리즘 접근 방법중에 Brute Force에 대한 정리입니다. 
 

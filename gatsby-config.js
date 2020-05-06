@@ -6,14 +6,13 @@ module.exports = {
   },
   plugins: [
     {
-        resolve: "gatsby-plugin-web-font-loader",
-        options: {
-          custom: {
-            families: ["NotoSansKR"],
-            urls: ["/static/fonts/fonts.css"],
-          },
-        },
-      },
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['NotoSansKR', 'Droid Serif', 'Crimson Text']
+        }
+      }
+    },
     {
         resolve: 'gatsby-source-filesystem',
         options: {
@@ -34,14 +33,28 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-background-image',
+      options: {
+        // add your own characters to escape, replacing the default ':/'
+        specialChars: '/:',
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          'gatsby-remark-static-images',
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 800,
+              maxWidth: 1000,
             },
+          },
+           {
+          resolve: `gatsby-remark-prismjs`,
+          options: {
+            aliases:{sh: "bash", js:"javascript"}
+            }
           },
         ],
       },

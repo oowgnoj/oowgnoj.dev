@@ -4,7 +4,9 @@ title: "타입스크립트 따라하기"
 author: "oowgnoj"
 header-img: "img/post-bg-universe.jpg"
 subtitle: "typescript tutorial"
-catalog: true
+category: development
+date: 2019-11-15
+photo: "https://media.vlpt.us/post-images/chltndid724/0b2147f0-20a3-11ea-bfea-5d0fa0c4a664/ts.png"
 tags:
   - typescript
   - begin

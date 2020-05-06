@@ -4,7 +4,9 @@ title: "컴퓨터는 데이터를 어떻게 저장할까 - array"
 author: "oowgnoj"
 header-img: "img/in-post/desert-night.jpeg"
 subtitle: "data structure in python - 1. array"
-catalog: true
+category: CS Basic
+date: 2020-02-15
+photo: "https://miro.medium.com/max/2800/1*xjqpnt-99z7Uu5EgJBpvRA.png"
 tags:
   - computer science
   - data structure
@@ -13,7 +15,7 @@ tags:
 
 
 
-![stack-overflow](/img/in-post/stack-overflow.png)
+![stack-overflow](./../images/in-post/stack-overflow.png)
 
 ### 자료구조를 배워야 하는 이유는?
 
@@ -27,7 +29,7 @@ RAM 에 대해 조금 더 자세히 알아보자.
 
 ##### RAM (random access memory)
 
-![stack-overflow](/img/in-post/data-structure/ram.jpg)
+![stack-overflow](./../images/in-post/data-structure/ram.jpg)
 
 RAM 은 임의접근메모리 메모리로서, 메모리의 기본단위는 바이트(byte)를 사용한다. 메모리 한 칸에 담기는 데이터 용량은 1 바이트라는 뜻인데,
 4GB 메모리를 가지고 있다고 하면, 4e+9 byte 만큼을 저장할 수 있다는 뜻이고, 1 byte는 binary(0 또는 1) 데이터를 저장할 수 있으니,
@@ -79,7 +81,7 @@ C에서는 배열을 이렇게 선언한다.
 
 C에서 배열을 선언할 때 (1)데이터 타입과 (2)요소의 길이 를 미리 정해주는 이유는 **array가 차지할 총 메모리를 계산해서, RAM 공간 내, 비어있는 저장공간을 확보하기 위함이다**
 
-![stack-overflow](/img/in-post/data-structure/structure-1.png)
+![stack-overflow](./../images/in-post/data-structure/structure-1.png)
 
 
 파이썬의 list는 c로 구현이 되어 있다. 결국 파이썬의 list 도 C 배열로 구현이 되어있다는 말인데, 파이썬에서는 미리 자료형을 정해줄 필요도, 요소의 길이를 정할 필요도 없다.
@@ -90,7 +92,7 @@ C에서 배열을 선언할 때 (1)데이터 타입과 (2)요소의 길이 를 �
 아래의 그림을 보면 앞서 나온 C 배열과 같이 RAM 에 저장공간을 확보하고, 그 속에 값을 저장한다. 
 하지만 다른 점은, 값을 저장하는 것이 아니라, 값이 저장되어있는 주소값(reference)를 저장한다. 
 
-![stack-overflow](/img/in-post/data-structure/structure-2.png)
+![stack-overflow](./../images/in-post/data-structure/structure-2.png)
 
 그림의 경우에 `item_list`는 총 4개의 요소를 가지고 있다. 정수형 (2, 5)와 문자열 "큰 데이터", 불리언 (True) 인데, c 배열로 저장하려고 하면 그렇게 할 수 없을 뿐더러
 2byte x 2 , 3byte * 5("큰  데 이 터") * 1byte x 2 (True)의 byte 값을 총 더한 다음에 RAM 의 **연속적으로 비어있는 공간**에 저장해야 한다.
@@ -148,7 +150,7 @@ C에서 배열을 선언할 때 (1)데이터 타입과 (2)요소의 길이 를 �
 **동적배열**에 새 값을 추가하려고 할 때
 - 정적배열에 남는 공간이 있을 때 **O(1)**
 
-    ![stack-overflow](/img/in-post/data-structure/structure-3.png)
+    ![stack-overflow](./../images/in-post/data-structure/structure-3.png)
 
 - 없을 때 **O(n)**
 1. 기존배열 → 새로운 배열로 값 복사
@@ -207,6 +209,6 @@ ex) 동적 배열에 요소를 추가
 
 ### 정적배열 vs 동적배열
 
-![stack-overflow](/img/in-post/data-structure/structure-4.png)
+![stack-overflow](./../images/in-post/data-structure/structure-4.png)
 
 동적배열은 정적배열을 생성하고, 동적 배열의 요소 수가 특정 값 이하로 떨어질 때, 정적배열을 새로 생성하고, 옮기는 작업을 해야한다.

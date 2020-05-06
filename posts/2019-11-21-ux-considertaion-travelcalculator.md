@@ -4,7 +4,9 @@ title: "여행계산기 UX 고민 : 긴 로딩시간"
 author: "oowgnoj"
 header-img: "img/post-bg-universe.jpg"
 subtitle: "gif를 사용 할 줄이야"
-catalog: true
+category: development
+date: 2019-11-21
+photo: "https://miro.medium.com/max/506/1*FqpuKySet9_T4ZhNlVwxPw.png"
 tags:
   - UI
   - front-end

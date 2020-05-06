@@ -3,7 +3,9 @@ layout: post
 title: "컴포넌트 리팩토링"
 author: "oowgnoj"
 subtitle: "시련과 고난"
-catalog: true
+category: development
+date: 2019-12-10
+photo: "https://nesoy.github.io/assets/posts/20180503/refactoring.jpg"
 tags:
   - web
   - front-end
