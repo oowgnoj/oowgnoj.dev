@@ -49,6 +49,11 @@ const PostWrapper = styled.div`
   &:hover div{
     visibility: visible;
   }
+  @media(max-width: 767px){
+    border: black;    
+    background-size: 100% 60%;
+    background-image: ${props => props.mobileTouch ? `linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(${props => props.img})` : `linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)), url(${props => props.img})`};
+  }  
  
 `
 
@@ -89,8 +94,3 @@ const PostDate = styled.div`
 export default Post;
 
 
-//  @media(max-width: 767px){
-//     border: black;    
-//     background-size: 100% 60%;
-//     background-image: ${props => props.mobileTouch ? `linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(${props => props.img})` : `linear-gradient(rgba(255,255,255,1), rgba(255,255,255,1)), url(${props => props.img})`};
-//   }
