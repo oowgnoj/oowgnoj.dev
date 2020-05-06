@@ -695,11 +695,11 @@ export type FileFieldsEnum =
   'childMarkdownRemark___frontmatter___title' |
   'childMarkdownRemark___frontmatter___layout' |
   'childMarkdownRemark___frontmatter___author' |
+  'childMarkdownRemark___frontmatter___header_img' |
   'childMarkdownRemark___frontmatter___category' |
   'childMarkdownRemark___frontmatter___date' |
   'childMarkdownRemark___frontmatter___photo' |
   'childMarkdownRemark___frontmatter___tags' |
-  'childMarkdownRemark___frontmatter___header_img' |
   'childMarkdownRemark___frontmatter___subtitle' |
   'childMarkdownRemark___frontmatter___catalog' |
   'childMarkdownRemark___excerpt' |
@@ -1465,11 +1465,11 @@ export type MarkdownRemarkFieldsEnum =
   'frontmatter___title' |
   'frontmatter___layout' |
   'frontmatter___author' |
+  'frontmatter___header_img' |
   'frontmatter___category' |
   'frontmatter___date' |
   'frontmatter___photo' |
   'frontmatter___tags' |
-  'frontmatter___header_img' |
   'frontmatter___subtitle' |
   'frontmatter___catalog' |
   'excerpt' |

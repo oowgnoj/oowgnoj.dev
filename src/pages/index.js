@@ -33,7 +33,8 @@ const IndexPage = () => {
       }
   `
 )
-  // const ImagePost = isHover ? postData.node.frontmatter.photo.childImageSharp.fluid : null
+
+
   return(
     <Layout isMain={true}>
     <SEO title="Home" />
@@ -58,10 +59,4 @@ const PostList = styled.li`
   @media(max-width: 767px){
     grid-template-columns: repeat(1, 1fr);
   }
-`
-
-
-
-const Slogan = styled.div`
-  font-size: 100px;
 `
