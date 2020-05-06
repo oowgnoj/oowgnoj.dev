@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "컴퓨터는 데이터를 어떻게 저장할까 - array"
+title: "자료구조 - array"
 author: "oowgnoj"
 header-img: "img/in-post/desert-night.jpeg"
 subtitle: "data structure in python - 1. array"

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "재귀함수 정리(Flip, Binary Search, Hanoi Tower)"
+title: "알고리즘 - 재귀함수 정리"
 author: "oowgnoj"
 date: 2019-10-12
 subtitle : "Recursion in python"

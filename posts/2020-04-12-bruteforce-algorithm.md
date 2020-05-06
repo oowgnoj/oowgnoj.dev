@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "짐승처럼 무식하게, brute force"
+title: "알고리즘 - brute force"
 author: "oowgnoj"
 subtitle: "way to approach algorithm - 1 - brute force"
 category: CS Basic

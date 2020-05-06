@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Clean code를 읽고"
+title: "리뷰 - Clean code"
 author: "oowgnoj"
 subtitle: "writing code for everybody"
 category: development

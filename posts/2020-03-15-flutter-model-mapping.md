@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[번역] 복잡한 JSON 파싱하기"
+title: "[번역] 플러터 - 복잡한 JSON 파싱하기"
 author: "oowgnoj"
 category: Flutter
 date: 2020-03-15

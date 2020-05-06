@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "함께 자라기 애자일로 가는길 리뷰"
+title: "리뷰 - 함께 자라기 애자일로 가는길"
 author: "oowgnoj"
 subtitle: "개인과 팀의 발전"
 category: Book review
