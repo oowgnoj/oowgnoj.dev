@@ -20,12 +20,18 @@ module.exports = {
             path: `${__dirname}/posts`,
         },
     },
-   `gatsby-plugin-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-graphql-codegen`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-typescript`, 
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `oowgnoj-dev`
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

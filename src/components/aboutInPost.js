@@ -28,6 +28,7 @@ const Warpper = styled.div`
   margin-top: 100px;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 100px;
 `
 
 const About = styled.div`

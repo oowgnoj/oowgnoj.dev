@@ -7,9 +7,11 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.5.8",
     "@mdx-js/react": "^1.5.8",
-    "gatsby": "^2.20.12",
+    "disqus-react": "^1.0.8",
+    "gatsby": "^2.21.19",
     "gatsby-background-image": "^1.1.1",
     "gatsby-image": "^2.3.4",
+    "gatsby-plugin-disqus": "^1.1.4",
     "gatsby-plugin-generate-typings": "^0.9.8-r1",
     "gatsby-plugin-graphql-codegen": "^2.7.1",
     "gatsby-plugin-manifest": "^2.3.3",
@@ -24,8 +26,8 @@
     "gatsby-transformer-sharp": "^2.4.6",
     "intersection-observer": "^0.10.0",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
