@@ -4,7 +4,6 @@ import AboutMe from '../components/aboutInPost'
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 
 const PostTemplate: React.FC<IPostTemplateProps> = React.memo(props => {
-  console.log(location.pathname)
   const { title, date, html } = props.pageContext;
   let disqusConfig = {
     identifier: title,
