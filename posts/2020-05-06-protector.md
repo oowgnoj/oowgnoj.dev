@@ -5,7 +5,7 @@ author: "oowgnoj"
 subtitle: "너도 나도"
 category: random
 date: 2020-05-06
-photo: "https://lh3.googleusercontent.com/proxy/_jL3eMMdu9mhGM3n9AhsN39Mf_APzv_jFAzxVhr-lwMGZ1ddrYZA2slm1CjFQ-UOH3uCWeKHrrUv8TLig-BEztt6NecC7omuJiGWPg228J7oabGyy3KoH-X86STDJBgSMHg81wV27xi0gheWNDHO-aRTcrG6rylrVWaU1rAeq0wbeKE2CHXfXyHMB6x-BC5eL3dX-5CbxpiDve6CIvrBDWUMV1CEVgLECCBhUNRPLWPMT0d_a3z8ORl_oDnZyHOWE-YqnScmi1FpsWlLooTseiendlabU_KhuGwA8O0Rz3BQqfsZUKyK3UpREdKcwaMfg4sT2NmylTI07fZAUdCNGbA"
+photo: "http://file3.instiz.net/data/file3/2018/03/03/4/2/7/427910151100a18465ca8dc5c208653f.jpg"
 tags:
   - random
   - daily
