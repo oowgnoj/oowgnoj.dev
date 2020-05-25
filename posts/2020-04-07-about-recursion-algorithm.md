@@ -2,7 +2,7 @@
 layout: post
 title: "알고리즘 - 재귀함수 정리"
 author: "oowgnoj"
-date: 2019-10-12
+date: 2020-03-06
 subtitle : "Recursion in python"
 category: CS Basic
 photo: "https://cdn-images-1.medium.com/max/1600/1*gSHrSNZK0bx-X7m1RraA6A.jpeg"
