@@ -12,7 +12,7 @@ const PostListTemplate = ({ location, pageContext }) => {
 
     return (
         <Layout isMain={true}>
-            <SEO title="Home" />
+            <SEO title="글 목록" />
             <Categories current={current}></Categories>
             {nodes.map(node => (
                 <PostItem key={node.id}>
