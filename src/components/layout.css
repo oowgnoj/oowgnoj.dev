@@ -5,6 +5,7 @@ html {
 }
 body {
     margin: 0;
+    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -202,10 +203,11 @@ html {
 }
 body {
     color: hsla(0, 0%, 0%, 0.8);
-    font-family: -apple-system, BlinkMacSystemFont, NotoSansKR;
+    font-family: 'Apple SD Gothic Neo', BlinkMacSystemFont, NotoSansKR;
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
+    font-size: 16px;
     -moz-font-feature-settings: -apple-system, BlinkMacSystemFont, NotoSansKR;
     -ms-font-feature-settings: -apple-system, BlinkMacSystemFont, NotoSansKR;
     -webkit-font-feature-settings: -apple-system, BlinkMacSystemFont, NotoSansKR;
@@ -244,7 +246,7 @@ h1 {
         Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 2.25rem;
+    font-size: 2rem;
     line-height: 1.1;
 }
 h2 {
@@ -255,30 +257,31 @@ h2 {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-top: 2em;
+    margin-bottom: 1em;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
         Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 1.62671rem;
+    font-size: 1.5em;
     line-height: 1.1;
 }
 h3 {
     margin-left: 0;
     margin-right: 0;
-    margin-top: 0;
+    margin-top: 2em;
+    margin-bottom: 1em;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
         Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 1.38316rem;
+    font-size: 1.3em;
     line-height: 1.1;
 }
 h4 {
@@ -295,7 +298,7 @@ h4 {
         Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.1;
 }
 h5 {
@@ -396,6 +399,7 @@ p {
     padding-top: 0;
     margin-bottom: 1.45rem;
     line-height: 1.625;
+    font-size: 1em;
     color: rgb(45, 55, 72);
 }
 
