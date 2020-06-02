@@ -203,6 +203,7 @@ html {
 }
 body {
     color: hsla(0, 0%, 0%, 0.8);
+    word-wrap: break-word;
     font-family: 'Apple SD Gothic Neo', BlinkMacSystemFont, NotoSansKR;
     font-weight: normal;
     word-wrap: break-word;
@@ -287,12 +288,12 @@ h3 {
 h4 {
     margin-left: 0;
     margin-right: 0;
-    margin-top: 0;
+    margin-top: 2em;
+    margin-bottom: 1em;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
         Helvetica Neue, sans-serif;
@@ -304,12 +305,12 @@ h4 {
 h5 {
     margin-left: 0;
     margin-right: 0;
-    margin-top: 0;
+    margin-top: 2em;
+    margin-bottom: 1em;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
         Helvetica Neue, sans-serif;
@@ -534,7 +535,10 @@ li {
 }
 ol li {
     padding-left: 0;
-    line-height: 1.425;
+}
+
+li li {
+    line-height: 1;
 }
 ul li {
     padding-left: 0;
