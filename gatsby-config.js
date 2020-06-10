@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `oowgnoj.dev`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `개발/리뷰/일상 등을 올리는 개발자 박종우의 블로그 입니다.`,
     author: `@oowgnoj`,
   },
   plugins: [
