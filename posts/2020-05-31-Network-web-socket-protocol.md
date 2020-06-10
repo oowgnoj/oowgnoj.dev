@@ -72,4 +72,39 @@ The handshake from the client looks as follows:
       Sec-WebSocket-Protocol: chat
 ```
 
-클라이언트 / 서버 간에 handshake 를 통한 web socket protocol 규약이 만들어졌다. 이제 서버에서 클라이언트로 자유롭게 양방향 데이터를 주고받을 수 있는 연결환경이 구성되었다.
+클라이언트 / 서버 간에 handshake 를 통한 web socket protocol 규약이 만들어졌다. 이제 서버에서 클라이언트로 자유롭게 양방향 데이터를 주고받을 수 있는 연결환경이 구성되었다. 
+
+
+## **flask x socket**
+
+![socket.png](./../images/in-post/socket.png)
+- 클라이언트 소켓
+1. 소켓 생성 $socket()
+2. 서버 연결 요청 $connect()  *(Block 방식으로 동작)*
+3. IF 서버 OK, 데이터 송수신 ($send/$recv)
+    - send(), recv() API 사용 *block 방식으로 동작
+    - 요청: send() 사용
+    - 응답: recv() 실행후, 별도의 스레드에서 응답 대기
+4. 소켓 닫는다 close
+    - send, recv API를 통해 송수신 완료되면 close() 사용해 소켓 닫는다
+
+*연결이 종료된 후 다시 데이터를 주고 받고자 한다면, 다시 생성, 연결 과정을 거쳐야 함*
+
+### **서버 사이드 소켓**
+
+1. 소켓 생성 $socket
+2. 서버 소켓 바인딩 $bind
+    - 소켓을 포트 번호에 바인딩
+    - 각기 다른 소켓에 포트를 부여하기 위해 (포트 중복 피하기 위해)
+3. 클라이언트 연결 요청 대기 $listen
+    - 클라이언트의 연결 요청을 받고, 수행하기 위해 대기
+    - 요청 수신 / 에러 발생 / socket close() 세가지 경우에 대기상태 탈출
+4. 클라이언트 연결 수립 $accept
+    - 연결 요청을 받아들여 소켓 간 연결을 수립
+    - 최종적으로 클라이언트의 소켓과 연결이 이루어지는 **새로운 소켓 생성 (2-2)**
+        1. 새로운 소켓은 클라이언트의 정보가 세팅되어 있음
+    - 서버소켓은 다시 새로운 연결에 대한 listen (혹은 close) 상태
+5. 데이터 송수신 $send/$recv 클라이언트와 동일
+6. 소켓 연결 종료 $close
+
+[예제코드](https://github.com/oowgnoj/flask_socket)
