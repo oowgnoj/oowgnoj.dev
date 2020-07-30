@@ -695,12 +695,12 @@ export type FileFieldsEnum =
   'childMarkdownRemark___frontmatter___title' |
   'childMarkdownRemark___frontmatter___layout' |
   'childMarkdownRemark___frontmatter___author' |
-  'childMarkdownRemark___frontmatter___header_img' |
-  'childMarkdownRemark___frontmatter___subtitle' |
   'childMarkdownRemark___frontmatter___category' |
+  'childMarkdownRemark___frontmatter___subtitle' |
   'childMarkdownRemark___frontmatter___date' |
   'childMarkdownRemark___frontmatter___photo' |
   'childMarkdownRemark___frontmatter___tags' |
+  'childMarkdownRemark___frontmatter___header_img' |
   'childMarkdownRemark___frontmatter___catalog' |
   'childMarkdownRemark___excerpt' |
   'childMarkdownRemark___rawMarkdownBody' |
@@ -1468,12 +1468,12 @@ export type MarkdownRemarkFieldsEnum =
   'frontmatter___title' |
   'frontmatter___layout' |
   'frontmatter___author' |
-  'frontmatter___header_img' |
-  'frontmatter___subtitle' |
   'frontmatter___category' |
+  'frontmatter___subtitle' |
   'frontmatter___date' |
   'frontmatter___photo' |
   'frontmatter___tags' |
+  'frontmatter___header_img' |
   'frontmatter___catalog' |
   'excerpt' |
   'rawMarkdownBody' |
@@ -1598,12 +1598,12 @@ export type MarkdownRemarkFrontmatter = {
   title?: Maybe<Scalars['String']>;
   layout?: Maybe<Scalars['String']>;
   author?: Maybe<Scalars['String']>;
-  header_img?: Maybe<Scalars['String']>;
-  subtitle?: Maybe<Scalars['String']>;
   category?: Maybe<Scalars['String']>;
+  subtitle?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
   photo?: Maybe<Scalars['String']>;
   tags?: Maybe<Array<Maybe<Scalars['String']>>>;
+  header_img?: Maybe<Scalars['String']>;
   catalog?: Maybe<Scalars['String']>;
 };
 
@@ -1619,12 +1619,12 @@ export type MarkdownRemarkFrontmatterFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   layout?: Maybe<StringQueryOperatorInput>;
   author?: Maybe<StringQueryOperatorInput>;
-  header_img?: Maybe<StringQueryOperatorInput>;
-  subtitle?: Maybe<StringQueryOperatorInput>;
   category?: Maybe<StringQueryOperatorInput>;
+  subtitle?: Maybe<StringQueryOperatorInput>;
   date?: Maybe<DateQueryOperatorInput>;
   photo?: Maybe<StringQueryOperatorInput>;
   tags?: Maybe<StringQueryOperatorInput>;
+  header_img?: Maybe<StringQueryOperatorInput>;
   catalog?: Maybe<StringQueryOperatorInput>;
 };
 
