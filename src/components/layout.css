@@ -5,6 +5,7 @@ html {
 }
 body {
     margin: 0;
+    padding: 0;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -88,6 +89,7 @@ sup {
     top: -0.5em;
 }
 img {
+    margin: 20px;
     border-style: none;
 }
 svg:not(:root) {
@@ -218,14 +220,7 @@ img {
     width: 80%;
     max-width: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin: 20px auto;
 }
 @media screen and (max-width: 767px) {
     img {
@@ -234,13 +229,6 @@ img {
     }
 }
 h1 {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
@@ -251,13 +239,6 @@ h1 {
     line-height: 1.1;
 }
 h2 {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
     margin-top: 2em;
     margin-bottom: 1em;
     color: inherit;
@@ -320,13 +301,6 @@ h5 {
     line-height: 1.1;
 }
 h6 {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
@@ -337,13 +311,6 @@ h6 {
     line-height: 1.1;
 }
 hgroup {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
     margin-bottom: 1.45rem;
 }
 ul {
@@ -366,52 +333,24 @@ ol {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-bottom: 1.2rem;
     list-style-position: outside;
     list-style-image: none;
 }
 dl {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
     margin-bottom: 1.45rem;
 }
 dd {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
     margin-bottom: 1.45rem;
 }
 p {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-bottom: 0.7rem;
     line-height: 1.625;
     font-size: 1em;
     color: rgb(45, 55, 72);
 }
 
 figure {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
     margin-bottom: 1.45rem;
 }
 pre {
@@ -428,13 +367,6 @@ pre {
     padding: 1.45rem;
 }
 table {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
     margin-bottom: 1.45rem;
     font-size: 1rem;
     line-height: 1.45rem;
@@ -442,13 +374,6 @@ table {
     width: 100%;
 }
 fieldset {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
     margin-bottom: 1.45rem;
 }
 blockquote {
@@ -465,56 +390,21 @@ blockquote {
     margin-bottom: 1.45rem;
 }
 form {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
     margin-bottom: 1.45rem;
 }
 noscript {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
     margin-bottom: 1.45rem;
 }
 iframe {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
     margin-bottom: 1.45rem;
 }
 hr {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
     margin-bottom: calc(1.45rem - 1px);
     background: hsla(0, 0%, 0%, 0.2);
     border: none;
     height: 1px;
 }
 address {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
     margin-bottom: 1.45rem;
 }
 b {
