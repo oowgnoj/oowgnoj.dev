@@ -3,15 +3,15 @@ import { useStaticQuery, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Categories from '../components/categories';
-import ImagePost from '../components/imagePost';
-import PostListTemplate from '../templates/PostListTemplate';
+// import ImagePost from '../components/imagePost';
+// import PostListTemplate from '../templates/PostListTemplate';
 import styled from 'styled-components';
 
 const IndexPage = () => {
-    const [isGalleryMode, setGalleryMode] = useState(false);
-    const handleGallery = () => {
-        isGalleryMode = !isGalleryMode;
-    };
+    // const [isGalleryMode, setGalleryMode] = useState(false);
+    // const handleGallery = () => {
+    //     isGalleryMode = !isGalleryMode;
+    // };
     const postData = useStaticQuery(graphql`
         query LatestPostListQuery {
             allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
@@ -57,17 +57,10 @@ export default IndexPage;
 
 const PostList = styled.li`
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 60px;
-    grid-auto-rows: minmax(100px, auto);
-    @media (max-width: 767px) {
-        grid-template-columns: repeat(1, 1fr);
-    }
 `;
-
 const PostItem = styled.li`
     list-style: none;
+    margin-bottm: 2rem;
 `;
 
 const PostItemWrapper = styled.div`
@@ -78,8 +71,7 @@ const PostItemWrapper = styled.div`
 `;
 const PostTitle = styled.div`
     font-size: 26px;
-    color: rgb(72, 72, 72);
-    font-weight: bold;
+    color: #2d3748;
     padding-bottom: 5px;
     @media (max-width: 767px) {
         font-size: 21px;
@@ -88,7 +80,7 @@ const PostTitle = styled.div`
 
 const PostSubtitle = styled.div`
     font-size: 16px;
-    color: #484848;
+    color: #2d3748;
     padding-bottom: 5px;
     @media (max-width: 767px) {
         font-size: 15px;
@@ -97,7 +89,7 @@ const PostSubtitle = styled.div`
 
 const PostDate = styled.div`
     font-size: 13px;
-    color: #484848;
+    color: #2d3748;
     padding-bottom: 5px;
     @media (max-width: 767px) {
         font-size: 12px;
@@ -118,3 +110,13 @@ const PostDate = styled.div`
 //         </Layout>
 //     );
 // }
+// const PostList = styled.li`
+//     list-style: none;
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-gap: 60px;
+//     grid-auto-rows: minmax(100px, auto);
+//     @media (max-width: 767px) {
+//         grid-template-columns: repeat(1, 1fr);
+//     }
+// `;

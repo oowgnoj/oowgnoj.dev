@@ -1,10 +1,12 @@
+import '../font/fonts.css';
+
 import Typography from 'typography';
 
 const typography = new Typography({
-    baseFontSize: '18px',
-    baseLineHeight: 1.45,
-    headerFontFamily: ['Playfair Display', 'serif'],
-    bodyFontFamily: ['Roboto', 'sans-serif'],
+    baseFontSize: '16px',
+    baseLineHeight: 1.625,
+    headerFontFamily: ['IBM-flex-mono', 'sans-serif'],
+    bodyFontFamily: ['Ibm-flex', 'sans-serif'],
 });
 
 // Insert styles directly into the <head>

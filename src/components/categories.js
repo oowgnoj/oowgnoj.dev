@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useStaticQuery, Link } from 'gatsby';
-import { Query } from '../../graphql-types';
 import CategoryItem from './categoryItem';
 import styled from 'styled-components';
 
@@ -40,13 +39,16 @@ const Categories = props => {
 export default Categories;
 
 const CategoryList = styled.div`
-    margin-bottom: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cbd5e0;
     @media (max-width: 767px) {
         margin-bottom: 30px;
         display: flex;
         flex-wrap: wrap;
         flex-flow: row wrap;
-        height: 90px;
+        align-content: space-between;
+        min-height: 60px;
     }
 `;
 
@@ -58,7 +60,7 @@ const LinkItem = styled.span`
     border-radius: 5px;
     padding: 8px;
     .LinkItem + .LinkItem {
-        margin-top: 12px;
+        margin-top: 30px;
     }
 
     @media (max-width: 767px) {

@@ -1,10 +1,16 @@
 module.exports = {
     siteMetadata: {
-        title: `oowgnoj.dev`,
-        description: `개발/리뷰/일상 등을 올리는 개발자 박종우의 블로그 입니다.`,
+        title: 'oowgnoj',
+        description: '개발/리뷰/일상 등을 올리는 개발자 박종우의 블로그 입니다.',
         author: `@oowgnoj`,
     },
     plugins: [
+        {
+            resolve: 'gatsby-plugin-typography',
+            options: {
+                pathToConfigModule: 'src/utils/typography.js',
+            },
+        },
         {
             resolve: 'gatsby-source-filesystem',
             options: {

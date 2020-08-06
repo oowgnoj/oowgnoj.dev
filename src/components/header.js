@@ -3,33 +3,19 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const Header = ({ siteTitle }) => (
-    <header
-        style={{
-            background: `white`,
-            marginBottom: `3rem`,
-        }}
-    >
-        <div
+    <h1>
+        <Link
+            to="/"
             style={{
-                margin: `0`,
-                maxWidth: 960,
-                padding: `1.45rem 1.0875rem`,
+                color: 'rgb(72,72,72)',
+                textDecoration: 'none',
+                fontSize: '1.875rem',
+                padding: '45px 20px',
             }}
         >
-            <span style={{ margin: 0 }}>
-                <Link
-                    to="/"
-                    style={{
-                        color: 'rgb(72,72,72)',
-                        textDecoration: `none`,
-                        fontWeight: 'bold',
-                    }}
-                >
-                    {siteTitle}
-                </Link>
-            </span>
-        </div>
-    </header>
+            {siteTitle}
+        </Link>
+    </h1>
 );
 
 Header.propTypes = {
@@ -37,7 +23,7 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-    siteTitle: ``,
+    siteTitle: '',
 };
 
 export default Header;
