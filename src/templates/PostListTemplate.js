@@ -1,19 +1,18 @@
 import React from 'react';
-import PostCategory from '../components/categories';
 import SEO from '../components/seo';
-import { useStaticQuery, Link } from 'gatsby';
+import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Categories from '../components/categories';
 import styled from 'styled-components';
 
 const PostListTemplate = ({ location, pageContext }) => {
-    const { cagtegory, pagePath, nodes } = pageContext;
+    const { nodes } = pageContext;
     const current = location.state ? location.state.current : undefined;
 
     return (
         <Layout isMain={true}>
             <SEO title="글 목록" />
-            <Categories current={current}></Categories>
+            <Categories current={current} />
             {nodes.map(node => (
                 <PostItem key={node.id}>
                     <PostItemWrapper>

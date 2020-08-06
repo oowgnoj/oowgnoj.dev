@@ -1,10 +1,8 @@
-import React, { Fragment } from 'react';
-import { useStaticQuery, Link } from 'gatsby';
-import { Query } from '../../graphql-types';
+import React from 'react';
 import styled from 'styled-components';
 import Me from './../images/me.png';
 
-const AboutInpost = ({ item }) => {
+const AboutInpost = () => {
     const linkto = 'https://github.com/oowgnoj';
     return (
         <Warpper>
