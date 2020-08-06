@@ -42,7 +42,6 @@ const PostItemWrapper = styled.div`
 `;
 const PostTitle = styled.div`
     font-size: 26px;
-    color: rgb(72, 72, 72);
     font-weight: bold;
     padding-bottom: 5px;
     @media (max-width: 767px) {
@@ -52,7 +51,6 @@ const PostTitle = styled.div`
 
 const PostSubtitle = styled.div`
     font-size: 16px;
-    color: #484848;
     padding-bottom: 5px;
     @media (max-width: 767px) {
         font-size: 15px;
@@ -61,7 +59,6 @@ const PostSubtitle = styled.div`
 
 const PostPreview = styled.div`
     font-size: 14px;
-    color: #484848;
     padding-bottom: 5px;
     @media (max-width: 767px) {
         font-size: 12px;
@@ -69,7 +66,6 @@ const PostPreview = styled.div`
 `;
 const PostDate = styled.div`
     font-size: 13px;
-    color: #484848;
     padding-bottom: 5px;
     @media (max-width: 767px) {
         font-size: 12px;

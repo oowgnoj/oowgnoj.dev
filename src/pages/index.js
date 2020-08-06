@@ -71,7 +71,6 @@ const PostItemWrapper = styled.div`
 `;
 const PostTitle = styled.div`
     font-size: 26px;
-    color: #2d3748;
     padding-bottom: 5px;
     @media (max-width: 767px) {
         font-size: 21px;
@@ -80,7 +79,6 @@ const PostTitle = styled.div`
 
 const PostSubtitle = styled.div`
     font-size: 16px;
-    color: #2d3748;
     padding-bottom: 5px;
     @media (max-width: 767px) {
         font-size: 15px;
@@ -89,7 +87,6 @@ const PostSubtitle = styled.div`
 
 const PostDate = styled.div`
     font-size: 13px;
-    color: #2d3748;
     padding-bottom: 5px;
     @media (max-width: 767px) {
         font-size: 12px;
