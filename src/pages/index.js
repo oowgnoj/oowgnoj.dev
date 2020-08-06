@@ -3,9 +3,9 @@ import { useStaticQuery, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Categories from '../components/categories';
-// import ImagePost from '../components/imagePost';
-// import PostListTemplate from '../templates/PostListTemplate';
-import styled from 'styled-components';
+import { GlobalStyles } from '../utils/globalStyle';
+import { lightTheme, darkTheme } from '../utils/Theme';
+import styled, { ThemeProvider } from 'styled-components';
 
 const IndexPage = () => {
     // const [isGalleryMode, setGalleryMode] = useState(false);
