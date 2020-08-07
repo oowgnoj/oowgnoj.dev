@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { GlobalStyles } from '../utils/globalStyle';
 import { lightTheme, darkTheme } from '../utils/Theme';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import Sun from '../images/sun.png';
 import Moon from '../images/moon.png';
 function useStickyState(defaultValue, key) {
@@ -38,8 +38,8 @@ const Header = ({ siteTitle }) => {
                     >
                         {siteTitle}
                     </Link>
-                    <img
-                        style={{ width: '44px', height: '44px', WebkitFilter: 'brightness(0) invert(1);' }}
+                    <DarkModeIcon
+                        theme = {theme}
                         onClick={themeToggler}
                         src={theme === 'light' ? Moon : Sun}
                     />
@@ -58,3 +58,12 @@ Header.defaultProps = {
 };
 
 export default Header;
+
+const DarkModeIcon = styled.img`
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    align-self: center;
+    -webkit-filter: ${props => props.theme ==='light' ? null : 'invert(100%)'} 
+
+`

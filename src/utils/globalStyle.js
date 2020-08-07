@@ -9,4 +9,8 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     text-decoration: none;
   }
+  span {
+    background: ${({ theme }) => theme.body} !important;
+    color: ${({ theme }) => theme.text} !important;
+  }
   `;

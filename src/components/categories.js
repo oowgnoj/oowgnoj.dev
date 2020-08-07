@@ -48,13 +48,13 @@ const CategoryList = styled.div`
         flex-wrap: wrap;
         flex-flow: row wrap;
         align-content: space-between;
-        min-height: 60px;
+        min-height: 110px;
     }
 `;
 
 const LinkItem = styled.span`
     margin-left: 5px;
-    color: #fff;
+    color: ${props => (!props.current ? '#fff' : '#1A202C')};
     background-color: ${props => (!props.current ? '#193B59' : null)};
     cursor: pointer;
     border-radius: 5px;

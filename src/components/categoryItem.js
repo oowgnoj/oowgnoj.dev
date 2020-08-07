@@ -20,8 +20,8 @@ export default CategoryItem;
 
 const LinkItem = styled.span`
     margin-left: 5px;
-    background-color: ${props => (props.hilight ? '#193B59' : null)};
     cursor: pointer;
+    color : ${props => (props.hilight ? '#9f7aea' : null)} !important;
     padding: 8px;
     border-radius: 5px;
     @media (max-width: 767px) {
