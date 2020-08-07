@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import { GlobalStyles } from '../utils/globalStyle';
 import { lightTheme, darkTheme } from '../utils/Theme';
 import { ThemeProvider } from 'styled-components';
-
+import Sun from '../images/sun.png';
+import Moon from '../images/moon.png';
 function useStickyState(defaultValue, key) {
     const [value, setValue] = React.useState(() => {
         const stickyValue = window.localStorage.getItem(key);
@@ -25,19 +26,23 @@ const Header = ({ siteTitle }) => {
         <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
             <>
                 <GlobalStyles />
-                <h1>
+                <h1 style={{ display: 'flex', justifyContent: 'space-between' }}>
                     <Link
                         to="/"
                         style={{
-                            color: 'rgb(72,72,72)',
                             textDecoration: 'none',
-                            fontSize: '1.875rem',
+                            fontSize: '2',
+                            color: theme === 'light' ? 'black' : 'white',
                             padding: '45px 20px',
                         }}
                     >
                         {siteTitle}
                     </Link>
-                    <button onClick={themeToggler}>Switch Theme</button>
+                    <img
+                        style={{ width: '44px', height: '44px', WebkitFilter: 'brightness(0) invert(1);' }}
+                        onClick={themeToggler}
+                        src={theme === 'light' ? Moon : Sun}
+                    />
                 </h1>
             </>
         </ThemeProvider>

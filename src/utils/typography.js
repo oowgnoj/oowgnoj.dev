@@ -7,6 +7,7 @@ const typography = new Typography({
     baseLineHeight: 1.625,
     headerFontFamily: ['IBM-flex-mono', 'sans-serif'],
     bodyFontFamily: ['Ibm-flex', 'sans-serif'],
+    bodyFontWeight: 700,
 });
 
 // Insert styles directly into the <head>

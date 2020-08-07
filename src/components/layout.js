@@ -32,7 +32,6 @@ const Layout = ({ children, isMain }) => {
             <Main
                 style={{
                     margin: `0 auto`,
-                    color: '#2A3132',
                     maxWidth: isMain ? 1200 : 800,
                     padding: `45px 20px`,
                 }}
@@ -59,7 +58,6 @@ const Wrapper = styled.div`
 `;
 
 const Main = styled.div`
-    color: #2a3132;
     max-width: 960;
     padding: 0 5rem 0 5rem;
     @media (max-width: 767px) {

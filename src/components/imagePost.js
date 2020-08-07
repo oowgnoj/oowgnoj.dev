@@ -60,7 +60,7 @@ const TextWrapper = styled.div`
     background-color: rgba(256, 256, 256, 0.6);
     padding: 30px;
 `;
-const PostTitle = styled.div`
+const PostTitle = styled.h2`
     font-size: 26px;
     color: black;
     font-weight: bold;

@@ -5,4 +5,8 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     transition: all 0.50s linear;
   }
+  a {
+    color: ${({ theme }) => theme.text};
+    text-decoration: none;
+  }
   `;

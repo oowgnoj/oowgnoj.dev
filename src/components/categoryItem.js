@@ -19,9 +19,8 @@ const CategoryItem = ({ key, item, current, setCurrent, location }) => {
 export default CategoryItem;
 
 const LinkItem = styled.span`
-    color: ${props => (props.hilight ? '#ffffff' : 'rgb(72,72,72)')};
     margin-left: 5px;
-    background-color: ${props => (props.hilight ? '#336B87' : null)};
+    background-color: ${props => (props.hilight ? '#193B59' : null)};
     cursor: pointer;
     padding: 8px;
     border-radius: 5px;
