@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Categories from '../components/categories';
 import styled from 'styled-components';
-require ('../font/fonts.css')
+require('../font/fonts.css');
 
 const PostListTemplate = ({ location, pageContext }) => {
     const { nodes } = pageContext;
@@ -44,6 +44,7 @@ const PostItemWrapper = styled.div`
 `;
 const PostTitle = styled.div`
     font-family: IBM-flex-mono;
+    font-weight: bold;
     font-size: 26px;
     padding-bottom: 5px;
     @media (max-width: 767px) {

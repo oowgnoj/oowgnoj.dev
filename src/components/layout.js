@@ -10,12 +10,9 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import styled from 'styled-components';
+require('./layout.css');
 
 const Layout = ({ children, isMain }) => {
-    const [theme, setTheme] = useState('light');
-    const themeToggler = () => {
-        theme === 'light' ? setTheme('dark') : setTheme('light');
-    };
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
             site {
@@ -37,7 +34,7 @@ const Layout = ({ children, isMain }) => {
                 }}
             >
                 <main>{children}</main>
-                <footer style={{ marginTop: '20px', marginBottom: '20px', fontWeight: '500'}}>
+                <footer style={{ marginTop: '20px', marginBottom: '20px', fontWeight: '500' }}>
                     © {new Date().getFullYear()}, by oowgnoj
                     {` `}
                 </footer>
