@@ -3,7 +3,7 @@ layout: post
 title: 'Typescript Custom 모듈 정의'
 author: 'oowgnoj'
 subtitle: '사용하고 싶은 library에서 @types 파일이 존재하지 않을 때가 있습니다. 다른 라이브러리를 찾아보기 전에 선택권을 늘리기 위하면 좋을 것 같습니다. @types 지원이 되지 않아도 간단히 custom type을 정의하는 법을 정리했습니다.'
-category: devlopment
+category: development
 date: 2020-07-29
 photo: 'https://2f0m6a43zofy3ffa863wmmhv-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/Switch-to-Employee-Scheduling-Software.jpg'
 tags:
