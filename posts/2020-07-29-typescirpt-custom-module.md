@@ -1,22 +1,21 @@
 ---
 layout: post
-title: "Typescript Custom 모듈 정의"
-author: "oowgnoj"
-subtitle: "사용하고 싶은 library에서 @types 파일이 존재하지 않을 때가 있습니다. 다른 라이브러리를 찾아보기 전에 선택권을 늘리기 위하면 좋을 것 같습니다. @types 지원이 되지 않아도 간단히 custom type을 정의하는 법을 정리했습니다."
-category: Journal
+title: 'Typescript Custom 모듈 정의'
+author: 'oowgnoj'
+subtitle: '사용하고 싶은 library에서 @types 파일이 존재하지 않을 때가 있습니다. 다른 라이브러리를 찾아보기 전에 선택권을 늘리기 위하면 좋을 것 같습니다. @types 지원이 되지 않아도 간단히 custom type을 정의하는 법을 정리했습니다.'
+category: devlopment
 date: 2020-07-29
-photo: "https://2f0m6a43zofy3ffa863wmmhv-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/Switch-to-Employee-Scheduling-Software.jpg"
+photo: 'https://2f0m6a43zofy3ffa863wmmhv-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/Switch-to-Employee-Scheduling-Software.jpg'
 tags:
-  - typescript module type declaration
-  - typescript 모듈 컴파일 과정
+    - typescript module type declaration
+    - typescript 모듈 컴파일 과정
 ---
 
 ### Summary
 
-- Typescript compiler는 모듈에 대한 타입을 알아내기 위해 특정한 path를 따른다. 
-- 모듈 import 시 상대경로 / 비상대경로 에 따라 path가 다르다. 
-- `tsconfig.json` 에서 custom 설정이 가능하다. (`path`, `typeRoot`, `type` 등등)
-
+-   Typescript compiler는 모듈에 대한 타입을 알아내기 위해 특정한 path를 따른다.
+-   모듈 import 시 상대경로 / 비상대경로 에 따라 path가 다르다.
+-   `tsconfig.json` 에서 custom 설정이 가능하다. (`path`, `typeRoot`, `type` 등등)
 
 ### react 에 custom type을 적용하고 싶다면?
 
@@ -24,17 +23,17 @@ tags:
 
 **src/types/index.d.ts**
 
-````
+```
 export module "react" {
   export type my_custom_type = React.FC;
 }
-````
+```
 
-2. 모듈 이름에 따라 type을 참조할 path 정의 
+2. 모듈 이름에 따라 type을 참조할 path 정의
 
 t**sconfig.json**
 
-````
+```
 {
   "compilerOptions": {
     "jsx": "react",
@@ -58,18 +57,18 @@ t**sconfig.json**
 	"include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
-````
+```
 
 3. 사용
 
 **/src/index.tsx**
 
-````
+```
 import React from "react";
 import "./App.css";
 
 ~~c~~onst App: React.my_custom_type = () => {
-  return ( 
+  return (
     <div className="App">
       <header translate="no" className="App-header">
         <p>
@@ -89,15 +88,13 @@ import "./App.css";
 };
 
 export default App;
-````
-
+```
 
 ## TL;DR
-제가 모르고 있었던 부분을 정리했습니다. 
+
+제가 모르고 있었던 부분을 정리했습니다.
 타입스크립트 컴파일러와 컴파일러가 타입을 찾는 과정,
 index.d.ts 파일 구조, ambient module에 대해 아래에서 설명합니다.
-
-
 
 ### 타입스크립트 컴파일러
 
@@ -105,30 +102,29 @@ index.d.ts 파일 구조, ambient module에 대해 아래에서 설명합니다.
 
 [microsoft/TypeScript-React-Starter](https://github.com/microsoft/TypeScript-React-Starter.git)
 
-**타입스크립트 컴파일러**: 타입스크립트 → 자바스크립트 `tsc` 
+**타입스크립트 컴파일러**: 타입스크립트 → 자바스크립트 `tsc`
 
 #### **타입스크립트 컴파일러가 해주는 일은?**
 
-**당연 type checking** 
+**당연 type checking**
 정의한 type을 참고해 정의된 타입과 사용된 타입이 일치하는지 type checking 과정이 추가된 것 뿐이다.
 
 a : string = 'jongwoo'
 
 #### **모듈 구현과 타입 선언은 별개**
 
-- `d.ts` 파일로 타입을 따로 정리하게 되면, **타입 선언만** 이루어진다.
-- `.js` 파일에서는 오로지 모듈 구현만 이루어진다.
-- `.ts` 파일로 작성한 스크립트의 경우 **모듈 구현과 타입 선언**이 동시에 이루어진다.
-
+-   `d.ts` 파일로 타입을 따로 정리하게 되면, **타입 선언만** 이루어진다.
+-   `.js` 파일에서는 오로지 모듈 구현만 이루어진다.
+-   `.ts` 파일로 작성한 스크립트의 경우 **모듈 구현과 타입 선언**이 동시에 이루어진다.
 
 ### 타입스크립트는 어떻게 타입을 찾을까?
 
 #### import 과정
 
-````
+```
 import React from "react"; // 비상대경로
 import React from "../node_modules/react" // 상대경로
-````
+```
 
 ### 상대경로
 
@@ -145,9 +141,9 @@ import React from "../node_modules/react" // 상대경로
 
 6번까지 과정에서 못찾았다면 **앰비언트 모듈 선언 에서 타입 참조**
 
-- cf ) tsc —traceResolution command 확인 가능
+-   cf ) tsc —traceResolution command 확인 가능
 
-````
+```
     File '/Users/oowgnoj/Desktop/tutorial/my-app/node_modules/yargs-parser/index.js.ts' does not exist.
     File '/Users/oowgnoj/Desktop/tutorial/my-app/node_modules/yargs-parser/index.js.tsx' does not exist.
     File '/Users/oowgnoj/Desktop/tutorial/my-app/node_modules/yargs-parser/index.js.d.ts' does not exist.
@@ -160,7 +156,7 @@ import React from "../node_modules/react" // 상대경로
     File '/Users/oowgnoj/Desktop/tutorial/my-app/node_modules/yargs-parser/index.tsx' does not exist.
     File '/Users/oowgnoj/Desktop/tutorial/my-app/node_modules/yargs-parser/index.d.ts' does not exist.
     Found 'package.json' at '/Users/oowgnoj/Desktop/tutorial/my-app/node_modules/@types/yargs-parser/package.json'.
-````
+```
 
 ### @types/sth의 index.d.ts 는 어떻게 생겼을까?
 
@@ -168,8 +164,8 @@ npm install @types/underscore
 
 `node_module/@types/index.d.ts`
 
-````
-export = React; // CommonJD and AMD module system 
+```
+export = React; // CommonJD and AMD module system
 export as namespace React; // UMD : 전역변수로 설정
 declare namespace React { //typescript 컴파일러가 알아듣게 declare namespace
     //
@@ -201,7 +197,7 @@ declare namespace React { //typescript 컴파일러가 알아듣게 declare name
         ....
 }
 
-````
+```
 
 ### Ambient Module이란?
 
@@ -212,7 +208,6 @@ third party library는 이 방식을 사용하고 있음
 `declare`
 
 ![OS](./../images/in-post/ambient_module.png)
-    
 
 #### ambient module에 custom 타입 추가하는 방법
 
@@ -226,7 +221,6 @@ export module "react" {
 }
 
 ```
-
 
 ## Reference
 
