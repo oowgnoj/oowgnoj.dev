@@ -21,7 +21,7 @@ export default CategoryItem;
 const LinkItem = styled.span`
     margin-left: 5px;
     cursor: pointer;
-    color : ${props => (props.hilight ? '#9f7aea' : null)} !important;
+    color : ${props => (props.hilight ? '#90afc5' : null)} !important;
     padding: 8px;
     border-radius: 5px;
     @media (max-width: 767px) {

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[번역] 플러터 - 복잡한 JSON 파싱하기"
+title: "[번역] 복잡한 JSON 파싱하기 in flutter"
 author: "oowgnoj"
 category: development
 date: 2020-03-15
-subtitle : 'parsing complex json in flutter'
+subtitle : "구글 엔지니어 Pooja의 'Parsing complex JSON in Flutter'를 번역한 글 입니다."
 photo: "https://nesoy.github.io/assets/posts/20170208/json.PNG"
 tags:
   - flutter

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "OS-2 시스템 구조와 프로그램 실행"
+title: "어떻게 프로그램이 실행될까 feat. 시스템 구조"
 author: "oowgnoj"
-subtitle: "Operating System"
+subtitle: "프로그램 실행에 필요한 시스템 구조에 대한 글 입니다. kernel interrupt에 의해 구동되는 현대 운영체제와, 저장장치, 동기/비동기적 입출력에 대한 개괄적인 설명을 포함합니다."
 category: CS Basic
 date: 2020-05-24
 photo: "https://www.sigarch.org/wp-content/uploads/2017/03/Welcome-1080x675.jpg"
@@ -19,7 +19,7 @@ kowc에서 제공하는 [반효경 교수님의 운영체제](http://www.kocw.ne
 
 컴퓨터 시스템 구조에서 가장 중요한 역할을 하는 hardware device는 CPU, 메모리, 그리고 각종 I/O 장치들이다. I/O 장치는 hard disk, 키보드, 모니터, 마우스 등을 포함한다. 
 
-####CPU
+### CPU
 
 CPU(Central Processing Unit)는 번역하면 중앙처리장치로 컴퓨터에서 두뇌와 같은 역할을 담당한다. 간단히 CPU의 구조를 살펴보면 연산을 수행하는 산술논리장치(ALU), 제어 명령을 전달하는 컨트롤 장치(CU), 결과 값을 일시적으로 기억하는 레지스터(register)로 구성이 되어있다.
 ![OS](./../images/in-post/OS/CPU.png)

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "리뷰 - 함께 자라기 애자일로 가는길"
+title: "함께자라기 애자일로 가는 길을 읽고"
 author: "oowgnoj"
-subtitle: "개인과 팀의 발전"
+subtitle: "짧은 주기의 반복을 통해 발전하는 방법과 학습/실행 프레임의 차이에 대해 중점적으로 다룬 글 입니다. 인간의 능력을 점점 대체하는 컴퓨터로부터 살아남는 저자의 방법도 소개합니다."
 category: random
 date: 2020-01-15
 photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSX4LXY9fkfwFyYJrQCMWrtBgK2iiMWItGBMzb0A24MRga9ASyO&usqp=CAU"

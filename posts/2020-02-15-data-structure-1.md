@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "자료구조 - array"
+title: "Array"
 author: "oowgnoj"
 header-img: "img/in-post/desert-night.jpeg"
-subtitle: "data structure in python - 1. array"
+subtitle: "기본적인 자료구조인 배열에 대해 정리합니다."
 category: CS Basic
 date: 2020-02-15
 photo: "https://miro.medium.com/max/2800/1*xjqpnt-99z7Uu5EgJBpvRA.png"

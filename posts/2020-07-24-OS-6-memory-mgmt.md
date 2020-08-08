@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "OS-6 memory management"
+title: "운영체제가 메모리를 관리하는 방법"
 author: "oowgnoj"
-subtitle: "Operating system"
+subtitle: "프로그램이 실행되면 CPU가 데이터를 사용하기 위해 물리적 메모리인 RAM에  데이터가 할당되어야 합니다. 본문에서 우리가 작성한 변수가 어떻게 변환되어 물리적 메모리에 저장되는지, 메모리에 각기 다른 프로그램의 데이터가  할당되는 방식, 그 중에서도 페이징 기법에 대해 중점적으로 정리합니다. "
 category: CS Basic
-date: 2020-07-27
+date: 2020-07-24
 photo: "https://previews.123rf.com/images/jemastock/jemastock1704/jemastock170405487/75950616-profile-human-head-brain-memory-vector-illustration-eps-10.jpg"
 tags:
   - computer science

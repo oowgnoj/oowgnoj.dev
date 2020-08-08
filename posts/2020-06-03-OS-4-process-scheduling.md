@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "OS-4 CPU Scheduling"
+title: "컴퓨터가 자신의 가장 비싼 자원을 관리하는 방법 - CPU 스케줄링"
 author: "oowgnoj"
-subtitle: "Operating system"
+subtitle: "CPU(central processing unit)는 한 번에 하나의 작업만 수행할 수 있습니다. 하지만 우리는 항상 여러 프로그램을 동시에 실행합니다. 그래서 운영체제가 일밖에 할 줄 모르는 cpu의 스케줄 관리를 대신 해주는데요, 본문에 다양한 CPU 스케줄 관리 알고리즘에 대해 정리했습니다. "
 category: CS Basic
 date: 2020-06-15
 photo: "https://2f0m6a43zofy3ffa863wmmhv-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/Switch-to-Employee-Scheduling-Software.jpg"

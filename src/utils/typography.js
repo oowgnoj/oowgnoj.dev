@@ -5,9 +5,9 @@ import Typography from 'typography';
 const typography = new Typography({
     baseFontSize: '16px',
     baseLineHeight: 1.625,
-    headerFontFamily: ['IBM-flex-mono', 'sans-serif'],
+    // headerFontFamily: ['IBM-flex-mono', 'sans-serif'],
     bodyFontFamily: ['Ibm-flex', 'sans-serif'],
-    bodyFontWeight: 700,
+    bodyFontWeight: 400,
 });
 
 // Insert styles directly into the <head>

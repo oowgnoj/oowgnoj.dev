@@ -37,10 +37,9 @@ const Layout = ({ children, isMain }) => {
                 }}
             >
                 <main>{children}</main>
-                <footer style={{ marginTop: '20px', marginBottom: '20px' }}>
-                    © {new Date().getFullYear()}, Built with
+                <footer style={{ marginTop: '20px', marginBottom: '20px', fontWeight: '500'}}>
+                    © {new Date().getFullYear()}, by oowgnoj
                     {` `}
-                    <a href="https://www.gatsbyjs.org">Gatsby</a>
                 </footer>
             </Main>
         </Wrapper>

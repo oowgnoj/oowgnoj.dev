@@ -2,9 +2,9 @@
 layout: post
 title: "보호자"
 author: "oowgnoj"
-subtitle: "너도 나도"
+subtitle: "장군이와 제주에서 있었던 일 입니다. 보호자와 피보호자의 관계에 대해 생각해 보았습니다. 장군이도 저를 지켜주고 싶었나 봅니다."
 category: random
-date: 2020-05-06
+date: 2020-06-05
 photo: "http://file3.instiz.net/data/file3/2018/03/03/4/2/7/427910151100a18465ca8dc5c208653f.jpg"
 tags:
   - random

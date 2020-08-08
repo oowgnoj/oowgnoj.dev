@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "자료구조 - hash table"
+title: "Hash Table"
 author: "oowgnoj"
-subtitle: "hash table 정리"
+subtitle: "key-value 쌍을 저장하는 자료구조 hash table에 대해 정리합니다."
 category: CS Basic
 date: 2020-05-08
 photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Hash_table_4_1_1_0_0_1_0_LL.svg/480px-Hash_table_4_1_1_0_0_1_0_LL.svg.png"

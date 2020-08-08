@@ -6,6 +6,8 @@ import Categories from '../components/categories';
 import { GlobalStyles } from '../utils/globalStyle';
 import { lightTheme, darkTheme } from '../utils/Theme';
 import styled, { ThemeProvider } from 'styled-components';
+require ('../font/fonts.css');
+
 
 const IndexPage = () => {
     // const [isGalleryMode, setGalleryMode] = useState(false);
@@ -71,6 +73,7 @@ const PostItemWrapper = styled.div`
 `;
 const PostTitle = styled.div`
     font-size: 26px;
+    font-family: IBM-flex-mono;
     padding-bottom: 5px;
     @media (max-width: 767px) {
         font-size: 21px;

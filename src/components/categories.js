@@ -54,7 +54,7 @@ const CategoryList = styled.div`
 
 const LinkItem = styled.span`
     margin-left: 5px;
-    color: ${props => (!props.current ? '#fff' : '#1A202C')};
+    color : ${props => (!props.current ? '#90afc5' : null)} !important;
     background-color: ${props => (!props.current ? '#193B59' : null)};
     cursor: pointer;
     border-radius: 5px;
