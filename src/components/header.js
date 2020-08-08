@@ -7,14 +7,18 @@ import styled, { ThemeProvider } from 'styled-components';
 import Sun from '../images/sun.png';
 import Moon from '../images/moon.png';
 function useStickyState(defaultValue, key) {
-    const [value, setValue] = React.useState(() => {
-        const stickyValue = window.localStorage.getItem(key);
-        return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
-    });
-    React.useEffect(() => {
-        window.localStorage.setItem(key, JSON.stringify(value));
-    }, [key, value]);
-    return [value, setValue];
+    if (typeof window !== 'undefined') {
+        const [value, setValue] = React.useState(() => {
+            const stickyValue = window.localStorage.getItem(key);
+            return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
+        });
+        React.useEffect(() => {
+            window.localStorage.setItem(key, JSON.stringify(value));
+        }, [key, value]);
+        return [value, setValue];
+    } else {
+        return ['light', 'mode_jp'];
+    }
 }
 
 const Header = ({ siteTitle }) => {
@@ -38,11 +42,7 @@ const Header = ({ siteTitle }) => {
                     >
                         {siteTitle}
                     </Link>
-                    <DarkModeIcon
-                        theme = {theme}
-                        onClick={themeToggler}
-                        src={theme === 'light' ? Moon : Sun}
-                    />
+                    <DarkModeIcon theme={theme} onClick={themeToggler} src={theme === 'light' ? Moon : Sun} />
                 </h1>
             </>
         </ThemeProvider>
@@ -64,6 +64,5 @@ const DarkModeIcon = styled.img`
     height: 44px;
     margin: 0;
     align-self: center;
-    -webkit-filter: ${props => props.theme ==='light' ? null : 'invert(100%)'} 
-
-`
+    -webkit-filter: ${props => (props.theme === 'light' ? null : 'invert(100%)')};
+`;
