@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "web socket protocol"
+title: "서버와 클라이언트의 양방향 통신 - websocket"
 author: "oowgnoj"
-subtitle: "서버/클라이언트의 양방향 통신"
+subtitle: "HTML5 web socket 프로토콜에 대해 알아보았습니다."
 category: CS Basic
 date: 2020-05-30
 photo: "https://dshekhada.files.wordpress.com/2016/07/difference-performance1.png?w=1400"

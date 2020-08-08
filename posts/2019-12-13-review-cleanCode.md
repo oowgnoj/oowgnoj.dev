@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "리뷰 - Clean code"
+title: "Clean Code"
 author: "oowgnoj"
-subtitle: "writing code for everybody"
+subtitle: "제가 작성한 코드는 깨끗하지 않았습니다."
 category: development
 date: 2019-12-13
 photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt4UOW9hCeGdqfRe2cYpl9TGXfI7p8dAqQZX_2RnsjLttmuYBv&usqp=CAU"

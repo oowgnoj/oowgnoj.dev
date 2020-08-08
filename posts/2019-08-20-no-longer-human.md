@@ -3,7 +3,7 @@ layout: post
 title: "청춘과 믿음 그리고 인간실격"
 author: "oowgnoj"
 header-img: "img/post-bg-universe.jpg"
-subtitle: "다자이 오사무가 생각하는 인간의 조건"
+subtitle: "다자이 오사무가 생각하는 인간의 조건에 대해, 그리고 청춘과의 관계에 대해서 생각했습니다."
 category: random
 date: 2019-08-20
 photo: "http://image.yes24.com/goods/1387488/800x0"

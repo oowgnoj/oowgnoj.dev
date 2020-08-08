@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "알고리즘 - brute force"
+title: "Brute Force"
 author: "oowgnoj"
-subtitle: "way to approach algorithm - 1 - brute force"
+subtitle: "가능한 모든 경우의 수를 구하는 알고리즘 접근법 Brute Force에 대해 정리합니다."
 category: CS Basic
 date: 2020-04-12
 photo: "https://3.bp.blogspot.com/-bsAe5iHfUvw/XMm2l8YCMtI/AAAAAAAAA28/9-Uj-v3GHhIE06c1_HdSEOeXML1byHInACLcBGAs/s1600/what-is-an-algorithm.png"

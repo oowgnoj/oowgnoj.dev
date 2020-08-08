@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "여행계산기 UI 고려사항"
+title: "여행 견적 어플리케이션 UI 디자인 고려 요소"
 author: "oowgnoj"
 header-img: "img/post-bg-universe.jpg"
-subtitle: "첫 프로젝트"
+subtitle: "여행계산기의 UI를 디자인하며 고려했던 요소들에 대해 정리했습니다."
 category: development
 date: 2019-11-20
 photo: "https://miro.medium.com/max/506/1*FqpuKySet9_T4ZhNlVwxPw.png"

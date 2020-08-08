@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "플러터 HTTP request"
+title: "HTTP request 보내기 in flutter"
 author: "oowgnoj"
 header-img: "img/post-bg-universe.jpg"
-subtitle : 'api request in flutter'
+subtitle : 'flutter에서 http 요청을 보내는 방법을 정리합니다.'
 category: development
 date: 2020-03-12
 photo: "https://flutter.dev/images/flutter-logo-sharing.png"
@@ -11,7 +11,6 @@ tags:
   - flutter
 ---
 
-### flutter network request 보내기
 
 #### 1. http package 설치
 

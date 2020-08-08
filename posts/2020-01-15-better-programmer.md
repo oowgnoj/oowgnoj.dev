@@ -2,7 +2,7 @@
 layout: post
 title: "더 좋은 프로그래머 되기"
 author: "oowgnoj"
-subtitle: "할 수 있다."
+subtitle: "주니어 개발자로서 더 좋은 프로그래머가 되기 위한 방법을 정리했습니다. 기초와 알고리즘의 중요성과 '안다는 것'에 대한 리처드 파인만 교수의 테크닉을 포함합니다."
 catalog: development
 date: 2020-01-15
 photo: "https://i2.wp.com/www.brainpickings.org/wp-content/uploads/2013/08/richardfeynman-1.jpg?resize=680%2C383&ssl=1"

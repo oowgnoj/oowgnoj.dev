@@ -1,43 +1,69 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React, { useState, useEffect } from 'react';
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import { GlobalStyles } from '../utils/globalStyle';
+import { lightTheme, darkTheme } from '../utils/Theme';
+import styled, { ThemeProvider } from 'styled-components';
+import Sun from '../images/sun.png';
+import Moon from '../images/moon.png';
+function useStickyState(defaultValue, key) {
+    const [value, setValue] = React.useState(() => {
+        const stickyValue = window.localStorage.getItem(key);
+        return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
+    });
+    React.useEffect(() => {
+        window.localStorage.setItem(key, JSON.stringify(value));
+    }, [key, value]);
+    return [value, setValue];
+}
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `white`,
-      marginBottom: `3rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <span style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'rgb(72,72,72)',
-            textDecoration: `none`,
-            fontWeight: 'bold'
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </span>
-    </div>
-  </header>
-)
+const Header = ({ siteTitle }) => {
+    const [theme, setTheme] = useStickyState('light', 'mode_jp');
+    const themeToggler = () => {
+        theme === 'light' ? setTheme('dark') : setTheme('light');
+    };
+    return (
+        <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+            <>
+                <GlobalStyles />
+                <h1 style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <Link
+                        to="/"
+                        style={{
+                            textDecoration: 'none',
+                            fontSize: '2',
+                            color: theme === 'light' ? 'black' : 'white',
+                            padding: '45px 20px',
+                        }}
+                    >
+                        {siteTitle}
+                    </Link>
+                    <DarkModeIcon
+                        theme = {theme}
+                        onClick={themeToggler}
+                        src={theme === 'light' ? Moon : Sun}
+                    />
+                </h1>
+            </>
+        </ThemeProvider>
+    );
+};
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+    siteTitle: PropTypes.string,
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+    siteTitle: '',
+};
 
-export default Header
+export default Header;
+
+const DarkModeIcon = styled.img`
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    align-self: center;
+    -webkit-filter: ${props => props.theme ==='light' ? null : 'invert(100%)'} 
+
+`

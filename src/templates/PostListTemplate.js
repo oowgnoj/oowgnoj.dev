@@ -1,19 +1,19 @@
 import React from 'react';
-import PostCategory from '../components/categories';
 import SEO from '../components/seo';
-import { useStaticQuery, Link } from 'gatsby';
+import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Categories from '../components/categories';
 import styled from 'styled-components';
+require('../font/fonts.css');
 
 const PostListTemplate = ({ location, pageContext }) => {
-    const { cagtegory, pagePath, nodes } = pageContext;
+    const { nodes } = pageContext;
     const current = location.state ? location.state.current : undefined;
 
     return (
         <Layout isMain={true}>
             <SEO title="글 목록" />
-            <Categories current={current}></Categories>
+            <Categories current={current} />
             {nodes.map(node => (
                 <PostItem key={node.id}>
                     <PostItemWrapper>
@@ -36,15 +36,16 @@ const PostItem = styled.li`
 `;
 
 const PostItemWrapper = styled.div`
-    padding-top: 20px;
+    padding: 20px 0;
     &:hover {
+        padding-bottom: 20px;
         box-shadow: inset 0 -3px 0 #90afc5;
     }
 `;
 const PostTitle = styled.div`
-    font-size: 26px;
-    color: rgb(72, 72, 72);
+    font-family: IBM-flex-mono;
     font-weight: bold;
+    font-size: 26px;
     padding-bottom: 5px;
     @media (max-width: 767px) {
         font-size: 21px;
@@ -53,7 +54,6 @@ const PostTitle = styled.div`
 
 const PostSubtitle = styled.div`
     font-size: 16px;
-    color: #484848;
     padding-bottom: 5px;
     @media (max-width: 767px) {
         font-size: 15px;
@@ -62,7 +62,6 @@ const PostSubtitle = styled.div`
 
 const PostPreview = styled.div`
     font-size: 14px;
-    color: #484848;
     padding-bottom: 5px;
     @media (max-width: 767px) {
         font-size: 12px;
@@ -70,7 +69,6 @@ const PostPreview = styled.div`
 `;
 const PostDate = styled.div`
     font-size: 13px;
-    color: #484848;
     padding-bottom: 5px;
     @media (max-width: 767px) {
         font-size: 12px;

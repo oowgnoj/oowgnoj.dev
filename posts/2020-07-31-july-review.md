@@ -2,7 +2,7 @@
 layout: post
 title: '7월 회고'
 author: 'oowgnoj'
-subtitle: '목표 찾기 목표 실패'
+subtitle: "7월의 주된 관심사와 개인적인 목표, 과정, 결과에 대한 글 입니다. '확실한 목표'를 찾기 위해 고군분투 했던 과정을 소개합니다."
 category: Journal
 date: 2020-07-31
 photo: 'https://images.unsplash.com/photo-1464788061904-b026adb5422b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80'
@@ -52,7 +52,7 @@ tags:
 
 ![july-goal](./../images/in-post/Journal/4.png)
 
-## 결론적으로는 실패했다.
+## 결론적으로 이번 달은 이것으로 만족해야 했다.
 
 ### 그럼에도 얻은 것
 

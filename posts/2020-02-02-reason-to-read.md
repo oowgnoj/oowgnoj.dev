@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "내가 책을 읽는 이유"
+title: "책을 읽는 이유"
 author: "oowgnoj"
-subtitle: "읽기에 대한 생각"
+subtitle: "책을 읽는 이유에 대해 생각하고 정리한 글 입니다."
 category: random
 photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSj0iZgYE2vxvmCJ50_GTSB0Br79vU7Pn_XGteoFRBNTvUUlajr&usqp=CAU"
 date: 2020-02-02

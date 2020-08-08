@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "알고리즘 - 재귀함수 정리"
+title: "재귀함수"
 author: "oowgnoj"
 date: 2020-03-06
-subtitle : "Recursion in python"
+subtitle : "자기 자신을 호출하는 재귀함수에 대해 정리했습니다. 언젠가 꼭 탈출해야 합니다. 간단한 예시부터 국민예제 하노이의 탑 python code도 포함되어 있습니다."
 category: CS Basic
 photo: "https://cdn-images-1.medium.com/max/1600/1*gSHrSNZK0bx-X7m1RraA6A.jpeg"
 tags:

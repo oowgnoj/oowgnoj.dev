@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "자료구조 - linked list"
+title: "Linked List"
 author: "oowgnoj"
 header-img: "img/in-post/desert-night.jpeg"
-subtitle: "data structure in python - 2. linked list"
+subtitle: "꼬리를 무는 자료구조 Linked List에 대해 정리합니다."
 category: CS Basic
 photo: "https://res.cloudinary.com/practicaldev/image/fetch/s--y3j6aJXJ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://res.cloudinary.com/practicaldev/image/fetch/s--_PwtVEkJ--/c_limit%252Cf_auto%252Cfl_progressive%252Cq_auto%252Cw_880/https://www.educative.io/api/edpresso/shot/5077575695073280/image/5192456339456000"
 date: 2020-03-01
@@ -18,8 +18,6 @@ tags:
 ## Linked List
 
 ![linkedList](./../images/in-post/data-structure/linked-list-illustrate.png)
-
-
 
 
 - Node 에 데이터를 저장한다.
