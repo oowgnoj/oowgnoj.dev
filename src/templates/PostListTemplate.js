@@ -43,11 +43,11 @@ const PostItemWrapper = styled.div`
     }
 `;
 const PostTitle = styled.div`
-    font-family: IBM-flex-mono;
     font-weight: bold;
     font-size: 26px;
     padding-bottom: 5px;
     @media (max-width: 767px) {
+        font-family: IBM-flex-mono important!;
         font-size: 21px;
     }
 `;
@@ -55,18 +55,12 @@ const PostTitle = styled.div`
 const PostSubtitle = styled.div`
     font-size: 16px;
     padding-bottom: 5px;
+    color: #7d7d7d important!;
     @media (max-width: 767px) {
         font-size: 15px;
     }
 `;
 
-const PostPreview = styled.div`
-    font-size: 14px;
-    padding-bottom: 5px;
-    @media (max-width: 767px) {
-        font-size: 12px;
-    }
-`;
 const PostDate = styled.div`
     font-size: 13px;
     padding-bottom: 5px;
