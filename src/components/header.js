@@ -7,18 +7,18 @@ import styled, { ThemeProvider } from 'styled-components';
 import Sun from '../images/sun.png';
 import Moon from '../images/moon.png';
 function useStickyState(defaultValue, key) {
-    if (typeof window !== 'undefined') {
-        const [value, setValue] = React.useState(() => {
-            const stickyValue = window.localStorage.getItem(key);
-            return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
-        });
-        React.useEffect(() => {
-            window.localStorage.setItem(key, JSON.stringify(value));
-        }, [key, value]);
-        return [value, setValue];
-    } else {
-        return ['light', 'mode_jp'];
-    }
+    // if (typeof window !== 'undefined') {
+    //     const [value, setValue] = React.useState(() => {
+    //         const stickyValue = window.localStorage.getItem(key);
+    //         return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
+    //     });
+    //     React.useEffect(() => {
+    //         window.localStorage.setItem(key, JSON.stringify(value));
+    //     }, [key, value]);
+    //     return [value, setValue];
+    // } else {
+    return ['light', 'mode_jp'];
+    // }
 }
 
 const Header = ({ siteTitle }) => {
