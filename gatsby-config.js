@@ -56,10 +56,18 @@ module.exports = {
                 trackingId: 'UA-120228926-2',
             },
         },
+
         {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [
+                    {
+                        resolve: `gatsby-remark-highlight-code`,
+                        options: {
+                            terminal: 'carbon',
+                            theme: 'dracula',
+                        },
+                    },
                     'gatsby-remark-static-images',
                     {
                         resolve: `gatsby-remark-images`,
@@ -67,15 +75,10 @@ module.exports = {
                             maxWidth: 1000,
                         },
                     },
-                    {
-                        resolve: `gatsby-remark-prismjs`,
-                        options: {
-                            aliases: { sh: 'bash', js: 'javascript' },
-                        },
-                    },
                 ],
             },
         },
+
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         {

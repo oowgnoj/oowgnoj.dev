@@ -73,9 +73,9 @@ const PostItemWrapper = styled.div`
 const PostTitle = styled.div`
     font-size: 26px;
     font-weight: bold;
-    font-family: IBM-flex-mono;
     padding-bottom: 5px;
     @media (max-width: 767px) {
+        font-family: IBM-flex-mono important!;
         font-size: 21px;
     }
 `;
