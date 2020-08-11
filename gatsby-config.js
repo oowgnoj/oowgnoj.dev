@@ -60,19 +60,17 @@ module.exports = {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [
+                    'gatsby-remark-static-images',
                     {
-                        resolve: `gatsby-transformer-remark`,
+                        resolve: `gatsby-remark-images`,
                         options: {
-                            plugins: [
-                                {
-                                    resolve: `gatsby-remark-highlight-code`,
-                                    options: {
-                                        terminal: 'carbon',
-                                        theme: 'twilight',
-                                        lineNumbes: true,
-                                    },
-                                },
-                            ],
+                            maxWidth: 1000,
+                        },
+                    },
+                    {
+                        resolve: `gatsby-remark-prismjs`,
+                        options: {
+                            aliases: { sh: 'bash', js: 'javascript' },
                         },
                     },
                 ],
