@@ -75,7 +75,6 @@ const PostTitle = styled.div`
     font-weight: bold;
     padding-bottom: 5px;
     @media (max-width: 767px) {
-        font-family: IBM-flex-mono important!;
         font-size: 21px;
     }
 `;

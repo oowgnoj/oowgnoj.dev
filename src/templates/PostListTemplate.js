@@ -47,7 +47,6 @@ const PostTitle = styled.div`
     font-size: 26px;
     padding-bottom: 5px;
     @media (max-width: 767px) {
-        font-family: IBM-flex-mono;
         font-size: 21px;
     }
 `;
