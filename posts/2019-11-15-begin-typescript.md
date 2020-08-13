@@ -1,16 +1,14 @@
 ---
 layout: post
-title: "5분만에 타입스크립트 입문하기"
-author: "oowgnoj"
-header-img: "img/post-bg-universe.jpg"
-subtitle: "변수, class interface 에 타입을 설정하는 방법에 대해 다루고 있습니다. 생소할 수 있는 Generic에 대한 소개도 포함합니다."
+title: '5분만에 타입스크립트 입문하기'
+author: 'oowgnoj'
+header-img: 'img/post-bg-universe.jpg'
+subtitle: '변수, class interface 에 타입을 설정하는 방법에 대해 다루고 있습니다. 생소할 수 있는 Generic에 대한 소개도 포함합니다.'
 category: development
 date: 2019-11-15
-photo: "https://media.vlpt.us/post-images/chltndid724/0b2147f0-20a3-11ea-bfea-5d0fa0c4a664/ts.png"
 tags:
-  - typescript
+    - typescript
 ---
-
 
 기본적으로, let 과 const 를 사용해서 변수에 특정 값을 선언 할 때, 해당되는 기본 타입을 명시한다.
 
@@ -61,9 +59,8 @@ interfac** 클래스** 또는 **객체**를 위한 타입을 지정할 때 사�
       constructor(public radius : *number*) {
         this.radius = radius;
     }
-    
 
-typescript에서는 public / private 을 지정해 줄 수 있는데 일반적으로 class / object 바깥에서도 변수를 사용하고 싶다면 public 을 앞에 붙여주고, 그렇지 않다면 private을, 또한 변수명 앞에 _ (underscore)를 사용하면 private variable 의 convention 이다.
+typescript에서는 public / private 을 지정해 줄 수 있는데 일반적으로 class / object 바깥에서도 변수를 사용하고 싶다면 public 을 앞에 붙여주고, 그렇지 않다면 private을, 또한 변수명 앞에 \_ (underscore)를 사용하면 private variable 의 convention 이다.
 
 tsconfig.json 파일에서 outDir 을 “./dist” 에 설정하게 되면 해당 폴더 안으로 typescript가 compile 된 파일이 생성되게 되고, 실행하면 (node dist/practice) 실행 결과를 얻을 수 있다.
 
@@ -96,20 +93,20 @@ tsconfig.json 파일에서 outDir 을 “./dist” 에 설정하게 되면 해�
 type 은 특정 타입에 별칭을 붙이는 용도 : 정의한다고 봐도 무방한지?
 
     type Person = {
-      name : string ; 
-      age? : number ; 
+      name : string ;
+      age? : number ;
     };
 
     type Developer = Person & {
       skills : string[] ;
     };
 
-    
+
     const person : Person = {
       name : '김사람'
     };
 
-** type과 interface는 무엇을 써도 상관 없는데 일관성 있게 쓰면 된다. 큰 차이 없다. 다만 라이브러리를 작성하거나 다른 라이브러리를 위한 타입 지원 파일을 작성하게 될 때는 interface 를 사용하는것이 권장 되고 있다.
+\*\* type과 interface는 무엇을 써도 상관 없는데 일관성 있게 쓰면 된다. 큰 차이 없다. 다만 라이브러리를 작성하거나 다른 라이브러리를 위한 타입 지원 파일을 작성하게 될 때는 interface 를 사용하는것이 권장 되고 있다.
 
 ### Generic
 
@@ -149,4 +146,3 @@ Generic 을 사용하면 **어떠한 타입이 들어와도 될 수 있게 되�
     const items : Items<String> = {
       list : ['a', 'b', 'c']
     };
-    

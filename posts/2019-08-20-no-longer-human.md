@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "청춘과 믿음 그리고 인간실격"
-author: "oowgnoj"
-header-img: "img/post-bg-universe.jpg"
-subtitle: "다자이 오사무가 생각하는 인간의 조건에 대해, 그리고 청춘과의 관계에 대해서 생각했습니다."
+title: '청춘과 믿음 그리고 인간실격'
+author: 'oowgnoj'
+header-img: 'img/post-bg-universe.jpg'
+subtitle: '다자이 오사무가 생각하는 인간의 조건에 대해, 그리고 청춘과의 관계에 대해서 생각했습니다.'
 category: random
 date: 2019-08-20
-photo: "http://image.yes24.com/goods/1387488/800x0"
 tags:
-  - 독서
-  - 리뷰
+    - 독서
+    - 리뷰
 ---
 
 ‘인간 실격’은 다자이 오사무의 소설이다. 동시에 그의 삶을 다룬 자서전적 글이다. 책의 본문은 처음부터 끝까지 주인공 요조(다자이 오사무)의 암울한 인생을 다룬다. 마치 비 오는 날 불 꺼진 음산한 마을을 걸어가는 기분이다.

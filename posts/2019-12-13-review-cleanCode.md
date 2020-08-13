@@ -1,16 +1,15 @@
 ---
 layout: post
-title: "Clean Code"
-author: "oowgnoj"
-subtitle: "제가 작성한 코드는 깨끗하지 않았습니다."
+title: 'Clean Code'
+author: 'oowgnoj'
+subtitle: '제가 작성한 코드는 깨끗하지 않았습니다.'
 category: development
 date: 2019-12-13
-photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTt4UOW9hCeGdqfRe2cYpl9TGXfI7p8dAqQZX_2RnsjLttmuYBv&usqp=CAU"
 tags:
-  - web
-  - front-end
-  - 독서
-  - 리뷰
+    - web
+    - front-end
+    - 독서
+    - 리뷰
 ---
 
 書로모임 프로젝트 에서 리팩토링을 진행했습니다. 컴포넌트, 함수 재사용 등에 중점을 맞춰 진행하다 보니 성에 차지 않는 무언가를 느꼈습니다. 팀원들과 제가 조금 더 이해하기 쉬운 코드를 작성하고 싶었습니다. 이런 배경에서 Clean Code, Robert C. Martin 를 읽게 되었습니다.

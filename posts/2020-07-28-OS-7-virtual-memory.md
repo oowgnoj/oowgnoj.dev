@@ -5,7 +5,6 @@ author: 'oowgnoj'
 subtitle: '8G 램으로 배그, 카톡, 브라우저, 유튜브를 동시에 실행할 수 있는 가상메모리에 대해 정리한 글 입니다. 프로그램에서 당장 필요한 부분만 물리적 메모리에 할당해 사용하고, 나머지는 가상 메모리에 저장합니다. 본문에서 demand paging 기법과 page fault, replace algorithm에 대해 간략하게 다루고 있습니다.'
 category: CS Basic
 date: 2020-07-28
-photo: 'https://hbr.org/resources/images/article_assets/2015/04/APR15_03_40382668.jpg'
 tags:
     - computer science
     - OS

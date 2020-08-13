@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "여행 견적 어플리케이션 UI 디자인 고려 요소"
-author: "oowgnoj"
-header-img: "img/post-bg-universe.jpg"
-subtitle: "여행계산기의 UI를 디자인하며 고려했던 요소들에 대해 정리했습니다."
+title: '여행 견적 어플리케이션 UI 디자인 고려 요소'
+author: 'oowgnoj'
+header-img: 'img/post-bg-universe.jpg'
+subtitle: '여행계산기의 UI를 디자인하며 고려했던 요소들에 대해 정리했습니다.'
 category: development
 date: 2019-11-20
-photo: "https://miro.medium.com/max/506/1*FqpuKySet9_T4ZhNlVwxPw.png"
 tags:
-  - UI
-  - front-end
+    - UI
+    - front-end
 ---
 
 Travel Calculator는 ‘7박 8일 런던으로 여행가면 얼마나 들지?’의 대답을 실시간 데이터를 바탕으로 간단하게 조회 할 수 있는 mobile first web service 입니다.

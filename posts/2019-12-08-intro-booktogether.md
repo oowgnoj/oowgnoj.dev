@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "書로모임 프로젝트 소개"
-author: "oowgnoj"
-subtitle: "서평과 큐레이션을 공유하는 서로모임 프로젝트를 소개합니다. (booktogether.org)"
+title: '書로모임 프로젝트 소개'
+author: 'oowgnoj'
+subtitle: '서평과 큐레이션을 공유하는 서로모임 프로젝트를 소개합니다. (booktogether.org)'
 category: development
 date: 2019-12-08
-photo: "https://www.challies.com/wp-content/uploads/2019/02/janko-ferlic-174927-unsplash-1.jpg"
 tags:
-  - web
-  - front-end
+    - web
+    - front-end
 ---
 
 “서로모임에 오신 분들께 당신만의 서평과 북 큐레이션을 공유하여 주세요”
@@ -77,7 +76,7 @@ tags:
 
 > daily
 
-- 애자일 스크럼 (agile scrum)
+-   애자일 스크럼 (agile scrum)
 
 ![](https://cdn-images-1.medium.com/max/5308/1*XaQqQ6kT16BtyCt50Msc2g.png)
 
@@ -89,7 +88,7 @@ _애자일 스크럼 규칙_
 
 1. 매일 두차례 (stand-up meeting, code review) 시간에 카드를 다같이 확인하며 동료들의 진행상황을 파악했습니다. 또한 미처 카드를 넘기지 못한 경우에 같이 관리하며 최대한 반영하려 노력했습니다.
 
-- stand-up meeting
+-   stand-up meeting
 
 ![](https://cdn-images-1.medium.com/max/2888/1*ZQrcmxdx_oD2Y67vh0WBGw.png)
 

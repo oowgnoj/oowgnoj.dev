@@ -1,36 +1,36 @@
 ---
 layout: post
-title: "더 좋은 프로그래머 되기"
-author: "oowgnoj"
+title: '더 좋은 프로그래머 되기'
+author: 'oowgnoj'
 subtitle: "주니어 개발자로서 더 좋은 프로그래머가 되기 위한 방법을 정리했습니다. 기초와 알고리즘의 중요성과 '안다는 것'에 대한 리처드 파인만 교수의 테크닉을 포함합니다."
 catalog: development
 date: 2020-01-15
-photo: "https://i2.wp.com/www.brainpickings.org/wp-content/uploads/2013/08/richardfeynman-1.jpg?resize=680%2C383&ssl=1"
 tags:
-  - web
-  - front-end
-  - 독서
-  - 리뷰
+    - web
+    - front-end
+    - 독서
+    - 리뷰
 ---
+
 # 더 좋은 프로그래머 되기
 
 빠르게 쏟아지는 신기술과 개념을 어떻게 공부할 것인가
 
 [데이터 시대를 사는 소프트웨어 개발자를 위한 생존 가이드](https://www.youtube.com/watch?v=9Moy_b-H-CM&t=2336s) — 임백준
 
-![AI, 데이터 시대를 사는 소프트웨어 개발자를 위한 생존가이드 — 임백준](https://cdn-images-1.medium.com/max/2000/1*w14GLBdATFRvA54N5tZYHQ.png)*AI, 데이터 시대를 사는 소프트웨어 개발자를 위한 생존가이드 — 임백준*
+![AI, 데이터 시대를 사는 소프트웨어 개발자를 위한 생존가이드 — 임백준](https://cdn-images-1.medium.com/max/2000/1*w14GLBdATFRvA54N5tZYHQ.png)_AI, 데이터 시대를 사는 소프트웨어 개발자를 위한 생존가이드 — 임백준_
 
 **전제. 모든 것을 배우는 것은 불가능하다
-**Dev-oops & full-stack : 일부만 경험했다 하더라도 “**어떤 일도 잘할 것 같은 사람**"이 되기 위해 역량을 키워야 한다**
+**Dev-oops & full-stack : 일부만 경험했다 하더라도 “**어떤 일도 잘할 것 같은 사람**"이 되기 위해 역량을 키워야 한다\*\*
 **fundamental : 70%**
 
 **concurrent library or framework : 30%**
 
 ### Why?
 
-* 유행하는 framework / library / API의 수명은 길어야 3년
+-   유행하는 framework / library / API의 수명은 길어야 3년
 
-* methodology or philosophy (TDD, OOP) : 3년보다는 길지만
+-   methodology or philosophy (TDD, OOP) : 3년보다는 길지만
 
 ### 결국 중요한 것은 사람 자체의 문제해결 능력
 
@@ -50,7 +50,7 @@ tags:
 
 현실은 알고리즘으로 돈다 — 포프
 
-![현실은 알고리즘으로 돈다 — 포프 TV](https://cdn-images-1.medium.com/max/2000/1*BEt7erYPQaWCICe-z8vi2A.png)*현실은 알고리즘으로 돈다 — 포프 TV*
+![현실은 알고리즘으로 돈다 — 포프 TV](https://cdn-images-1.medium.com/max/2000/1*BEt7erYPQaWCICe-z8vi2A.png)_현실은 알고리즘으로 돈다 — 포프 TV_
 
 포프님에 따르면 Algorithm 은 **어떤 일을 진행하는 데의 그 순서**라고 한다. 커피머신에서 커피를 내리는 것도 순서를 표현해 누구나 따라할 수 있게 process를 정의하면 algorithm 이라 말할 수 있다.
 
@@ -60,10 +60,11 @@ tags:
 
 ## Feynman Technique
 
-[*algorithm when learning new stuffs](https://medium.com/personal-growth/the-secret-algorithm-behind-learning-7c6f4eb702df)*
+[\*algorithm when learning new stuffs](https://medium.com/personal-growth/the-secret-algorithm-behind-learning-7c6f4eb702df)\*
+
 > emphasize difference between ‘knowing something’ and ‘knowing the name of something’
 
-![The Feynman Technique: 3 step of learning new things](https://cdn-images-1.medium.com/max/2000/1*P6Jil-cAjyNPsUOY_bZzWw.jpeg)*The Feynman Technique: 3 step of learning new things*
+![The Feynman Technique: 3 step of learning new things](https://cdn-images-1.medium.com/max/2000/1*P6Jil-cAjyNPsUOY_bZzWw.jpeg)_The Feynman Technique: 3 step of learning new things_
 
 ### Teach it to a child
 

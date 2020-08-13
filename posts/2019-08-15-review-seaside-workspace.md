@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "바닷가 작업실에서는 전혀 다른 시간이 흐른다"
-author: "oowgnoj"
-header-img: "img/post-bg-universe.jpg"
-subtitle: "공간에 대한 욕심"
+title: '바닷가 작업실에서는 전혀 다른 시간이 흐른다'
+author: 'oowgnoj'
+header-img: 'img/post-bg-universe.jpg'
+subtitle: '공간에 대한 욕심'
 category: random
 date: 2019-08-15
-photo: "https://img.ridicdn.net/cover/222002134/xxlarge"
 tags:
-  - 독서
-  - 리뷰
+    - 독서
+    - 리뷰
 ---
 
 작년 여름 부모님께 생 떼를 썼어요.

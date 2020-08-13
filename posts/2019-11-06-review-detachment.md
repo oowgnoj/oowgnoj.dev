@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "영화 Detachment 후기"
-author: "oowgnoj"
-header-img: "img/post-bg-universe.jpg"
-subtitle: ""
+title: '영화 Detachment 후기'
+author: 'oowgnoj'
+header-img: 'img/post-bg-universe.jpg'
+subtitle: ''
 category: random
 date: 2019-11-06
-photo: "http://www.artinsight.co.kr/data/tmp/1608/62f32e36be3348ccb1142831a1d23602_ajCQ5A92LT.png"
 tags:
-  - 영화
-  - 리뷰
+    - 영화
+    - 리뷰
 ---
 
 종종 나는 객관적 기준과 주관적 믿음 가운데 갈등한다. 며칠 전 한 친구가 말했다. “너가 하고 싶은걸 하려면 우선 돈이 있어야 해. 그럴려면 취직을 해야하고, 그러기 위해선……”. 충분히 합리적이다. 하지만 항상 그렇게 믿는것은 아니다. 내가 좋아하는 것이 있고 그러므로 잘 할 수 있는 것이 있다고 본다. 세상의 기준에 맞추고자 아등바등 하루를 보내고 싶지는 않다. 행복한 삶을 위해 무엇을 추구해야 할까 고민했지만 아직 뾰족한 수를 찾지 못했다. 두가지 다 말이 된다고 생각하기 때문이다.

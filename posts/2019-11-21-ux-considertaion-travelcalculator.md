@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "긴 로딩시간에 대한 UI적 해결법"
-author: "oowgnoj"
-header-img: "img/post-bg-universe.jpg"
+title: '긴 로딩시간에 대한 UI적 해결법'
+author: 'oowgnoj'
+header-img: 'img/post-bg-universe.jpg'
 subtitle: "여행계산기 프로젝트를 진행하며 유저의 긴 로딩시간을 UI로 대처했던 경험을 소개합니다. skeleton, spinner, gif 이미지를 사용해 '저희는 쉬지않고 계산하고 있습니다'를 강조하고 싶었습니다."
 category: development
 date: 2019-11-21
-photo: "https://miro.medium.com/max/506/1*FqpuKySet9_T4ZhNlVwxPw.png"
 tags:
-  - UI
-  - front-end
+    - UI
+    - front-end
 ---
 
 이번 블로그에서 Travel Calculator 의 client side를 구현하며 했던 긴 로딩시간에 대한 고민과 해결방안을 공유하려고 합니다.
