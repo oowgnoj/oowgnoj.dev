@@ -13,8 +13,8 @@ tags:
 
 ### Summary
 
--   Typescript compiler는 모듈에 대한 타입을 알아내기 위해 특정한 path를 따른다.
--   모듈 import 시 상대경로 / 비상대경로 에 따라 path가 다르다.
+-   Typescript compiler는 모듈의 타입을 알아내기 위해 특정한 path를 따른다.
+-   모듈 import 시 상대경로 / 비상대경로 에 따라 찾아보는 순서가 다르다 다르다.
 -   `tsconfig.json` 에서 custom 설정이 가능하다. (`path`, `typeRoot`, `type` 등등)
 
 ### react 에 custom type을 적용하고 싶다면?
@@ -92,13 +92,9 @@ export default App;
 
 ## TL;DR
 
-제가 모르고 있었던 부분을 정리했습니다.
-타입스크립트 컴파일러와 컴파일러가 타입을 찾는 과정,
-index.d.ts 파일 구조, ambient module에 대해 아래에서 설명합니다.
+제가 모르고 있었던 부분을 정리했습니다. 타입스크립트 컴파일러와 컴파일러가 타입을 찾는 과정, index.d.ts 파일 구조, ambient module에 대해 아래에서 설명합니다.
 
 ### 타입스크립트 컴파일러
-
-**compiler 는 A language -> B language 로 바꾸는 프로그램이다.**
 
 [microsoft/TypeScript-React-Starter](https://github.com/microsoft/TypeScript-React-Starter.git)
 
@@ -106,9 +102,8 @@ index.d.ts 파일 구조, ambient module에 대해 아래에서 설명합니다.
 
 #### **타입스크립트 컴파일러가 해주는 일은?**
 
-**당연 type checking**
+**type checking**
 정의한 type을 참고해 정의된 타입과 사용된 타입이 일치하는지 type checking 과정이 추가된 것 뿐이다.
-
 a : string = 'jongwoo'
 
 #### **모듈 구현과 타입 선언은 별개**

@@ -11,3 +11,7 @@
     padding-right: 2.8em;
     overflow: initial;
 }
+
+p > a {
+    color: #9f7aea;
+}
