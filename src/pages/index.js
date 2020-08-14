@@ -24,7 +24,6 @@ const IndexPage = () => {
                             category
                             subtitle
                             tags
-                            photo
                             date(formatString: "YYYY-MM-DD")
                         }
                         id
