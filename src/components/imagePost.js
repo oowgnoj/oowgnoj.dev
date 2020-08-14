@@ -9,7 +9,7 @@ import { Link } from 'gatsby';
 // import Categories from "../components/categories"
 
 const Post = ({ node }) => {
-    const image = node.frontmatter.photo;
+    // const image = node.frontmatter.photo;
     const touchRef = useRef('');
     const [mobileTouch, setTouch] = useState(false);
     useEffect(() => {
@@ -22,16 +22,16 @@ const Post = ({ node }) => {
     }, []);
     return (
         <Link style={{ textDecoration: `none` }} to={node.frontmatter.title}>
-            <PostWrapper img={image} ref={touchRef} mobileTouch={mobileTouch}>
-                <TextWrapper>
-                    <PostTitle>
-                        {' '}
-                        <span> {node.frontmatter.title} </span>{' '}
-                    </PostTitle>
-                    <PostDate>{node.frontmatter.date}</PostDate>
-                    <PostSubtitle>{node.frontmatter.subtitle}</PostSubtitle>
-                </TextWrapper>
-            </PostWrapper>
+            {/* <PostWrapper img={image} ref={touchRef} mobileTouch={mobileTouch}> */}
+            <TextWrapper>
+                <PostTitle>
+                    {' '}
+                    <span> {node.frontmatter.title} </span>{' '}
+                </PostTitle>
+                <PostDate>{node.frontmatter.date}</PostDate>
+                <PostSubtitle>{node.frontmatter.subtitle}</PostSubtitle>
+            </TextWrapper>
+            {/* </PostWrapper> */}
         </Link>
     );
 };
