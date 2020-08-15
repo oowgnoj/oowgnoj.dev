@@ -13,4 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.body} !important;
     color: ${({ theme }) => theme.text} !important;
   }
+  div[class^=pages__PostSubtitle] {
+    color: ${({ theme }) => theme.dark} !important;
+  }
   `;
