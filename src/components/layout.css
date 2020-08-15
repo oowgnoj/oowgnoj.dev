@@ -15,3 +15,17 @@
 p > a {
     color: #9f7aea;
 }
+
+p > img {
+    display: block;
+    margin: auto;
+    margin-bottom: 36px;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+deckgo-highlight-code {
+    margin-bottom: 36px;
+}
