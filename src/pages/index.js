@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useStaticQuery, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Categories from '../components/categories';
-import { GlobalStyles } from '../utils/globalStyle';
-import { lightTheme, darkTheme } from '../utils/Theme';
 import styled, { ThemeProvider } from 'styled-components';
 require('../font/fonts.css');
 
 const IndexPage = () => {
-    // const [isGalleryMode, setGalleryMode] = useState(false);
-    // const handleGallery = () => {
-    //     isGalleryMode = !isGalleryMode;
-    // };
+    const [current, setCurrent] = useState('ALL');
+    const handleCurrent = category => {
+        setCurrent(category);
+    };
+
     const postData = useStaticQuery(graphql`
         query LatestPostListQuery {
             allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
@@ -36,19 +35,25 @@ const IndexPage = () => {
     return (
         <Layout isMain={true}>
             <SEO title="Home" />
-            <Categories />
+            <Categories current={current} setCurrent={handleCurrent} />
             <PostList>
-                {postData.allMarkdownRemark.edges.map(({ node }) => (
-                    <PostItem key={node.id}>
-                        <PostItemWrapper>
-                            <Link to={node.frontmatter.title} style={{ textDecoration: `none` }}>
-                                <PostTitle> {node.frontmatter.title} </PostTitle>
-                                <PostSubtitle>{node.frontmatter.subtitle}</PostSubtitle>
-                                <PostDate>{node.frontmatter.date ? node.frontmatter.date.slice(0, 10) : null}</PostDate>
-                            </Link>
-                        </PostItemWrapper>
-                    </PostItem>
-                ))}
+                {postData.allMarkdownRemark.edges
+                    .filter(({ node }) => {
+                        return current === 'ALL' ? true : current == node.frontmatter.category;
+                    })
+                    .map(({ node }) => (
+                        <PostItem key={node.id}>
+                            <PostItemWrapper>
+                                <Link to={node.frontmatter.title} style={{ textDecoration: `none` }}>
+                                    <PostTitle> {node.frontmatter.title} </PostTitle>
+                                    <PostSubtitle>{node.frontmatter.subtitle}</PostSubtitle>
+                                    <PostDate>
+                                        {node.frontmatter.date ? node.frontmatter.date.slice(0, 10) : null}
+                                    </PostDate>
+                                </Link>
+                            </PostItemWrapper>
+                        </PostItem>
+                    ))}
             </PostList>
         </Layout>
     );
@@ -93,28 +98,3 @@ const PostDate = styled.div`
         font-size: 12px;
     }
 `;
-
-// if (true) {
-//     return (
-//         <Layout isMain={true}>
-//             <SEO title="Home" />
-
-//             <Categories />
-//             <PostList>
-//                 {postData.allMarkdownRemark.edges.map(({ node }) => (
-//                     <ImagePost node={node} />
-//                 ))}
-//             </PostList>
-//         </Layout>
-//     );
-// }
-// const PostList = styled.li`
-//     list-style: none;
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-//     grid-gap: 60px;
-//     grid-auto-rows: minmax(100px, auto);
-//     @media (max-width: 767px) {
-//         grid-template-columns: repeat(1, 1fr);
-//     }
-// `;

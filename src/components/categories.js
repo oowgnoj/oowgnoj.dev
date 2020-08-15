@@ -3,7 +3,7 @@ import { useStaticQuery, Link } from 'gatsby';
 import CategoryItem from './categoryItem';
 import styled from 'styled-components';
 
-const Categories = props => {
+const Categories = ({ current, setCurrent }) => {
     const data = useStaticQuery(graphql`
         query getCategories {
             allMarkdownRemark {
@@ -18,18 +18,12 @@ const Categories = props => {
             }
         }
     `);
-    const categoryList = data.allMarkdownRemark.group.map(category => {
+    let categoryList = data.allMarkdownRemark.group.map(category => {
         return { category: category.fieldValue, num: category.nodes.length };
     });
-    const [current, setCurrent] = useState('');
-    useEffect(() => {
-        setCurrent(props.current);
-    });
+    categoryList.unshift({ category: 'ALL', num: '' });
     return (
         <CategoryList>
-            <Link style={{ textDecoration: `none` }} to={'/'}>
-                <LinkItem current={current}> All </LinkItem>
-            </Link>
             {categoryList.map((category, key) => (
                 <CategoryItem key={key} item={category} current={current} setCurrent={setCurrent} />
             ))}
@@ -54,7 +48,7 @@ const CategoryList = styled.div`
 
 const LinkItem = styled.span`
     margin-left: 5px;
-    color : ${props => (!props.current ? '#90afc5' : null)} !important;
+    color: ${props => (!props.current ? '#90afc5' : null)} !important;
     background-color: ${props => (!props.current ? '#193B59' : null)};
     cursor: pointer;
     border-radius: 5px;
