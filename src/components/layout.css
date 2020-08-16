@@ -15,6 +15,9 @@
 p > a {
     color: #9f7aea;
 }
+td > a {
+    color: #9f7aea;
+}
 
 p > img {
     display: block;
