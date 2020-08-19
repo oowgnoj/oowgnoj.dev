@@ -16,6 +16,7 @@ img {
 }
 
 p {
+    font-weight: normal;
     line-height: 29px;
 }
 p > a {
@@ -23,6 +24,9 @@ p > a {
 }
 td > a {
     color: #9f7aea;
+}
+figure {
+    text-align: center;
 }
 
 h4 {
