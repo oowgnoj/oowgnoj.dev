@@ -11,24 +11,37 @@
     padding-right: 2.8em;
     overflow: initial;
 }
+img {
+    margin-bottom: 0;
+}
 
+p {
+    font-weight: normal;
+    line-height: 29px;
+}
 p > a {
     color: #9f7aea;
 }
 td > a {
     color: #9f7aea;
 }
-
-p > img {
-    display: block;
-    margin: auto;
-    margin-bottom: 36px;
+figure {
+    text-align: center;
 }
 
 h4 {
     font-size: 1.2rem;
 }
 
+figcaption {
+    font-family: ;
+    display: block;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    line-height: 15px;
+    font-weight: normal;
+}
 deckgo-highlight-code {
     margin-bottom: 36px;
 }
