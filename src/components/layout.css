@@ -15,6 +15,9 @@ img {
     margin-bottom: 0;
 }
 
+p {
+    line-height: 29px;
+}
 p > a {
     color: #9f7aea;
 }
