@@ -3,7 +3,7 @@ import { useStaticQuery, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Categories from '../components/categories';
-import styled, { ThemeProvider } from 'styled-components';
+import styled from 'styled-components';
 require('../font/fonts.css');
 
 const IndexPage = () => {

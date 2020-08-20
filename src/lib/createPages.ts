@@ -45,7 +45,6 @@ export async function createPages({ actions, graphql }) {
     }
 
     res.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        console.log(node);
         createPage({
             path: node.frontmatter.path,
             context: {

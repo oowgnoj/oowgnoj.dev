@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-        title: 'oowgnoj',
-        description: '개발/리뷰/일상 등을 올리는 개발자 박종우의 블로그 입니다.',
+        title: 'oowgnoj.dev',
+        description: '기억하기 위해 기록합니다.',
         author: `@oowgnoj`,
     },
     plugins: [
@@ -77,8 +77,8 @@ module.exports = {
                     },
                     {
                         resolve: `gatsby-remark-figure-caption`,
-                        options: {figureClassName: 'md-figure'},
-                      },
+                        options: { figureClassName: 'md-figure' },
+                    },
                 ],
             },
         },
