@@ -71,7 +71,7 @@ serialization 과 deserialization에 대해서 먼저 살펴보겠습니다. ser
 
 **_근데 왜 dynamic 일까요?_**
 
-![json-example-1](/img/in-post/json-example-1.png)
+![json-example-1](./../images/in-post/json-example-1.png)
 
 `name`은 Map<String, String>, `majors`은 문자 배열 그리고 List<String>, `subjects`는 String 객체, List <Object> 입니다. 핵심은, key는 언제나 문자열이고, value는 여러 타입이 될 수 있으므로 안전하게 `dynamic`을 설정한 것 입니다.
 
@@ -455,11 +455,8 @@ factory PhotosList.fromJson(List<dynamic> parsedJson) {
 ### JSON 구조 #6 : 복잡한 nested 구조
 
 [page.json](https://github.com/PoojaB26/ParsingJSON-Flutter/blob/master/assets/page.json)
-
 이번에는 글을 읽는 독자분께서 직접 해결해볼 차례에요. sample project에 포함되어 있어요. Model과 services 파일을 구현하면 되요. 문제를 해결할 때 필요한 힌트와 팁을 먼저 드릴게요.
-
-**Rule#1** 과 **Rule#2** 는 그대로 적용되요. 먼저 구조를 파악해 주세요. 이번 json 형태는 map 이에ㅛ. 1-5번의 json 구조가 도움이 될거에요
-
+**Rule#1** 과 **Rule#2** 는 그대로 적용되요. 먼저 구조를 파악해 주세요. 이번 json 형태는 map 이에요. 1-5번의 json 구조가 도움이 될거에요
 **Rule #3** 을 통해 classes와 생성자를 먼저 만들어 주세요. 그리고 하위 모델에 factory method를 추가해 주세요. 다른 팁을 드리자면, 하위 모델의 class 들을 추가해주세요. 이번 json 을 통해 예를 들면, `Image` class를 먼저 만들고, 그 다음에 `Data`와 `Author` class를 main class `Page` 안에 생성해주세요 그리고 factory methods를 추가해 주는 것이 전에 말씀드린 순서와 같습니다.
 
 `Image` 와 `Data` class는 json structure #4 ,
