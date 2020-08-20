@@ -9,7 +9,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
-import Sun from '../images/sun.png';
+import Udon from '../images/udon.png';
 
 function SEO({ description, lang, meta, title }) {
     const { site } = useStaticQuery(
@@ -42,7 +42,7 @@ function SEO({ description, lang, meta, title }) {
                 },
                 {
                     property: `og:image`,
-                    content: Sun,
+                    content: Udon,
                 },
                 {
                     property: `og:title`,
