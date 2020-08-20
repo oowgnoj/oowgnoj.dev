@@ -2,6 +2,7 @@
 layout: post
 title: '7월 회고'
 author: 'oowgnoj'
+path: 'post/review-july'
 subtitle: "7월의 주된 관심사와 개인적인 목표, 과정, 결과에 대한 글 입니다. '확실한 목표'를 찾기 위해 고군분투 했던 과정을 소개합니다."
 category: Journal
 date: 2020-07-31

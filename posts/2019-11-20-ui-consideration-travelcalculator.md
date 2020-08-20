@@ -2,6 +2,7 @@
 layout: post
 title: '여행 견적 어플리케이션 UI 디자인 고려 요소'
 author: 'oowgnoj'
+path: 'project/tc-ui-1'
 header-img: 'img/post-bg-universe.jpg'
 subtitle: '여행계산기의 UI를 디자인하며 고려했던 요소들에 대해 정리했습니다.'
 category: development

@@ -2,6 +2,7 @@
 layout: post
 title: '긴 로딩시간에 대한 UI적 해결법'
 author: 'oowgnoj'
+path: 'project/tc-ui-2'
 header-img: 'img/post-bg-universe.jpg'
 subtitle: "여행계산기 프로젝트를 진행하며 유저의 긴 로딩시간을 UI로 대처했던 경험을 소개합니다. skeleton, spinner, gif 이미지를 사용해 '저희는 쉬지않고 계산하고 있습니다'를 강조하고 싶었습니다."
 category: development

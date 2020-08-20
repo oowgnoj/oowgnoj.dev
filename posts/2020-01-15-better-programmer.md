@@ -2,6 +2,7 @@
 layout: post
 title: '더 좋은 프로그래머 되기'
 author: 'oowgnoj'
+path: 'journ/better-dev-1'
 subtitle: "주니어 개발자로서 더 좋은 프로그래머가 되기 위한 방법을 정리했습니다. 기초와 알고리즘의 중요성과 '안다는 것'에 대한 리처드 파인만 교수의 테크닉을 포함합니다."
 catalog: development
 date: 2020-01-15

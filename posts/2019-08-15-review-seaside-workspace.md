@@ -2,6 +2,7 @@
 layout: post
 title: '바닷가 작업실에서는 전혀 다른 시간이 흐른다'
 author: 'oowgnoj'
+path: 'review/seaside'
 header-img: 'img/post-bg-universe.jpg'
 subtitle: '공간에 대한 욕심'
 category: random

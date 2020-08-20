@@ -2,6 +2,7 @@
 layout: post
 title: 'Clean Code'
 author: 'oowgnoj'
+path: 'review/cleancode'
 subtitle: '제가 작성한 코드는 깨끗하지 않았습니다.'
 category: development
 date: 2019-12-13

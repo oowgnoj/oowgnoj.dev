@@ -2,6 +2,7 @@
 layout: post
 title: '컴포넌트 리팩토링'
 author: 'oowgnoj'
+path: 'dev/refactoring'
 subtitle: '저의 첫 리팩토링 경험을 공유합니다. 잘 된 건지는 모르겠습니다.'
 category: development
 date: 2019-12-10

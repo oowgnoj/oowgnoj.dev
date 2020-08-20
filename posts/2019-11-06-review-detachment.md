@@ -2,6 +2,7 @@
 layout: post
 title: '영화 Detachment 후기'
 author: 'oowgnoj'
+path: 'review/detachment'
 header-img: 'img/post-bg-universe.jpg'
 subtitle: ''
 category: random

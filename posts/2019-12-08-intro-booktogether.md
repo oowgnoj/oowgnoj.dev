@@ -2,6 +2,7 @@
 layout: post
 title: '書로모임 프로젝트 소개'
 author: 'oowgnoj'
+path: 'project/bt'
 subtitle: '서평과 큐레이션을 공유하는 서로모임 프로젝트를 소개합니다. (booktogether.org)'
 category: development
 date: 2019-12-08

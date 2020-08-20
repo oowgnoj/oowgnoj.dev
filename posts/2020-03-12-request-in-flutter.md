@@ -2,6 +2,7 @@
 layout: post
 title: 'HTTP request 보내기 in flutter'
 author: 'oowgnoj'
+path: 'post/flutter-req'
 header-img: 'img/post-bg-universe.jpg'
 subtitle: 'flutter에서 http 요청을 보내는 방법을 정리합니다.'
 category: development

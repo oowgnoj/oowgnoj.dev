@@ -2,6 +2,7 @@
 layout: post
 title: 'Brute Force'
 author: 'oowgnoj'
+path: 'post/algo-bf'
 subtitle: '가능한 모든 경우의 수를 구하는 알고리즘 접근법 Brute Force에 대해 정리합니다.'
 category: CS Basic
 date: 2020-04-12

@@ -2,6 +2,7 @@
 layout: post
 title: 'Typescript Custom 모듈 정의'
 author: 'oowgnoj'
+path: 'post/ts-module'
 subtitle: '사용하고 싶은 library에서 @types 파일이 존재하지 않을 때가 있습니다. 다른 라이브러리를 찾아보기 전에 직접 만들어보면 어떨까요? @types 지원이 되지 않아도 간단히 custom type을 정의하는 법을 정리했습니다.'
 category: development
 date: 2020-07-29

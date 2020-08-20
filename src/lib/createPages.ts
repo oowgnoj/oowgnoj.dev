@@ -11,6 +11,7 @@ export async function createPages({ actions, graphql }) {
                     node {
                         html
                         frontmatter {
+                            path
                             title
                         }
                     }
@@ -44,8 +45,9 @@ export async function createPages({ actions, graphql }) {
     }
 
     res.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        console.log(node);
         createPage({
-            path: node.frontmatter.title,
+            path: node.frontmatter.path,
             context: {
                 html: node.html,
                 title: node.frontmatter.title,

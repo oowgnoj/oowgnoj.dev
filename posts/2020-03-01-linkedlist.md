@@ -2,6 +2,7 @@
 layout: post
 title: 'Linked List'
 author: 'oowgnoj'
+path: 'post/ds-linkedlist'
 header-img: 'img/in-post/desert-night.jpeg'
 subtitle: '꼬리를 무는 자료구조 Linked List에 대해 정리합니다.'
 category: CS Basic

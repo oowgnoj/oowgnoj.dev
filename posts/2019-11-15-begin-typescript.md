@@ -2,6 +2,7 @@
 layout: post
 title: '5분만에 타입스크립트 입문하기'
 author: 'oowgnoj'
+path: 'ts/intro'
 header-img: 'img/post-bg-universe.jpg'
 subtitle: '변수, class interface 에 타입을 설정하는 방법에 대해 다루고 있습니다. 생소할 수 있는 Generic에 대한 소개도 포함합니다.'
 category: development

@@ -2,6 +2,7 @@
 layout: post
 title: 'Hash Table'
 author: 'oowgnoj'
+path: 'post/ds-hashtable'
 subtitle: 'key-value 쌍을 저장하는 자료구조 hash table에 대해 정리합니다.'
 category: CS Basic
 date: 2020-05-08

@@ -19,6 +19,7 @@ const IndexPage = () => {
                     node {
                         excerpt(truncate: true, pruneLength: 200)
                         frontmatter {
+                            path
                             title
                             category
                             subtitle
@@ -44,7 +45,7 @@ const IndexPage = () => {
                     .map(({ node }) => (
                         <PostItem key={node.id}>
                             <PostItemWrapper>
-                                <Link to={node.frontmatter.title} style={{ textDecoration: `none` }}>
+                                <Link to={node.frontmatter.path} style={{ textDecoration: `none` }}>
                                     <PostTitle> {node.frontmatter.title} </PostTitle>
                                     <PostSubtitle>{node.frontmatter.subtitle}</PostSubtitle>
                                     <PostDate>

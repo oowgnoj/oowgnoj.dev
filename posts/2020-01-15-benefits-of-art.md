@@ -2,6 +2,7 @@
 layout: post
 title: '예술을 가까이 두고 살아야 하는 이유'
 author: 'oowgnoj'
+path: 'review/artclass'
 subtitle: '예술작품을 통해 개인이 꿈꾸는 이상이 어떻게 현실이 되는지, 먹고 살기 위핸 실질세계와 여분세계의 차이점에 대해 정리했습니다.'
 category: random
 date: 2020-01-13
