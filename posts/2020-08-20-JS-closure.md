@@ -4,9 +4,10 @@ title: '자바스크립트 클로저의 실제 활용'
 author: 'oowgnoj'
 subtitle: '클로저의 개념에 대해 간단하게 알아보고, 실제 프로젝트에 어떤 용도로 사용되는지 살펴봤습니다.'
 category: development
-date: 2020-08-19
+date: 2020-08-20
 tags:
-    - browser
+    - closure
+    - javascript
 ---
 
 ### 클로저란?
