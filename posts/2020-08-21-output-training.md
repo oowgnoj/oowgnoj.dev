@@ -53,4 +53,4 @@ tags:
 -   가급적이면 빠른 시간 내에 작성하자. 놓치지 않고 기록할 수 있다.
 
 ## 참고
-[아웃풋 트레이닝](http://www.yes24.com/Product/Goods/69406695)
+[아웃풋 트레이닝 - 가바사와 시온](http://www.yes24.com/Product/Goods/69406695)
