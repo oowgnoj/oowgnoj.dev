@@ -13,6 +13,7 @@
 }
 img {
     margin-bottom: 0;
+    max-height: 400px;
 }
 
 p {
