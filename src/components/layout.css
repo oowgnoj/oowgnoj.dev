@@ -13,7 +13,7 @@
 }
 img {
     margin-bottom: 0;
-    max-height: 400px;
+    max-height: 500px;
 }
 
 p {
@@ -21,13 +21,22 @@ p {
     line-height: 29px;
 }
 p > a {
-    color: #9f7aea;
+    color: #9f7aea; 
+}
+p > a:hover {
+    text-decoration: underline;
 }
 li > a {
     color: #9f7aea;
 }
+li > a:hover {
+    text-decoration: underline;
+}
 td > a {
     color: #9f7aea;
+}
+td > a:hover {
+    text-decoration: underline;
 }
 figure {
     text-align: center;
@@ -41,7 +50,6 @@ h4 {
 }
 
 figcaption {
-    font-family: ;
     display: block;
     font-size: 14px;
     color: #777;

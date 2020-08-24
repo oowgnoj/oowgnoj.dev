@@ -27,7 +27,7 @@ const AboutInpost = () => {
 export default AboutInpost;
 // 반복의 느린 變化
 
-const Warpper = styled.div`
+const Warpper = styled.footer`
     display: flex;
     margin-top: 100px;
     justify-contents: flex-start;

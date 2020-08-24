@@ -32,7 +32,7 @@ const Categories = ({ current, setCurrent }) => {
 };
 export default Categories;
 
-const CategoryList = styled.div`
+const CategoryList = styled.nav`
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid #cbd5e0;
