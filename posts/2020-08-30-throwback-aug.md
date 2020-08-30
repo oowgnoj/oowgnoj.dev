@@ -5,7 +5,7 @@ path: 'review/throwback-2020-august'
 author: 'oowgnoj'
 subtitle: 'simple but significant'
 category: development
-date: 2020-08-25
+date: 2020-08-30
 tags:
     - 회고
 ---
