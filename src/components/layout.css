@@ -21,11 +21,15 @@ p {
     line-height: 29px;
 }
 p > a {
-    color: #9f7aea; 
+    color: #9f7aea;
 }
 p > a:hover {
     text-decoration: underline;
 }
+li {
+    margin-bottom: 2px;
+}
+
 li > a {
     color: #9f7aea;
 }
