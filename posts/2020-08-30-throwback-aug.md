@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '8월 회고하기'
+title: '8월 회고'
 path: 'review/throwback-2020-august'
 author: 'oowgnoj'
 subtitle: 'simple but significant'
