@@ -2,25 +2,10 @@ import React from 'react';
 import { Link } from 'gatsby';
 import GlobalStyles from '../style/globalStyle';
 import styled, { ThemeProvider } from 'styled-components';
+import { useLocalStorage } from '../hooks';
 import { lightTheme, darkTheme } from '../style/theme';
 import Sun from '../../images/logo/sun.png';
 import Moon from '../../images/logo/moon.png';
-
-function useLocalStorage(defaultValue, key) {
-    if (typeof window !== 'undefined') {
-        const [value, setValue] = React.useState(() => {
-            const stickyValue = window.localStorage.getItem(key);
-            return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
-        });
-        React.useEffect(() => {
-            window.localStorage.setItem(key, JSON.stringify(value));
-        }, [key, value]);
-        return [value, setValue];
-        // } else {
-        // return ['light', 'oowgnoj_dev'];
-        // }
-    }
-}
 
 const Header = ({ siteTitle }) => {
     const [theme, setTheme] = useLocalStorage('light', 'oowgnoj_dev');

@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../layout';
 import SEO from '../layout/seo';
-import AboutMe from '../components/aboutMe';
+import About from '../components/about';
 import { Disqus } from 'gatsby-plugin-disqus';
 
 const PostTemplate = React.memo(props => {
@@ -18,7 +18,7 @@ const PostTemplate = React.memo(props => {
             <h4>{date}</h4>
             <hr />
             <div dangerouslySetInnerHTML={{ __html: html }} />
-            <AboutMe />
+            <About />
             <Disqus config={disqusConfig} />
         </Layout>
     );
