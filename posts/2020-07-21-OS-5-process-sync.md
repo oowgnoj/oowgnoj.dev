@@ -4,7 +4,7 @@ title: '내가 데이터를 쓰고있어 잠시 기다려줘 - 프로세스 동�
 path: 'post/os-process-sync'
 author: 'oowgnoj'
 subtitle: '컴퓨터는 정보를 한 곳에 저장하고 여러 프로세스에서 사용합니다. 이러한 방식으로 저장공간을 아낄 수 있었습니다. 다만 한 가지 문제점은, 데이터를 동시에 여러 군데에서 사용하면 한 곳에서 처리한 결과가 미처 반영되지 못한 채 다른 프로세스에 쓰일 수 있습니다. 이번 글에서는 이러한 문제점을 방지하기 위해 사용되는 프로세스 동기화에 대해 정리했습니다.  '
-category: CS Basic
+category: CS Fundamental
 date: 2020-07-15
 tags:
     - computer science

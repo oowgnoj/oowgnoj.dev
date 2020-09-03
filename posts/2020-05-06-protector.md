@@ -4,7 +4,7 @@ title: '보호자'
 author: 'oowgnoj'
 path: 'post/journal-jeju'
 subtitle: '장군이와 제주에서 있었던 일 입니다. 보호자와 피보호자의 관계에 대해 생각해 보았습니다. 장군이도 저를 지켜주고 싶었나 봅니다.'
-category: random
+category: Journal
 date: 2020-06-05
 tags:
     - random

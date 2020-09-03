@@ -5,7 +5,7 @@ path: 'review/js-engine-is-function'
 author: 'oowgnoj'
 subtitle: 'JS 엔진도 하나의 함수다'
 category: development
-date: 2020-09-02
+date: 2020-07-28
 tags:
     - js engine
 ---

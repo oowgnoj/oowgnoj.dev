@@ -5,7 +5,7 @@ author: 'oowgnoj'
 path: 'post/algo-recursion'
 date: 2020-03-06
 subtitle: '자기 자신을 호출하는 재귀함수에 대해 정리했습니다. 언젠가 꼭 탈출해야 합니다. 간단한 예시부터 국민예제 하노이의 탑 python code도 포함되어 있습니다.'
-category: CS Basic
+category: CS Fundamental
 tags:
     - recursion
     - 하노이의 탑

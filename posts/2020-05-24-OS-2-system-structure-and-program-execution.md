@@ -4,7 +4,7 @@ title: '어떻게 프로그램이 실행될까 feat. 시스템 구조'
 author: 'oowgnoj'
 path: 'post/os-arch'
 subtitle: '프로그램 실행에 필요한 시스템 구조에 대한 글 입니다. kernel interrupt에 의해 구동되는 현대 운영체제와, 저장장치, 동기/비동기적 입출력에 대한 개괄적인 설명을 포함합니다.'
-category: CS Basic
+category: CS Fundamental
 date: 2020-05-24
 tags:
     - computer science
