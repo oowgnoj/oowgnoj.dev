@@ -2,17 +2,13 @@ import React from 'react';
 import { Link } from 'gatsby';
 import GlobalStyles from '../style/globalStyle';
 import styled, { ThemeProvider } from 'styled-components';
-import { useLocalStorage } from '../hooks';
+import useDarkMode from '../hooks/useDarkMode';
 import { lightTheme, darkTheme } from '../style/theme';
 import Sun from '../../images/logo/sun.png';
 import Moon from '../../images/logo/moon.png';
 
 const Header = ({ siteTitle }) => {
-    const [theme, setTheme] = useLocalStorage('light', 'oowgnoj_dev');
-    const changeTheme = () => {
-        theme === 'light' ? setTheme('dark') : setTheme('light');
-    };
-
+    const [theme, themeToggler] = useDarkMode();
     return (
         <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
             <GlobalStyles />
@@ -20,7 +16,7 @@ const Header = ({ siteTitle }) => {
                 <StyledLink to="/" theme={theme}>
                     {siteTitle}
                 </StyledLink>
-                <DarkModeIcon theme={theme} onClick={changeTheme} src={theme === 'light' ? Moon : Sun} />
+                <DarkModeIcon theme={theme} onClick={themeToggler} src={theme === 'light' ? Moon : Sun} />
             </Title>
         </ThemeProvider>
     );
