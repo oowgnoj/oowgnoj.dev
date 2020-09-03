@@ -5,7 +5,7 @@ author: 'oowgnoj'
 path: 'review/detachment'
 header-img: 'img/post-bg-universe.jpg'
 subtitle: ''
-category: random
+category: review
 date: 2019-11-06
 tags:
     - 영화

@@ -5,7 +5,7 @@ author: 'oowgnoj'
 path: 'review/no-human'
 header-img: 'img/post-bg-universe.jpg'
 subtitle: '다자이 오사무가 생각하는 인간의 조건에 대해, 그리고 청춘과의 관계에 대해서 생각했습니다.'
-category: random
+category: review
 date: 2019-08-20
 tags:
     - 독서

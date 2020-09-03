@@ -5,7 +5,7 @@ author: 'oowgnoj'
 path: 'post/ds-arr'
 header-img: 'img/in-post/desert-night.jpeg'
 subtitle: '기본적인 자료구조인 배열에 대해 정리합니다.'
-category: CS Basic
+category: CS Fundamental
 date: 2020-02-15
 tags:
     - computer science

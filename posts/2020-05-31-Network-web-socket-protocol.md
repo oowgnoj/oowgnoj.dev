@@ -4,7 +4,7 @@ title: '서버와 클라이언트의 양방향 통신 - websocket'
 author: 'oowgnoj'
 path: 'post/network-websocket'
 subtitle: 'HTML5 web socket 프로토콜에 대해 알아보았습니다.'
-category: CS Basic
+category: CS Fundamental
 date: 2020-05-30
 tags:
     - computer science

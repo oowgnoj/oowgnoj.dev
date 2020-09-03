@@ -4,7 +4,7 @@ title: '지금부터 시작하는 3가지 좋은 글쓰기 습관'
 path: 'review/output-training'
 author: 'oowgnoj'
 subtitle: '책 아웃풋 트레이닝을 읽고 정리한 내용입니다. 블로그 작성의 3가지 팁에 대해서 이야기합니다.'
-category: journal
+category: review
 date: 2020-08-21
 tags:
     - 아웃풋트레이닝

@@ -4,7 +4,7 @@ title: '책을 읽는 이유'
 author: 'oowgnoj'
 path: 'post/jour-reason-to-read'
 subtitle: '책을 읽는 이유에 대해 생각하고 정리한 글 입니다.'
-category: random
+category: Journal
 date: 2020-02-02
 tags:
     - 독서

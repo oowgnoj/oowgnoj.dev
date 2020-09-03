@@ -5,7 +5,7 @@ author: 'oowgnoj'
 path: 'review/seaside'
 header-img: 'img/post-bg-universe.jpg'
 subtitle: '공간에 대한 욕심'
-category: random
+category: review
 date: 2019-08-15
 tags:
     - 독서

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { useStaticQuery, Link } from 'gatsby';
-import CategoryItem from './categoryItem';
+import React from 'react';
+import { useStaticQuery } from 'gatsby';
+import Item from './item';
 import styled from 'styled-components';
 
 const Categories = ({ current, setCurrent }) => {
@@ -25,7 +25,7 @@ const Categories = ({ current, setCurrent }) => {
     return (
         <CategoryList>
             {categoryList.map((category, key) => (
-                <CategoryItem key={key} item={category} current={current} setCurrent={setCurrent} />
+                <Item key={key} item={category} current={current} setCurrent={setCurrent} />
             ))}
         </CategoryList>
     );
@@ -43,21 +43,5 @@ const CategoryList = styled.nav`
         flex-flow: row wrap;
         align-content: space-between;
         min-height: 110px;
-    }
-`;
-
-const LinkItem = styled.span`
-    margin-left: 5px;
-    color: ${props => (!props.current ? '#90afc5' : null)} !important;
-    background-color: ${props => (!props.current ? '#193B59' : null)};
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 8px;
-    .LinkItem + .LinkItem {
-        margin-top: 30px;
-    }
-
-    @media (max-width: 767px) {
-        margin-top: 3px;
     }
 `;
