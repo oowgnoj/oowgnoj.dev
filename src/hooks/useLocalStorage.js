@@ -11,7 +11,5 @@ export default function useLocalStorage(defaultValue, key) {
             window.localStorage.setItem(key, JSON.stringify(value));
         }, [key, value]);
         return [value, setValue];
-    } else {
-        return ['light', 'oowgnoj_dev'];
     }
 }
