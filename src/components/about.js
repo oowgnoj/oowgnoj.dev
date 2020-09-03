@@ -47,6 +47,7 @@ const About = styled.div`
 const Nickname = styled.div`
     margin-top: 6px;
 `;
+
 const LineBreak = styled.div`
     width: 100%;
 `;

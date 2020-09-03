@@ -44,9 +44,8 @@ const Wrapper = styled.div`
 
 const Main = styled.div`
     margin: 0 auto;
-    max-width: ${props => (props.isMain ? 1200 : 800)};
     padding: 45px 20px;
-    max-width: 960;
+    max-width: ${props => (props.isMain ? '100%' : '640px')};
     @media (max-width: 767px) {
         padding: 0 !important;
     }
