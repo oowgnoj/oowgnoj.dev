@@ -7,18 +7,19 @@ import Sun from '../../images/logo/sun.png';
 import Moon from '../../images/logo/moon.png';
 
 function useLocalStorage(defaultValue, key) {
-    // if (typeof window !== 'undefined') {
-    //     const [value, setValue] = React.useState(() => {
-    //         const stickyValue = window.localStorage.getItem(key);
-    //         return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
-    //     });
-    //     React.useEffect(() => {
-    //         window.localStorage.setItem(key, JSON.stringify(value));
-    //     }, [key, value]);
-    //     return [value, setValue];
-    // } else {
-    return ['light', 'oowgnoj_dev'];
-    // }
+    if (typeof window !== 'undefined') {
+        const [value, setValue] = React.useState(() => {
+            const stickyValue = window.localStorage.getItem(key);
+            return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
+        });
+        React.useEffect(() => {
+            window.localStorage.setItem(key, JSON.stringify(value));
+        }, [key, value]);
+        return [value, setValue];
+        // } else {
+        // return ['light', 'oowgnoj_dev'];
+        // }
+    }
 }
 
 const Header = ({ siteTitle }) => {
