@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Me from './../images/me.png';
+import Me from './../logo/me.png';
 
 const AboutInpost = () => {
     const linkto = 'https://github.com/oowgnoj';
@@ -14,10 +14,9 @@ const AboutInpost = () => {
                 <Nickname>
                     {' '}
                     oowgnoj{' '}
-                    <a style={{ textDecoration: `none` }} href={linkto}>
-                        {' '}
+                    <Link href={linkto}>
                         <LinkItem> github </LinkItem>{' '}
-                    </a>
+                    </Link>
                 </Nickname>
             </About>
         </Warpper>
@@ -30,7 +29,7 @@ export default AboutInpost;
 const Warpper = styled.footer`
     display: flex;
     margin-top: 100px;
-    justify-contents: flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 100px;
 `;
@@ -55,11 +54,11 @@ const LineBreak = styled.div`
     width: 100%;
 `;
 
+const Link = styled.a`
+    text-decoration: none;
+`;
 const LinkItem = styled.span`
+    display: inline;
     color: grey;
     cursor: pointer;
-    display: flex;
-    width: auto;
-    margin-top: 7px;
-    display: inline;
 `;

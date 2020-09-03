@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useStaticQuery, Link } from 'gatsby';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from '../templates/layout.js';
+import SEO from '../templates/seo.js';
 import Categories from '../components/categories';
 import styled from 'styled-components';
-require('../font/fonts.css');
 
 const IndexPage = () => {
     const [current, setCurrent] = useState('ALL');
@@ -40,12 +39,12 @@ const IndexPage = () => {
             <PostList>
                 {postData.allMarkdownRemark.edges
                     .filter(({ node }) => {
-                        return current === 'ALL' ? true : current == node.frontmatter.category;
+                        return current == 'ALL' ? true : current == node.frontmatter.category;
                     })
                     .map(({ node }) => (
                         <PostItem key={node.id}>
                             <PostItemWrapper>
-                                <Link to={node.frontmatter.path} style={{ textDecoration: `none` }}>
+                                <Link to={'/' + node.frontmatter.path} style={{ textDecoration: `none` }}>
                                     <PostTitle> {node.frontmatter.title} </PostTitle>
                                     <PostSubtitle>{node.frontmatter.subtitle}</PostSubtitle>
                                     <PostDate>
@@ -65,8 +64,8 @@ const PostList = styled.li`
     list-style: none;
 `;
 const PostItem = styled.li`
+    margin-bottom: 2rem;
     list-style: none;
-    margin-bottm: 2rem;
 `;
 
 const PostItemWrapper = styled.div`

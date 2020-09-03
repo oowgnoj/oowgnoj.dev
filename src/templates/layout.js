@@ -1,14 +1,7 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-import Header from './header';
+import Header from '../components/header';
 import styled from 'styled-components';
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 deckDeckGoHighlightElement();
@@ -28,43 +21,40 @@ const Layout = ({ children, isMain }) => {
     return (
         <Wrapper>
             <Header siteTitle={data.site.siteMetadata.title} />
-            <Main
-                style={{
-                    margin: `0 auto`,
-                    maxWidth: isMain ? 1200 : 800,
-                    padding: `45px 20px`,
-                }}
-            >
+            <Main isMain={isMain}>
                 <main>{children}</main>
-                <footer style={{ marginTop: '20px', marginBottom: '20px', fontWeight: '500' }}>
+                <Footer>
                     © {new Date().getFullYear()}, by oowgnoj
                     {` `}
-                </footer>
+                </Footer>
             </Main>
         </Wrapper>
     );
 };
 
 const Wrapper = styled.div`
+    margin: 0 auto;
+    padding: 2rem;
     width: 100%;
     max-width: 1024px;
-    padding: 2rem;
-    margin: 0 auto;
     @media (max-width: 767px) {
         padding: 1rem;
     }
 `;
 
 const Main = styled.div`
+    margin: 0 auto;
+    max-width: ${props => (props.isMain ? 1200 : 800)};
+    padding: 45px 20px;
     max-width: 960;
-    padding: 0 5rem 0 5rem;
     @media (max-width: 767px) {
         padding: 0 !important;
     }
 `;
 
-Layout.propTypes = {
-    children: PropTypes.node.isRequired,
-};
+const Footer = styled.footer`
+    margin: 0 20px;
+    font-weight: 500;
+`;
 
 export default Layout;

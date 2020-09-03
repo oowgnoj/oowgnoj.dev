@@ -54,17 +54,4 @@ export async function createPages({ actions, graphql }) {
             component: path.resolve(__dirname, '../templates/PostTemplate.tsx'),
         });
     });
-
-    res.data.allPostByCategory.group.forEach(({ category, nodes }) => {
-        const pagePath = `/category/${category}`;
-        createPage({
-            path: pagePath,
-            context: {
-                pagePath: pagePath,
-                category: category,
-                nodes: nodes,
-            },
-            component: path.resolve(__dirname, '../templates/PostListTemplate.js'),
-        });
-    });
 }

@@ -1,10 +1,10 @@
 import React from 'react';
-import Layout from '../components/layout';
-import AboutMe from '../components/aboutInPost';
-import SEO from '../components/seo';
+import Layout from './layout';
+import AboutMe from '../components/aboutMe';
+import SEO from './seo';
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
 
-const PostTemplate: React.FC<IPostTemplateProps> = React.memo(props => {
+const PostTemplate: React.FC = React.memo(props => {
     const { title, date, html } = props.pageContext;
     let disqusConfig = {
         identifier: title,
@@ -13,7 +13,7 @@ const PostTemplate: React.FC<IPostTemplateProps> = React.memo(props => {
 
     return (
         <Layout>
-            <SEO title={title}  />
+            <SEO title={title} />
             <h2>{title}</h2>
             <h4>{date}</h4>
             <hr />
