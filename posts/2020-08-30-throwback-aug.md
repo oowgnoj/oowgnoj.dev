@@ -4,7 +4,7 @@ title: '8월 회고'
 path: 'review/throwback-2020-august'
 author: 'oowgnoj'
 subtitle: 'simple but significant'
-category: development
+category: Journal
 date: 2020-08-30
 tags:
     - 회고
