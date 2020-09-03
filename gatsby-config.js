@@ -8,7 +8,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-typography',
             options: {
-                pathToConfigModule: 'src/utils/typography.js',
+                pathToConfigModule: 'src/style/font/typography.js',
             },
         },
         {
@@ -22,7 +22,7 @@ module.exports = {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'fonts',
-                path: `${__dirname}/static/fonts`,
+                path: `${__dirname}/src/style/font`,
             },
         },
         `gatsby-plugin-sharp`,
@@ -40,6 +40,7 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                name: 'images',
                 path: `${__dirname}/images`,
             },
         },
@@ -94,7 +95,7 @@ module.exports = {
                 background_color: `#ffffff`,
                 theme_color: `#ffffff`,
                 display: `minimal-ui`,
-                icon: `src/logo/gatsby-icon.png`, // This path is relative to the root of the site.
+                icon: `images/logo/gatsby-icon.png`, // This path is relative to the root of the site.
             },
         },
         // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Me from './../logo/me.png';
+import Me from '../../images/logo/me.png';
+const linkto = 'https://github.com/oowgnoj';
 
-const AboutInpost = () => {
-    const linkto = 'https://github.com/oowgnoj';
+export default () => {
     return (
         <Warpper>
             <Img src={Me} />
@@ -22,9 +22,6 @@ const AboutInpost = () => {
         </Warpper>
     );
 };
-
-export default AboutInpost;
-// 반복의 느린 變化
 
 const Warpper = styled.footer`
     display: flex;

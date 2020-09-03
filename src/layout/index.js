@@ -1,11 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 import Header from '../components/header';
 import styled from 'styled-components';
-import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+import './index.css';
+
 deckDeckGoHighlightElement();
-require('./layout.css');
 
 const Layout = ({ children, isMain }) => {
     const data = useStaticQuery(graphql`

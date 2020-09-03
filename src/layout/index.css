@@ -1,16 +1,4 @@
-.gatsby-highlight {
-    border-radius: 0.3em;
-    margin: 0.5em 0;
-    padding: 1em;
-    overflow: auto;
-}
-
-.gatsby-highlight pre[class*='language-'].line-numbers {
-    padding: 0;
-    padding-left: 2.8em;
-    padding-right: 2.8em;
-    overflow: initial;
-}
+/* body */
 img {
     margin-bottom: 0;
     max-height: 500px;
@@ -53,6 +41,8 @@ h4 {
     font-size: 1.2rem;
 }
 
+/* blog image caption */
+
 figcaption {
     display: block;
     font-size: 14px;
@@ -61,6 +51,22 @@ figcaption {
     line-height: 15px;
     font-weight: normal;
 }
+
+/* code hilight block */
+.gatsby-highlight {
+    border-radius: 0.3em;
+    margin: 0.5em 0;
+    padding: 1em;
+    overflow: auto;
+}
+
+.gatsby-highlight pre[class*='language-'].line-numbers {
+    padding: 0;
+    padding-left: 2.8em;
+    padding-right: 2.8em;
+    overflow: initial;
+}
+
 deckgo-highlight-code {
     margin-bottom: 36px;
 }

@@ -1,45 +1,24 @@
 import React, { useState } from 'react';
-import { useStaticQuery, Link } from 'gatsby';
-import Layout from '../templates/layout.js';
-import SEO from '../templates/seo.js';
-import Categories from '../components/categories';
+import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 
-const IndexPage = () => {
+import Categories from '../components/category';
+import Layout from '../layout';
+import SEO from '../layout/seo';
+
+export default ({ data }) => {
     const [current, setCurrent] = useState('ALL');
     const handleCurrent = category => {
         setCurrent(category);
     };
-
-    const postData = useStaticQuery(graphql`
-        query LatestPostListQuery {
-            allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
-                edges {
-                    node {
-                        excerpt(truncate: true, pruneLength: 200)
-                        frontmatter {
-                            path
-                            title
-                            category
-                            subtitle
-                            tags
-                            date(formatString: "YYYY-MM-DD")
-                        }
-                        id
-                    }
-                }
-            }
-        }
-    `);
-
     return (
         <Layout isMain={true}>
             <SEO title="Home" />
             <Categories current={current} setCurrent={handleCurrent} />
             <PostList>
-                {postData.allMarkdownRemark.edges
+                {data.allMarkdownRemark.edges
                     .filter(({ node }) => {
-                        return current == 'ALL' ? true : current == node.frontmatter.category;
+                        return current === 'ALL' ? true : current === node.frontmatter.category;
                     })
                     .map(({ node }) => (
                         <PostItem key={node.id}>
@@ -58,7 +37,27 @@ const IndexPage = () => {
         </Layout>
     );
 };
-export default IndexPage;
+
+export const query = graphql`
+    query LatestPostListQuery {
+        allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+            edges {
+                node {
+                    excerpt(truncate: true, pruneLength: 200)
+                    frontmatter {
+                        path
+                        title
+                        category
+                        subtitle
+                        tags
+                        date(formatString: "YYYY-MM-DD")
+                    }
+                    id
+                }
+            }
+        }
+    }
+`;
 
 const PostList = styled.li`
     list-style: none;

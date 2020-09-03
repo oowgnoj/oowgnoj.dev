@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery } from 'gatsby';
-import CategoryItem from './categoryItem';
+import Item from './item';
 import styled from 'styled-components';
 
 const Categories = ({ current, setCurrent }) => {
@@ -25,7 +25,7 @@ const Categories = ({ current, setCurrent }) => {
     return (
         <CategoryList>
             {categoryList.map((category, key) => (
-                <CategoryItem key={key} item={category} current={current} setCurrent={setCurrent} />
+                <Item key={key} item={category} current={current} setCurrent={setCurrent} />
             ))}
         </CategoryList>
     );

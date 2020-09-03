@@ -2939,20 +2939,6 @@ export type StringQueryOperatorInput = {
   glob?: Maybe<Scalars['String']>;
 };
 
-export type Unnamed_1_QueryVariables = {};
-
-
-export type Unnamed_1_Query = { allMarkdownRemark: { edges: Array<{ node: (
-        Pick<MarkdownRemark, 'html'>
-        & { frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'path' | 'title'>> }
-      ) }> }, allPostByCategory: { group: Array<(
-      { category: MarkdownRemarkGroupConnection['fieldValue'] }
-      & { nodes: Array<(
-        Pick<MarkdownRemark, 'excerpt' | 'id'>
-        & { frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'subtitle' | 'category' | 'author' | 'date' | 'tags'>> }
-      )> }
-    )> } };
-
 export type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
 export type GatsbyImageSharpFixed_TracedSvgFragment = Pick<ImageSharpFixed, 'tracedSVG' | 'width' | 'height' | 'src' | 'srcSet'>;

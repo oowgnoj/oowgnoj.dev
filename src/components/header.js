@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { GlobalStyles } from '../utils/globalStyle';
-import { lightTheme, darkTheme } from '../utils/Theme';
+import GlobalStyles from '../style/globalStyle';
 import styled, { ThemeProvider } from 'styled-components';
-import Sun from '../logo/sun.png';
-import Moon from '../logo/moon.png';
+import { lightTheme, darkTheme } from '../style/theme';
+import Sun from '../../images/logo/sun.png';
+import Moon from '../../images/logo/moon.png';
 
 function useLocalStorage(defaultValue, key) {
     // if (typeof window !== 'undefined') {
@@ -51,7 +51,7 @@ const DarkModeIcon = styled.img`
     height: 44px;
     margin: 0;
     align-self: center;
-    -webkit-filter: ${props => (props.theme === 'light' ? null : 'invert(100%)')};
+    filter: ${props => (props.theme === 'light' ? null : 'invert(100%)')};
 `;
 
 const StyledLink = styled(Link)`
