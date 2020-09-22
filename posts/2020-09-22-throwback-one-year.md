@@ -3,7 +3,7 @@ layout: post
 title: '나의 개발 1년을 돌아보며'
 path: 'review/throwback-first-year'
 author: 'oowgnoj'
-subtitle: '참 많은 일이 있었다.'
+subtitle: ''
 category: development
 date: 2020-09-22
 tags:
