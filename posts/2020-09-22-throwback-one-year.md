@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '나의 개발 1년을 돌아보며'
+title: '개발 1년 돌아보기'
 path: 'review/throwback-first-year'
 author: 'oowgnoj'
 subtitle: ''
