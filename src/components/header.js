@@ -37,6 +37,7 @@ const DarkModeIcon = styled.img`
 `;
 
 const StyledLink = styled(Link)`
+    font-size: 32px;
     padding: 45px 20px;
     text-decoration: none;
     color: ${props => (props.theme === 'light' ? 'black' : 'white')};

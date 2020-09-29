@@ -52,7 +52,8 @@ const Main = styled.div`
 `;
 
 const Footer = styled.footer`
-    margin: 0 20px;
+    margin-top: 100px;
+    font-size: 15px;
     font-weight: 500;
 `;
 
