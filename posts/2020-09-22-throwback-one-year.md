@@ -3,7 +3,7 @@ layout: post
 title: '지난 1 년 돌아보기'
 path: 'review/throwback-first-year'
 author: 'oowgnoj'
-subtitle: '개발을 시작하고 1 년이 흘렀습니다. 지난 시간동안 스스로 느낀 좋았던 점, 잘한 점을 적었습니다. 또한 부족한 점을 돌아보며 향후 보완해야할 점과 발전시키고 싶은 부분을 정리했습니다.'
+subtitle: '개발을 시작하고 1 년이 흘렀습니다. 지난 시간동안 스스로 느낀 좋았던 점, 잘한 점을 적었습니다. 또한 부족한 점을 돌아보며 앞으로 보완 하고싶은 점을 정리했습니다.'
 category: development
 date: 2020-09-22
 tags:
