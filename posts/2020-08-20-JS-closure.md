@@ -3,7 +3,7 @@ layout: post
 title: 'JavaScript, 클로저의 실제 활용'
 path: 'post/js-closure'
 author: 'oowgnoj'
-subtitle: '클로저의 개념에 대해 간단하게 알아보고, 실제 프로젝트에 어떤 용도로 사용되는지 살펴봤습니다.'
+subtitle: '클로저의 개념을 간단하게 정리하고 실제 프로젝트에서 어떤 방식으로 사용할 수 있는지 정리했습니다.'
 category: development
 date: 2020-08-20
 tags:

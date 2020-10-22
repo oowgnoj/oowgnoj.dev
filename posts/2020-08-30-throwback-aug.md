@@ -3,7 +3,7 @@ layout: post
 title: '8월 회고'
 path: 'review/throwback-2020-august'
 author: 'oowgnoj'
-subtitle: 'simple but significant'
+subtitle: '돌아볼 틈도 없이 하루, 일주일, 한 달이 빠르게 흘러간다고 생각했습니다. 월 말에 간단하게 지난 달을 돌아보는 시간을 가지고 있는데요, 이번 글에서 유난히 시원했던 8월을 돌아봤습니다.'
 category: Journal
 date: 2020-08-30
 tags:

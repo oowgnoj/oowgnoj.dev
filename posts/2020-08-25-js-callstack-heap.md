@@ -3,7 +3,7 @@ layout: post
 title: '자바스크립트 엔진이 죽을 때까지 기억하는 2가지'
 path: 'review/js-remember'
 author: 'oowgnoj'
-subtitle: '엔진이 작동하기 위한 기본요소이자, 무언가 잘못돼도(?) 끝까지 간직하는 두가지, call stack과 memory heap에 대해 다룹니다.'
+subtitle: '엔진이 하는 일을 간단하게 보면 데이터를 저장하고 함수를 실행하는 일이라고 생각합니다. 이번 글은 자바스크립트 엔진에서 앞서 말한 두가지 기능을 담당하는 call stack과 memory heap에 대해 정리했습니다.'
 category: development
 date: 2020-08-25
 tags:
