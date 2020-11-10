@@ -1,9 +1,9 @@
 ---
 layout: post
-title: '글또 6기 다짐 글'
+title: '글또 5기 다짐 글'
 path: 'etc/gulddo'
 author: 'oowgnoj'
-subtitle: '글 쓰는 또라이가 세상을 바꾼다. 글또 6기를 시작하는 마음가짐을 적었습니다.'
+subtitle: '글 쓰는 또라이가 세상을 바꾼다. 글또 5기를 시작하는 마음가짐을 적었습니다.'
 category: development
 date: 2020-11-10
 tags:
