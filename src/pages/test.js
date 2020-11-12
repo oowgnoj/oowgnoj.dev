@@ -5,7 +5,7 @@ const Hello = () => {
     useEffect(() => {
         async function getDate() {
             const data = await axios.get('http://52.78.122.131/api/test');
-            console.log('here', data);
+            console.log(data);
         }
         getDate();
     }, []);
