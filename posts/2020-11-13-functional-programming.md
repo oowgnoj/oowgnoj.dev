@@ -5,7 +5,7 @@ path: 'js/functional-programming-intro'
 author: 'oowgnoj'
 subtitle: '함수형 프로그래밍에 대한 소개, 이점과 개념을 다룬 글 입니다. 후반부에 예제도 포함하고 있습니다.'
 category: development
-date: 2020-11-13
+date: 2020-11-15
 tags:
     - 사이드 프로젝트
 ---
@@ -202,7 +202,7 @@ memoizeAddTo80(4)
 memoizeAddTo80(3) //memoized value
 ```
 
-### 쇼핑몰 예제
+## 장바구니 예제
 
 쇼핑몰에서 카트에 담은 상품을 구매하는 과정을 함수형으로 구현해보자. 장바구니와 구매 목록이 `배열` 형태로 있고 나머지는 유저 정보를 가지고 있는 유저 객체를 만든다.
 
@@ -243,7 +243,7 @@ const emptyCart = user =>{
 }
 
 const buyItem = compose(emptyCart, buyItems, applyTax)
-buyItem(user) //실행
+buyItem(user) 
 ```
 
 ## 정리
