@@ -37,6 +37,12 @@ figure {
     margin-bottom: 0.5rem;
 }
 
+h2 {
+    line-height: 29px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
 h3 {
     line-height: 29px;
     margin-bottom: 0.5rem;
