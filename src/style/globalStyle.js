@@ -1,21 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
-export default createGlobalStyle`
-  body {
-    background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
-    transition: all 0.50s linear;
+export const MAIN_GREEN = '#3b7750';
+export const MAIN_BLACK = '#12181f';
 
-  }
-  a {
-    color: ${({ theme }) => theme.text};
-    text-decoration: none;
-  }
-  span {
-    background: ${({ theme }) => theme.body} !important;
-    color: ${({ theme }) => theme.text} !important;
-  }
-  div[class^=pages__PostSubtitle] {
-    color: ${({ theme }) => theme.dark} !important;
-  }
+export default createGlobalStyle`
+
+
   `;

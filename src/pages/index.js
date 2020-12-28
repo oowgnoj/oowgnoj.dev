@@ -1,38 +1,25 @@
 import React, { useState } from 'react';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
-
-import Categories from '../components/category';
 import Layout from '../layout';
 import SEO from '../layout/seo';
 
 export default ({ data }) => {
-    const [current, setCurrent] = useState('ALL');
-    const handleCurrent = category => {
-        setCurrent(category);
-    };
     return (
-        <Layout isMain={true}>
+        <Layout>
             <SEO title="Home" />
-            <Categories current={current} setCurrent={handleCurrent} />
             <PostList>
-                {data.allMarkdownRemark.edges
-                    .filter(({ node }) => {
-                        return current === 'ALL' ? true : current === node.frontmatter.category;
-                    })
-                    .map(({ node }) => (
-                        <PostItem key={node.id}>
-                            <PostItemWrapper>
-                                <Link to={'/' + node.frontmatter.path} style={{ textDecoration: `none` }}>
-                                    <PostTitle> {node.frontmatter.title} </PostTitle>
-                                    <PostSubtitle>{node.frontmatter.subtitle}</PostSubtitle>
-                                    <PostDate>
-                                        {node.frontmatter.date ? node.frontmatter.date.slice(0, 10) : null}
-                                    </PostDate>
-                                </Link>
-                            </PostItemWrapper>
-                        </PostItem>
-                    ))}
+                {data.allMarkdownRemark.edges.map(({ node }) => {
+                    const { path, title, date } = node.frontmatter;
+                    return (
+                        <>
+                            <PostTitle>
+                                <Link to={'/' + path}>{title}</Link>
+                            </PostTitle>
+                            <PostDate>{date ? date.slice(0, 10) : null}</PostDate>
+                        </>
+                    );
+                })}
             </PostList>
         </Layout>
     );
@@ -59,41 +46,33 @@ export const query = graphql`
     }
 `;
 
-const PostList = styled.li`
-    list-style: none;
-`;
-const PostItem = styled.li`
-    margin-bottom: 2rem;
-    list-style: none;
-`;
+const PostList = styled.main`
+    display: grid;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    grid-template-columns: 1fr min-content;
 
-const PostItemWrapper = styled.div`
-    padding-top: 20px;
-    &:hover {
-        box-shadow: inset 0 -3px 0 #90afc5;
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+        grid-row-gap: 0;
     }
 `;
+
 const PostTitle = styled.div`
-    font-size: 26px;
-    font-weight: bold;
-    padding-bottom: 5px;
-    @media (max-width: 767px) {
-        font-size: 21px;
-    }
-`;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 500;
 
-const PostSubtitle = styled.div`
-    font-size: 16px;
-    padding-bottom: 5px;
     @media (max-width: 767px) {
-        font-size: 15px;
+        text-decoration: underline;
+    }
+
+    &:hover {
+        text-decoration: underline;
     }
 `;
 
 const PostDate = styled.div`
-    font-size: 13px;
-    padding-bottom: 5px;
-    @media (max-width: 767px) {
-        font-size: 12px;
-    }
+    white-space: pre;
+    font-variant-numeric: tabular-nums;
 `;
