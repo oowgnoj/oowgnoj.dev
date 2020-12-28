@@ -8,7 +8,7 @@ export default () => {
     return (
         <Layout>
             <SEO title="about" />
-            <ProfileImage src={Me} style={{ margin: '0 auto' }} />
+            <ProfileImage src={Me} />
             <Contents>
                 안녕하세요. 박종우 입니다.
                 <p>
@@ -41,7 +41,7 @@ export default () => {
 };
 
 const Contents = styled.div``;
-const ProfileImage = styled.div`
+const ProfileImage = styled.img`
     display: block;
     margin: 0px auto;
 `;
