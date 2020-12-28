@@ -1,6 +1,6 @@
 import React from 'react';
 import { Router } from '@reach/router';
-import About from './About';
+import About from './about';
 import Project from './projects';
 const App = () => {
     return (
