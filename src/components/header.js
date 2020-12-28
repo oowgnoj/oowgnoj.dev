@@ -13,10 +13,10 @@ const Header = ({ siteTitle }) => {
     return (
         <Wrapper>
             <GlobalStyles />
-            <Title>{siteTitle}</Title>
+            <Title>oowgnoj</Title>
             <Menus>
                 {menus.map(el => (
-                    <Menu>
+                    <Menu key={el.label}>
                         <StyledLink to={el.to}>{el.label}</StyledLink>
                     </Menu>
                 ))}
@@ -35,6 +35,7 @@ const Wrapper = styled.div`
         position: inherit;
         width: 100%;
         padding: 0 20px;
+        padding-bottom: 20px;
         margin-bottom: 20px;
         border-bottom: 1px solid #000;
     }
@@ -46,6 +47,7 @@ const StyledLink = styled(Link)`
 `;
 
 const Title = styled.div`
+    font-weight: 700;
     display: flex;
     justify-content: space-between;
 `;

@@ -12,12 +12,12 @@ export default ({ data }) => {
                 {data.allMarkdownRemark.edges.map(({ node }) => {
                     const { path, title, date } = node.frontmatter;
                     return (
-                        <>
+                        <React.Fragment key={title}>
                             <PostTitle>
                                 <Link to={'/' + path}>{title}</Link>
                             </PostTitle>
                             <PostDate>{date ? date.slice(0, 10) : null}</PostDate>
-                        </>
+                        </React.Fragment>
                     );
                 })}
             </PostList>
