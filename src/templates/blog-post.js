@@ -6,7 +6,7 @@ import { Disqus } from 'gatsby-plugin-disqus';
 
 const PostTemplate = React.memo(props => {
     const { title, date, html } = props.pageContext;
-    let disqusConfig = {
+    const disqusConfig = {
         identifier: title,
         title: title,
     };
@@ -14,11 +14,10 @@ const PostTemplate = React.memo(props => {
     return (
         <Layout>
             <SEO title={title} />
-            <h2>{title}</h2>
-            <h4>{date}</h4>
+            <h1>{title}</h1>
             <hr />
             <div dangerouslySetInnerHTML={{ __html: html }} />
-            <About />
+            <About date={date} />
             <Disqus config={disqusConfig} />
         </Layout>
     );

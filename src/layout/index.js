@@ -22,7 +22,9 @@ const Layout = ({ children, isMain }) => {
         <Wrapper>
             <Header siteTitle={data.site.siteMetadata.title} />
             <Main isMain={isMain}>
-                <main>{children}</main>
+                <Contents>
+                    <main>{children}</main>
+                </Contents>
                 <Footer>
                     © {new Date().getFullYear()}, by oowgnoj
                     {` `}
@@ -42,10 +44,13 @@ const Wrapper = styled.div`
     }
 `;
 
+const Contents = styled.div`
+    padding: 0 20px;
+`;
+
 const Main = styled.div`
     margin: 0 auto;
-    padding: 45px 20px;
-    max-width: ${props => (props.isMain ? '100%' : '640px')};
+    max-width: 680px;
     @media (max-width: 767px) {
         padding: 0 !important;
     }
@@ -54,7 +59,7 @@ const Main = styled.div`
 const Footer = styled.footer`
     margin-top: 100px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
 `;
 
 export default Layout;
