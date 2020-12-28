@@ -13,6 +13,10 @@ exports.createPages = async ({ actions, graphql }) => {
                         frontmatter {
                             path
                             title
+                            category
+                            subtitle
+                            tags
+                            date(formatString: "YYYY-MM-DD")
                         }
                     }
                 }
@@ -45,12 +49,17 @@ exports.createPages = async ({ actions, graphql }) => {
     }
 
     res.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        const { path, title } = node.frontmatter;
+        const { path, title, subtitle, category, author, tags, date } = node.frontmatter;
         createPage({
             path: path,
             context: {
                 html: node.html,
                 title: title,
+                subtitle: subtitle,
+                category: category,
+                author: author,
+                tags: tags,
+                date: date,
             },
             component: blogPostTemplate,
         });

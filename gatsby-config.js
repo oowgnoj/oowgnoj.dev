@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: 'oowgnoj.dev',
+        title: '@oowgnoj',
         description: '기억하기 위해 기록합니다.',
         author: `@oowgnoj`,
     },
@@ -16,6 +16,13 @@ module.exports = {
             options: {
                 name: 'posts',
                 path: `${__dirname}/posts`,
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'projects',
+                path: `${__dirname}/projects`,
             },
         },
         {
@@ -66,7 +73,7 @@ module.exports = {
                         resolve: `gatsby-remark-highlight-code`,
                         options: {
                             terminal: 'carbon',
-                            theme: 'dracula',
+                            theme: 'nord',
                         },
                     },
                     'gatsby-remark-static-images',

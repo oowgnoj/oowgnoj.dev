@@ -1,55 +1,81 @@
+/* HEADER */
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.004em;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.009em;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.009em;
+    margin-bottom: 0.5rem;
+}
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.009em;
+    margin-bottom: 0.5rem;
+}
+
 /* body */
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+strong {
+    font-weight: 600;
+}
+
 img {
     margin-bottom: 0;
     max-height: 500px;
 }
 
-p {
-    font-weight: normal;
-    line-height: 29px;
-    margin: 1rem 0;
+a {
+    color: #12181f;
+    text-decoration: none;
 }
-
 p > a {
-    color: #9f7aea;
-}
-p > a:hover {
     text-decoration: underline;
 }
-li {
-    margin-bottom: 2px;
-}
-
 li > a {
-    color: #9f7aea;
-}
-li > a:hover {
     text-decoration: underline;
 }
 td > a {
-    color: #9f7aea;
-}
-td > a:hover {
     text-decoration: underline;
 }
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 figure {
     text-align: center;
     margin-bottom: 0.5rem;
-}
-
-h2 {
-    line-height: 29px;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-h3 {
-    line-height: 29px;
-    margin-bottom: 0.5rem;
-}
-h4 {
-    font-size: 1.2rem;
-    margin-bottom: 0.3rem;
 }
 
 /* blog image caption */
@@ -64,6 +90,11 @@ figcaption {
 }
 
 /* code hilight block */
+
+p > code {
+    background-color: rgb(242, 242, 242);
+    font-size: 1em;
+}
 .gatsby-highlight {
     border-radius: 0.3em;
     margin: 0.5em 0;
@@ -76,8 +107,4 @@ figcaption {
     padding-left: 2.8em;
     padding-right: 2.8em;
     overflow: initial;
-}
-
-deckgo-highlight-code {
-    margin-bottom: 36px;
 }

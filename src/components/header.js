@@ -1,44 +1,62 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import GlobalStyles from '../style/globalStyle';
-import styled, { ThemeProvider } from 'styled-components';
-import useDarkMode from '../hooks/useDarkMode';
-import { lightTheme, darkTheme } from '../style/theme';
-import Sun from '../../images/logo/sun.png';
-import Moon from '../../images/logo/moon.png';
+import styled from 'styled-components';
+// const menus = ['Writing', 'Reading', 'Projects', 'About',];
 
+const menus = [
+    { label: 'Writing', to: '/' },
+    { label: 'Projects', to: 'projects' },
+    { label: 'About', to: 'about' },
+];
 const Header = ({ siteTitle }) => {
-    const [theme, themeToggler] = useDarkMode();
     return (
-        <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+        <Wrapper>
             <GlobalStyles />
-            <Title>
-                <StyledLink to="/" theme={theme}>
-                    {siteTitle}
-                </StyledLink>
-                <DarkModeIcon theme={theme} onClick={themeToggler} src={theme === 'light' ? Moon : Sun} />
-            </Title>
-        </ThemeProvider>
+            <Title>oowgnoj</Title>
+            <Menus>
+                {menus.map(el => (
+                    <Menu key={el.label}>
+                        <StyledLink to={el.to}>{el.label}</StyledLink>
+                    </Menu>
+                ))}
+            </Menus>
+        </Wrapper>
     );
 };
 
 export default Header;
-
-const Title = styled.h1`
-    display: flex;
-    justify-content: space-between;
-`;
-const DarkModeIcon = styled.img`
-    width: 44px;
-    height: 44px;
-    margin: 0;
-    align-self: center;
-    filter: ${props => (props.theme === 'light' ? null : 'invert(100%)')};
+const Wrapper = styled.div`
+    position: absolute;
+    right: 50%;
+    margin-right: 340px !important;
+    padding-right: 20px;
+    @media (max-width: 767px) {
+        position: inherit;
+        width: 100%;
+        padding: 0 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #000;
+    }
 `;
 
 const StyledLink = styled(Link)`
-    font-size: 32px;
-    padding: 45px 20px;
     text-decoration: none;
-    color: ${props => (props.theme === 'light' ? 'black' : 'white')};
+    text-weight: 500;
+`;
+
+const Title = styled.div`
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+`;
+
+const Menus = styled.div`
+    text-decoration: none;
+    text-weight: 500;
+`;
+const Menu = styled.div`
+    text-decoration: none;
+    text-weight: 500;
 `;

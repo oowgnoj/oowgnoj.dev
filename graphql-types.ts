@@ -2322,11 +2322,19 @@ export type SitePageConnectionGroupArgs = {
 export type SitePageContext = {
   html?: Maybe<Scalars['String']>;
   title?: Maybe<Scalars['String']>;
+  subtitle?: Maybe<Scalars['String']>;
+  category?: Maybe<Scalars['String']>;
+  tags?: Maybe<Array<Maybe<Scalars['String']>>>;
+  date?: Maybe<Scalars['Date']>;
 };
 
 export type SitePageContextFilterInput = {
   html?: Maybe<StringQueryOperatorInput>;
   title?: Maybe<StringQueryOperatorInput>;
+  subtitle?: Maybe<StringQueryOperatorInput>;
+  category?: Maybe<StringQueryOperatorInput>;
+  tags?: Maybe<StringQueryOperatorInput>;
+  date?: Maybe<DateQueryOperatorInput>;
 };
 
 export type SitePageEdge = {
@@ -2430,6 +2438,10 @@ export type SitePageFieldsEnum =
   'isCreatedByStatefulCreatePages' |
   'context___html' |
   'context___title' |
+  'context___subtitle' |
+  'context___category' |
+  'context___tags' |
+  'context___date' |
   'pluginCreator___id' |
   'pluginCreator___parent___id' |
   'pluginCreator___parent___parent___id' |
