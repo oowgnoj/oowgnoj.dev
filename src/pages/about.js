@@ -14,14 +14,14 @@ export default () => {
                 <p>
                     데이터 분석으로 처음 프로그래밍을 시작했습니다. 2020 년에는{' '}
                     <a href="http://www.atommerce.com/">아토머스</a>에서 프론트엔드를 개발했습니다. 생각을 실체로 구현할
-                    수 있어 프로그래밍을 좋아합니다. 웹을 처음 배우며 주머니 사정에 맞추어 여행지를 알아보고자{' '}
+                    수 있어 프로그래밍을 좋아합니다. 주머니 사정에 맞추어 여행지를 알아보고자{' '}
                     <a
                         href="https://www.notion.so/oowgonj/Travel-Calculator-28ccc8f49ad241cda94894985d2a23cf"
                         target="_blank"
                     >
                         여행 계산기
                     </a>
-                    를 만들었습니다. 그 밖에,{' '}
+                    를 처음 만들었습니다.{' '}
                     <a href="https://www.notion.so/oowgonj/229c32de2c7f4dc7b8249ea8f308b382" target="_blank">
                         책
                     </a>
