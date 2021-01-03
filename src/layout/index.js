@@ -46,6 +46,9 @@ const Wrapper = styled.div`
 
 const Contents = styled.div`
     padding: 0 20px;
+    @media (max-width: 767px) {
+        padding: 0
+    }
 `;
 
 const Main = styled.div`
