@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const menus = [
     { label: 'Writing', to: '/' },
     { label: 'Reading', to: '/reading' },
-    { label: 'Projects', to: 'projects' },
+    { label: 'Projects', to: '/projects' },
     { label: 'About', to: 'about' },
 ];
 const Header = ({ siteTitle }) => {
