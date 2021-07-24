@@ -3,12 +3,14 @@ import styled from 'styled-components';
 import Layout from '../layout';
 import SEO from '../layout/seo';
 import Me from '../../images/me-black.jpg';
+import Img from 'gatsby-image'
 
-export default () => {
+
+export default ({data}) => {
     return (
         <Layout>
             <SEO title="about" />
-            <ProfileImage src={Me} />
+            <Img fluid={data.file.childImageSharp.fluid} src={Me} />
             <Contents>
                 안녕하세요. 박종우 입니다.
                 <p>
@@ -40,7 +42,16 @@ export default () => {
 };
 
 const Contents = styled.div``;
-const ProfileImage = styled.img`
-    display: block;
-    margin: 0px auto;
-`;
+
+
+export const query = graphql`
+  query getImage {
+    file(relativePath: { eq: "me-black.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

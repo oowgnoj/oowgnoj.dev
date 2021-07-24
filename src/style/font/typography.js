@@ -2,7 +2,7 @@ import Typography from 'typography';
 import './ibm-plex/index.css';
 
 const typography = new Typography({
-    baseFontSize: '16px',
+    baseFontSize: '17px',
     baseLineHeight: 1.7,
     baseLetterSpacing: '-0.004em',
     bodyFontFamily: [

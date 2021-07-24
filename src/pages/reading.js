@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../layout';
@@ -14,15 +14,14 @@ export default ({ data }) => {
                     const { path, title, date, author, rating } = node.frontmatter;
                     return (
                         <React.Fragment key={title}>
-                            <PostTitle>
-                                <Link to={'/' + path}>{title}</Link>
-                            </PostTitle>
+                            <Link to={'/' + path}>
+                                <PostTitle>{title}</PostTitle>
+                            </Link>
                             <PostAuthor>
-                                <Link to={'/' + path}>{author}</Link>
+                                <a href={'https://www.google.com/search?q=' + author} target="_blank">{author}</a>
                             </PostAuthor>
                             <PostDate>{date ? date.slice(0, 10) : null}</PostDate>
-                            {console.log(rating)}
-                            <PostAuthor>{Array(rating).fill(<StarIcon src={Star} />)}</PostAuthor>
+                            <PostAuthor>{Array(rating).slice(0,5).fill(<StarIcon src={Star} />)}</PostAuthor>
                         </React.Fragment>
                     );
                 })}
@@ -43,7 +42,6 @@ export const query = graphql`
                     frontmatter {
                         path
                         title
-                        category
                         subtitle
                         tags
                         author
@@ -86,6 +84,7 @@ const PostTitle = styled.div`
 const PostAuthor = styled.div`
     white-space: nowrap;
     overflow: hidden;
+    text-decoration: underline;
     text-overflow: ellipsis;
 `;
 
