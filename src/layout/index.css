@@ -32,18 +32,16 @@ h4 {
 
 /* body */
 
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
 strong {
-    font-weight: 600;
+    font-weight: normal;
+    background-image: linear-gradient(
+        transparent 0%,
+        transparent calc(50% - 4px),
+        rgb(204, 242, 241) calc(50% - 4px),
+        rgb(204, 242, 241) 100%
+    );
+    transition: background-position 120ms ease-in-out 0s, padding 120ms ease-in-out 0s;
+    background-size: 100% 200%;
 }
 
 img {
@@ -58,9 +56,11 @@ a {
 p > a {
     text-decoration: underline;
 }
+
 li > a {
     text-decoration: underline;
 }
+
 td > a {
     text-decoration: underline;
 }
@@ -78,6 +78,19 @@ figure {
     margin-bottom: 0.5rem;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul > p {
+    margin: 0;
+    padding: 0;
+}
+li > p {
+    margin: 0;
+    padding: 0;
+}
 /* blog image caption */
 
 figcaption {
@@ -95,6 +108,7 @@ p > code {
     background-color: rgb(242, 242, 242);
     font-size: 1em;
 }
+
 .gatsby-highlight {
     border-radius: 0.3em;
     margin: 0.5em 0;

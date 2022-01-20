@@ -27,7 +27,10 @@ export default ({ data }) => {
 
 export const query = graphql`
     query LatestPostListQuery {
-        allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+        allMarkdownRemark(
+            filter: { frontmatter: { layout: { eq: "post" } } }
+            sort: { order: DESC, fields: frontmatter___date }
+        ) {
             edges {
                 node {
                     excerpt(truncate: true, pruneLength: 200)
