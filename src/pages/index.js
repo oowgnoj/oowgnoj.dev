@@ -50,6 +50,7 @@ export const query = graphql`
 `;
 
 const PostList = styled.main`
+    width: 100%;
     display: grid;
     grid-row-gap: 5px;
     grid-column-gap: 5px;

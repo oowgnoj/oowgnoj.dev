@@ -3,10 +3,9 @@ import styled from 'styled-components';
 import Layout from '../layout';
 import SEO from '../layout/seo';
 import Me from '../../images/me-black.jpg';
-import Img from 'gatsby-image'
+import Img from 'gatsby-image';
 
-
-export default ({data}) => {
+export default ({ data }) => {
     return (
         <Layout>
             <SEO title="about" />
@@ -36,6 +35,7 @@ export default ({data}) => {
                 <br />
                 <h4>contact</h4>
                 <p>Email: jongwoopark423@gmail.com</p>
+                <p>github: @oowgnoj</p>
             </Contents>
         </Layout>
     );
@@ -43,15 +43,14 @@ export default ({data}) => {
 
 const Contents = styled.div``;
 
-
 export const query = graphql`
-  query getImage {
-    file(relativePath: { eq: "me-black.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 500) {
-          ...GatsbyImageSharpFluid
+    query getImage {
+        file(relativePath: { eq: "me-black.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 500) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
         }
-      }
     }
-  }
-`
+`;

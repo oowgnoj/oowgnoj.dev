@@ -18,10 +18,16 @@ export default ({ data }) => {
                                 <PostTitle>{title}</PostTitle>
                             </Link>
                             <PostAuthor>
-                                <a href={'https://www.google.com/search?q=' + author} target="_blank">{author}</a>
+                                <a href={'https://www.google.com/search?q=' + author} target="_blank">
+                                    {author}
+                                </a>
                             </PostAuthor>
                             <PostDate>{date ? date.slice(0, 10) : null}</PostDate>
-                            <PostAuthor>{Array(rating).slice(0,5).fill(<StarIcon src={Star} />)}</PostAuthor>
+                            <PostAuthor>
+                                {Array(rating)
+                                    .slice(0, 5)
+                                    .fill(<StarIcon src={Star} />)}
+                            </PostAuthor>
                         </React.Fragment>
                     );
                 })}
