@@ -15,7 +15,6 @@ const Header = props => {
     const { pathname } = useLocation();
     const showMenu = pathname === '/reading' || pathname === '/';
 
-    console.log(showMenu, pathname);
     return (
         <Wrapper>
             <GlobalStyles />

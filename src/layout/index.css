@@ -1,5 +1,9 @@
 /* HEADER */
 
+body {
+    color: rgba(55, 65, 81);
+}
+
 h1 {
     font-size: 32px;
     font-weight: 600;
@@ -12,7 +16,8 @@ h2 {
     font-weight: 600;
     line-height: 1.25;
     letter-spacing: 0.009em;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
 }
 
 h3 {
@@ -20,7 +25,8 @@ h3 {
     font-weight: 600;
     line-height: 1.25;
     letter-spacing: 0.009em;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
 }
 h4 {
     font-size: 1.1rem;
@@ -28,6 +34,8 @@ h4 {
     line-height: 1.25;
     letter-spacing: 0.009em;
     margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
 }
 
 /* body */
@@ -71,6 +79,9 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    line-height: 1.5rem;
+    word-break: break-all;
+    margin-top: 0;
 }
 
 figure {
@@ -106,6 +117,7 @@ figcaption {
 
 p > code {
     background-color: rgb(242, 242, 242);
+    color: rgb(5, 150, 105);
     font-size: 1em;
 }
 
